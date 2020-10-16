@@ -12128,7 +12128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5174595340652149635}
   - component: {fileID: -3996229147084376790}
-  - component: {fileID: -2090568756143196859}
+  - component: {fileID: 7854582546525553144}
   m_Layer: 0
   m_Name: Pipes
   m_TagString: Environment
@@ -12165,7 +12165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementFactor: 30
---- !u!54 &-2090568756143196859
+--- !u!54 &7854582546525553144
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

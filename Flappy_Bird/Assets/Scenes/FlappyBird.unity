@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d7e20d309acb944cab9375016374872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipes: {fileID: 2967972191586994345, guid: 23d3e702577223a4f8cf528716405d72, type: 3}
+  pipes: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
   pipesParentTransform: {fileID: 863299235}
   secondsBetweenSpawns: 2
   minPipeHeight: -8
