@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Environment")
+        if (other.gameObject.tag == "Environment")
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 1f);
             SceneManager.LoadScene(0); // todo remove this line of code
         }
     }
