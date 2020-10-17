@@ -20,7 +20,7 @@ public class PipesMovement : MonoBehaviour
 
     private void PipeMovement()
     {
-        Vector3 currentPosX = new Vector3((-transform.position.x + (movementFactor * Time.deltaTime)), 0, 0);
-        rigidBody.MovePosition(-currentPosX);
+        Vector3 currentPosX = new Vector3((transform.position.x - (movementFactor * Time.deltaTime)), transform.position.y, -0);
+        rigidBody.MovePosition(currentPosX);
     }
 }
