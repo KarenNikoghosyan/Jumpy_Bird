@@ -11,8 +11,8 @@ public class PipesSpawner : MonoBehaviour
     [SerializeField] Transform pipesParentTransform;
     [SerializeField] float secondsBetweenSpawns = 2f;
 
-    [SerializeField] float minPipeHeight = -8f;
-    [SerializeField] float maxPipeHeight = 0.5f;
+    public float minPipeHeight = -8.5f;
+    public float maxPipeHeight = 0.5f;
 
     int numOfPipes = 0;
 
