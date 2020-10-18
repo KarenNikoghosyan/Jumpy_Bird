@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] float jumpForce = 7f;
     Rigidbody rigidBody;
-
+    
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();

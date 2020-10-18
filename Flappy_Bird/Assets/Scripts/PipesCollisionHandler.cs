@@ -16,6 +16,7 @@ public class PipesCollisionHandler : MonoBehaviour
     {
         if (other.gameObject.tag == "Finish")
         {
+            if (!enabled) { return; }
             float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
             transform.position = new Vector3(28f, randomYRange, 0);
         }

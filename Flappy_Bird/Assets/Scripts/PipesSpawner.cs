@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 public class PipesSpawner : MonoBehaviour
 {
+    //List<GameObject> pipesArr = new List<GameObject>(); // todo come back for that later
     [SerializeField] GameObject pipes;
     [SerializeField] Transform pipesParentTransform;
     [SerializeField] float secondsBetweenSpawns = 2f;
@@ -14,16 +15,17 @@ public class PipesSpawner : MonoBehaviour
     public float minPipeHeight = -8.5f;
     public float maxPipeHeight = 0.5f;
 
+    [SerializeField] int numberOfPipes = 5;
     int numOfPipes = 0;
 
     void Start()
     {
-        StartCoroutine(RepeatedlySpawnPipes());  
+        StartCoroutine(RepeatedlySpawnPipes());
     }
 
     IEnumerator RepeatedlySpawnPipes()
     {
-        while (numOfPipes < 5)
+        while (numOfPipes < numberOfPipes)
         {
             float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
             GameObject newPipe = Instantiate(pipes, new Vector3(28f, randomYRange, 0f), Quaternion.identity);
