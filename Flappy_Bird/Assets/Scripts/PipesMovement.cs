@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PipesMovement : MonoBehaviour
 {
-    [SerializeField] float movementFactor = 20f;
+    [SerializeField] float movementFactor = 6f;
     Rigidbody rigidBody;
 
     void Start()
