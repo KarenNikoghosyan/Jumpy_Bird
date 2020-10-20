@@ -16,11 +16,19 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         RespondToJumpInput();
+        RespondToTouchInput();
     }
 
     private void RespondToJumpInput()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+    }
+    private void RespondToTouchInput()
+    {
+        if (Input.touchCount > 0)
         {
             Jump();
         }

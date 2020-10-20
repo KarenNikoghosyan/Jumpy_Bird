@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class PipesMovement : MonoBehaviour
 {
@@ -13,14 +14,15 @@ public class PipesMovement : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         PipeMovement();
     }
-
+     
     private void PipeMovement()
     {
-        Vector3 currentPosX = new Vector3((transform.position.x - (movementFactor * Time.deltaTime)), transform.position.y, 0f);
+        Vector3 currentPosX = new Vector3((transform.position.x - (movementFactor * Time.fixedDeltaTime)), transform.position.y, 0f);
         rigidBody.MovePosition(currentPosX);
     }
+
 }

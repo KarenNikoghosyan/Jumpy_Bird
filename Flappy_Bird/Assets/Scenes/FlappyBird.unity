@@ -452,8 +452,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281940424
-  m_fontColor: {r: 0.7830189, g: 0.22530258, b: 0.22530258, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -664,7 +664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &799890495
 Transform:
   m_ObjectHideFlags: 0
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipes: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
   pipesParentTransform: {fileID: 863299235}
-  secondsBetweenSpawns: 2.5
+  secondsBetweenSpawns: 3.5
   minPipeHeight: -8.5
   maxPipeHeight: 0.5
 --- !u!1 &864550090

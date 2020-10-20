@@ -29,6 +29,7 @@ public class PipesSpawner : MonoBehaviour
             GameObject newPipe = ObjectPoolManager.CreatePooled(pipes, new Vector3(28f, randomYRange, 0f), Quaternion.identity);
             newPipe.transform.parent = pipesParentTransform;
             numOfPipes++;
+            print(numOfPipes);
             yield return new WaitForSeconds(secondsBetweenSpawns);
         }
     }

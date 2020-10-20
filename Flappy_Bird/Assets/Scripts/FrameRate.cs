@@ -9,6 +9,6 @@ public class FrameRate : MonoBehaviour
 
     void Awake()
     {
-        Application.targetFrameRate = framerate;
+        //Application.targetFrameRate = framerate;
     }
 }

@@ -12182,7 +12182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aac14560858c314a824fda39e811dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementFactor: 6
+  movementFactor: 4
 --- !u!114 &8108185096043203525
 MonoBehaviour:
   m_ObjectHideFlags: 0
