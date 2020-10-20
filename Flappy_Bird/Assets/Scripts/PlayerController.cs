@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     }
     private void RespondToTouchInput()
     {
-        if (Input.touchCount > 0)
+        if (Input.GetTouch(0).phase == TouchPhase.Began)
         {
             Jump();
         }

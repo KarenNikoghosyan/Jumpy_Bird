@@ -26,7 +26,7 @@ public class PipesSpawner : MonoBehaviour
         while (true)
         {
             float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
-            GameObject newPipe = ObjectPoolManager.CreatePooled(pipes, new Vector3(28f, randomYRange, 0f), Quaternion.identity);
+            GameObject newPipe = ObjectPoolManager.CreatePooled(pipes, new Vector3(25f, randomYRange, 0f), Quaternion.identity);
             newPipe.transform.parent = pipesParentTransform;
             numOfPipes++;
             print(numOfPipes);
