@@ -20,6 +20,23 @@ public class CollisionHandler : MonoBehaviour
         pipeChildren = GetComponent<MeshRenderer>();
     }
 
+    void Update()
+    {
+        if (Debug.isDebugBuild) 
+        {
+            DebugKeys();
+        }   
+    }
+
+    private void DebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            score += 1;
+            pipeScore.text = score.ToString();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Environment")

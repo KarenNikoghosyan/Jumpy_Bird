@@ -27,7 +27,7 @@ public class PipesSpawner : MonoBehaviour
     {
         if (isChangeable)
         {
-            int randomColor = Random.Range(0, 7);
+            int randomColor = Random.Range(0, 14);
             for (int i=0; i< pipes.Count; i+=2) 
             {
                 switch (randomColor)
@@ -46,8 +46,8 @@ public class PipesSpawner : MonoBehaviour
                         pipes[i+1].material.color = Color.green;
                         break;
                     case 3:
-                        pipes[i].material.color = Color.yellow;
-                        pipes[i+1].material.color = Color.yellow;
+                        pipes[i].material.color = new Color32(165, 42, 42 , 255); // Brown
+                        pipes[i+1].material.color = new Color32(165, 42, 42 , 255); // Brown
                         break;
                     case 4:
                         pipes[i].material.color = Color.gray;
@@ -62,8 +62,36 @@ public class PipesSpawner : MonoBehaviour
                         pipes[i+1].material.color = Color.magenta;
                         break;
                     case 7:
-                        pipes[i].material.color = Color.black;
-                        pipes[i+1].material.color = Color.black;
+                        pipes[i].material.color = new Color32(255, 165, 0, 255); // Orange
+                        pipes[i+1].material.color = new Color32(255, 165, 0 , 255); // Orange
+                        break;
+                    case 8:
+                        pipes[i].material.color = new Color32(128, 0, 128 , 255); //Purple
+                        pipes[i+1].material.color = new Color32(128, 0, 128 , 255); //Purple
+                        break;
+                    case 9:
+                        pipes[i].material.color = new Color32(0, 0, 128 , 255); // Navy
+                        pipes[i+1].material.color = new Color32(0, 0, 128 , 255); // Navy
+                        break;
+                    case 10:
+                        pipes[i].material.color = new Color32(238, 130, 238 , 255); // Violet
+                        pipes[i+1].material.color = new Color32(238, 130, 238 , 255); // Violet
+                        break;
+                    case 11:
+                        pipes[i].material.color = new Color32(64, 224, 208, 255); // Turquoise
+                        pipes[i+1].material.color = new Color32(64, 224, 208, 255); // Turquoise
+                        break;
+                    case 12:
+                        pipes[i].material.color = new Color32(245, 245, 220, 255); // Beige
+                        pipes[i+1].material.color = new Color32(245, 245, 220, 255); // Beige
+                        break;
+                    case 13:
+                        pipes[i].material.color = new Color32(230, 230, 250, 255); // Lavender
+                        pipes[i+1].material.color = new Color32(230, 230, 250, 255); // Lavender
+                        break;
+                    case 14:
+                        pipes[i].material.color = new Color32(192, 192, 192, 255); // Silver
+                        pipes[i+1].material.color = new Color32(192, 192, 192, 255); // Silver
                         break;
                 }
             }
