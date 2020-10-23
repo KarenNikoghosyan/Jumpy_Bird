@@ -15,6 +15,7 @@ public class PipesSpawner : MonoBehaviour
     [SerializeField] float maxPipeHeight = 0.5f;
 
     int numOfPipes = 0;
+
     public List<MeshRenderer> pipes = new List<MeshRenderer>();
 
     void Start()
@@ -76,11 +77,16 @@ public class PipesSpawner : MonoBehaviour
         {
             float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
             GameObject newPipe = ObjectPoolManager.CreatePooled(pipe, new Vector3(25f, randomYRange, 0f), Quaternion.identity);
-            pipes.Add(newPipe.transform.GetChild(0).GetComponent<MeshRenderer>());
-            pipes.Add(newPipe.transform.GetChild(1).GetComponent<MeshRenderer>());
             newPipe.transform.parent = pipesParentTransform;
+            AddPipesToList(newPipe);
             numOfPipes++;
             yield return new WaitForSeconds(secondsBetweenSpawns);
         }
+    }
+
+    private void AddPipesToList(GameObject newPipe)
+    {
+        pipes.Add(newPipe.transform.GetChild(0).GetComponent<MeshRenderer>());
+        pipes.Add(newPipe.transform.GetChild(1).GetComponent<MeshRenderer>());
     }
 }

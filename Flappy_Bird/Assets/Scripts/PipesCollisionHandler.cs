@@ -22,7 +22,7 @@ public class PipesCollisionHandler : MonoBehaviour
 
     private void RemovePipesFromList()
     {
-        pipes.Remove(pipes[0]);
         pipes.Remove(pipes[1]);
+        pipes.Remove(pipes[0]);
     }
 }
