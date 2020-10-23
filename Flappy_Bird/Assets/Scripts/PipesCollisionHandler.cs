@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class PipesCollisionHandler : MonoBehaviour
 {
+    List<MeshRenderer> pipes;
+    void Start()
+    {
+        pipes = FindObjectOfType<PipesSpawner>().pipes;    
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Finish")
         {
             if (!enabled) { return; }
+            RemovePipesFromList();
             ObjectPoolManager.DestroyPooled(gameObject);
         }
+    }
+
+    private void RemovePipesFromList()
+    {
+        pipes.Remove(pipes[0]);
+        pipes.Remove(pipes[1]);
     }
 }
