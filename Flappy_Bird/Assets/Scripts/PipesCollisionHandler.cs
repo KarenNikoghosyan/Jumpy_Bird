@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PipesCollisionHandler : MonoBehaviour
 {
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Finish")

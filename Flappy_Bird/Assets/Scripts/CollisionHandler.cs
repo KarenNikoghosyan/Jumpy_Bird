@@ -1,17 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI pipeScore;
+    MeshRenderer pipeChildren;
     int score = 0;
+
+    bool isChangeable = true;
 
     void Start()
     {
         pipeScore.text = score.ToString();
+        pipeChildren = GetComponent<MeshRenderer>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,6 +30,7 @@ public class CollisionHandler : MonoBehaviour
         if (other.gameObject.tag == "Score")
         {
             AddScore();
+            ChangePipeColor();
         }
     }
 
@@ -38,4 +45,12 @@ public class CollisionHandler : MonoBehaviour
         score++;
         pipeScore.text = score.ToString();
     }
+    private void ChangePipeColor()
+    {
+        if (score % 10 == 0)
+        {
+            FindObjectOfType<PipesSpawner>().ChangePipeColor(isChangeable);
+        }
+    }
+
 }

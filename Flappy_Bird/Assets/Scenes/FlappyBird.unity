@@ -691,11 +691,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d7e20d309acb944cab9375016374872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipes: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
+  pipe: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
   pipesParentTransform: {fileID: 863299235}
   secondsBetweenSpawns: 3.5
   minPipeHeight: -8.5
   maxPipeHeight: 0.5
+  pipes: []
 --- !u!1 &864550090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1310,18 @@ PrefabInstance:
       propertyPath: pipeScore
       value: 
       objectReference: {fileID: 408782320}
+    - target: {fileID: 4374159854025470381, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
+      propertyPath: pipes
+      value: 
+      objectReference: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
+    - target: {fileID: 4374159854025470381, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
+      propertyPath: pipeChildren1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374159854025470381, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
+      propertyPath: pipeChildren2
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4374159854025470383, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.89
