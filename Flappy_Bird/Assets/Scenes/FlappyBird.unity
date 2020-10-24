@@ -323,7 +323,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 40
+  field of view: 42
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -452,8 +452,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278255615
+  m_fontColor: {r: 1, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -580,7 +580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592312717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8100002, y: 1.55, z: 0}
+  m_LocalPosition: {x: -0.8100002, y: 1.4, z: 0}
   m_LocalScale: {x: 60, y: 0.5, z: 3.2}
   m_Children: []
   m_Father: {fileID: 864550091}
@@ -694,8 +694,8 @@ MonoBehaviour:
   pipe: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
   pipesParentTransform: {fileID: 863299235}
   secondsBetweenSpawns: 3.5
-  minPipeHeight: -8.5
-  maxPipeHeight: 0.5
+  minPipeHeight: -8.8
+  maxPipeHeight: 1
   pipes: []
 --- !u!1 &864550090
 GameObject:
@@ -1219,7 +1219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070069881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8100002, y: 18.800001, z: 0}
+  m_LocalPosition: {x: -0.8100002, y: 19.300001, z: 0}
   m_LocalScale: {x: 60, y: 0.5, z: 3.2}
   m_Children: []
   m_Father: {fileID: 864550091}

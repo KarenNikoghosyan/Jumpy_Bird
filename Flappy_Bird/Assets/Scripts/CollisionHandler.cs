@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI pipeScore;
+    public TextMeshProUGUI pipeScore;
     MeshRenderer pipeChildren;
     int score = 0;
 
@@ -66,7 +66,7 @@ public class CollisionHandler : MonoBehaviour
     {
         if (score % 10 == 0)
         {
-            FindObjectOfType<PipesSpawner>().ChangeRandomColor(isChangeable);
+            FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable);
         }
     }
 
