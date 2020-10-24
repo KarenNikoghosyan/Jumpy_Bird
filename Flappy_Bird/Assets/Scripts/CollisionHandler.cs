@@ -32,7 +32,7 @@ public class CollisionHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            score += 1;
+            score += 9;
             pipeScore.text = score.ToString();
         }
     }
@@ -66,7 +66,7 @@ public class CollisionHandler : MonoBehaviour
     {
         if (score % 10 == 0)
         {
-            FindObjectOfType<PipesSpawner>().ChangePipeColor(isChangeable);
+            FindObjectOfType<PipesSpawner>().ChangeRandomColor(isChangeable);
         }
     }
 
