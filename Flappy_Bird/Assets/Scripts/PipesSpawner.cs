@@ -8,17 +8,19 @@ using Random = UnityEngine.Random;
 
 public class PipesSpawner : MonoBehaviour
 {
+    public List<MeshRenderer> pipes = new List<MeshRenderer>();
+    //public float movementFactor = 4f;
+    [SerializeField] float secondsBetweenSpawns = 3.5f;
+    [SerializeField] float spawnSpeed = 0.5f;
+
     [SerializeField] GameObject pipe;
     [SerializeField] Transform pipesParentTransform;
-    [SerializeField] float secondsBetweenSpawns = 2.5f;
 
     [SerializeField] float minPipeHeight = -8.8f;
     [SerializeField] float maxPipeHeight = 1f;
 
-    int numOfPipes = 0;
-
-    public List<MeshRenderer> pipes = new List<MeshRenderer>();
     TextMeshProUGUI pipeScore;
+    int numOfPipes = 0;
 
     void Start()
     {
@@ -122,20 +124,35 @@ public class PipesSpawner : MonoBehaviour
         }
     }
 
+    public void ChangeSpawnSpeed(bool isValid)
+    {
+        if (isValid)
+        {
+            secondsBetweenSpawns += spawnSpeed;
+            isValid = false;
+        }
+    }
+
     IEnumerator RepeatedlySpawnPipes()
     {
         while (true)
         {
-            float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
-            GameObject newPipe = ObjectPoolManager.CreatePooled(pipe, new Vector3(25f, randomYRange, 0f), Quaternion.identity);
-            newPipe.transform.parent = pipesParentTransform;
-            AddPipesToList(newPipe);
+            GameObject newPipe = PipeSpawner();
+            AddPipesToAList(newPipe);
             numOfPipes++;
             yield return new WaitForSeconds(secondsBetweenSpawns);
         }
     }
 
-    private void AddPipesToList(GameObject newPipe)
+    private GameObject PipeSpawner()
+    {
+        float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
+        GameObject newPipe = ObjectPoolManager.CreatePooled(pipe, new Vector3(27f, randomYRange, 0f), Quaternion.identity);
+        newPipe.transform.parent = pipesParentTransform;
+        return newPipe;
+    }
+
+    private void AddPipesToAList(GameObject newPipe)
     {
         pipes.Add(newPipe.transform.GetChild(0).GetComponent<MeshRenderer>());
         pipes.Add(newPipe.transform.GetChild(1).GetComponent<MeshRenderer>());

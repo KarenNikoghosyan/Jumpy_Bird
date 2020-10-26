@@ -9,15 +9,14 @@ using Random = UnityEngine.Random;
 public class CollisionHandler : MonoBehaviour
 {
     public TextMeshProUGUI pipeScore;
-    MeshRenderer pipeChildren;
-    int score = 0;
 
-    bool isChangeable = true;
+    bool isChangeable = true, isValid = true, isValid2 = true;
+    
+    int score = 0;
 
     void Start()
     {
         pipeScore.text = score.ToString();
-        pipeChildren = GetComponent<MeshRenderer>();
     }
 
     void Update()
@@ -25,7 +24,7 @@ public class CollisionHandler : MonoBehaviour
         if (Debug.isDebugBuild) 
         {
             DebugKeys();
-        }   
+        }
     }
 
     private void DebugKeys()
@@ -47,14 +46,14 @@ public class CollisionHandler : MonoBehaviour
         if (other.gameObject.tag == "Score")
         {
             AddScore();
-            ChangePipeColor();
+            UpdatePipeColorAndSpeed();
         }
     }
 
     private void KillPlayer()
     {
         Destroy(gameObject, 1f);
-        SceneManager.LoadScene(0); // todo remove this line of code
+        SceneManager.LoadScene(0); // todo remove this line of code - after adding main menu, pause and restart functionality.
     }
 
     private void AddScore()
@@ -62,11 +61,13 @@ public class CollisionHandler : MonoBehaviour
         score++;
         pipeScore.text = score.ToString();
     }
-    private void ChangePipeColor()
+    private void UpdatePipeColorAndSpeed()
     {
         if (score % 10 == 0)
         {
-            FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable);
+            FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable); // todo move this line of code to a start Method.
+            FindObjectOfType<PipesSpawner>().ChangeSpawnSpeed(isValid);
+            FindObjectOfType<PipesMovement>().SpeedUpMovement(isValid2);
         }
     }
 

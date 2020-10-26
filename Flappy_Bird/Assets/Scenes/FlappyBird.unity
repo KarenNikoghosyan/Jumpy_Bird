@@ -530,7 +530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 579039423}
   m_Layer: 0
-  m_Name: Background
+  m_Name: Background Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -544,8 +544,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579039422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.79085, y: -5.4, z: 1.6889}
-  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_LocalPosition: {x: -2.2934, y: -5.4, z: 1.6889}
+  m_LocalScale: {x: 2.1000001, y: 1.7, z: 1.7}
   m_Children:
   - {fileID: 1589636755}
   - {fileID: 330611428}
@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 592312720}
   - component: {fileID: 592312719}
   m_Layer: 0
-  m_Name: Bottom
+  m_Name: Ground
   m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -580,8 +580,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592312717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8100002, y: 1.4, z: 0}
-  m_LocalScale: {x: 60, y: 0.5, z: 3.2}
+  m_LocalPosition: {x: -5.8, y: 1.4, z: 0}
+  m_LocalScale: {x: 68.8, y: 0.5, z: 3.2}
   m_Children: []
   m_Father: {fileID: 864550091}
   m_RootOrder: 2
@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 863299235}
   - component: {fileID: 863299237}
   m_Layer: 0
-  m_Name: Obstacles
+  m_Name: Pipes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -691,12 +691,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d7e20d309acb944cab9375016374872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pipes: []
+  secondsBetweenSpawns: 3.5
+  movementFactor: 4
   pipe: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
   pipesParentTransform: {fileID: 863299235}
-  secondsBetweenSpawns: 3.5
   minPipeHeight: -8.8
   maxPipeHeight: 1
-  pipes: []
 --- !u!1 &864550090
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,8 +758,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562308242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.2, y: 10, z: 0}
-  m_LocalScale: {x: 2.6000001, y: 16.300001, z: 3}
+  m_LocalPosition: {x: -38.8, y: 10.3, z: 0}
+  m_LocalScale: {x: 2.6000001, y: 17.2, z: 3}
   m_Children: []
   m_Father: {fileID: 864550091}
   m_RootOrder: 3
@@ -1205,7 +1206,7 @@ GameObject:
   - component: {fileID: 2070069884}
   - component: {fileID: 2070069883}
   m_Layer: 0
-  m_Name: Top
+  m_Name: Ceiling
   m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1219,8 +1220,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070069881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8100002, y: 19.300001, z: 0}
-  m_LocalScale: {x: 60, y: 0.5, z: 3.2}
+  m_LocalPosition: {x: -5.8, y: 19.300001, z: 0}
+  m_LocalScale: {x: 68.8, y: 0.5, z: 3.2}
   m_Children: []
   m_Father: {fileID: 864550091}
   m_RootOrder: 1
@@ -1313,7 +1314,7 @@ PrefabInstance:
     - target: {fileID: 4374159854025470381, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
       propertyPath: pipes
       value: 
-      objectReference: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
+      objectReference: {fileID: -3996229147084376790, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
     - target: {fileID: 4374159854025470381, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
       propertyPath: pipeChildren1
       value: 
@@ -1321,6 +1322,10 @@ PrefabInstance:
     - target: {fileID: 4374159854025470381, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
       propertyPath: pipeChildren2
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374159854025470381, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
+      propertyPath: movementSpeed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4374159854025470383, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
       propertyPath: m_LocalPosition.x

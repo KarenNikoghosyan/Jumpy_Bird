@@ -6,17 +6,28 @@ using UnityEngine.PlayerLoop;
 
 public class PipesMovement : MonoBehaviour
 {
-    [SerializeField] float movementFactor = 6f;
+    [SerializeField] float movementSpeed = 1f; // todo remove later
     Rigidbody rigidBody;
+    [SerializeField] float movementFactor = 4f;
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+        //movementFactor = FindObjectOfType<PipesSpawner>().movementFactor;
     }
 
     void FixedUpdate()
     {
         PipeMovement();
+    }
+
+    public void SpeedUpMovement(bool isValid2)
+    {
+        if (isValid2)
+        {
+            movementFactor += movementSpeed;
+            isValid2 = false; 
+        }
     }
      
     private void PipeMovement()
