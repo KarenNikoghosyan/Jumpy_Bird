@@ -13,10 +13,13 @@ public class CollisionHandler : MonoBehaviour
     bool isChangeable = true, isValid = true;
     
     int score = 0;
+    Material material;
 
     void Start()
     {
         pipeScore.text = score.ToString();
+        material = FindObjectOfType<PipesSpawner>().material;
+        material.color = Color.yellow;
     }
 
     void Update()

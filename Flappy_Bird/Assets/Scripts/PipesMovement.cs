@@ -31,7 +31,7 @@ public class PipesMovement : MonoBehaviour
     {
         if (isValid)
         {
-            for (int i = 2; i < pipes.Count; i+=3)
+            for (int i = 0; i < pipes.Count; i++)
             {
                 pipes[i].GetComponent<PipesMovement>().movementFactor += movementSpeed;
             }

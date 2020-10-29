@@ -5,9 +5,10 @@ using UnityEngine;
 public class PipesCollisionHandler : MonoBehaviour
 {
     List<GameObject> pipes;
+
     void Start()
     {
-        pipes = FindObjectOfType<PipesSpawner>().pipes;    
+        pipes = FindObjectOfType<PipesSpawner>().pipes;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -22,7 +23,6 @@ public class PipesCollisionHandler : MonoBehaviour
 
     private void RemovePipesFromList()
     {
-        pipes.Remove(pipes[1]);
         pipes.Remove(pipes[0]);
     }
 }

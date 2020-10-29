@@ -692,6 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipes: []
+  material: {fileID: 2100000, guid: c12135786493ad94d9adcf06c8295d6a, type: 2}
   secondsBetweenSpawns: 3.5
   spawnSpeed: 0.1
   pipePrefab: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
