@@ -12183,6 +12183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementFactor: 4
+  movementSpeed: 1
 --- !u!114 &8108185096043203525
 MonoBehaviour:
   m_ObjectHideFlags: 0

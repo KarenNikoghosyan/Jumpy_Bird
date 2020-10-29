@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class PipesSpawner : MonoBehaviour
 {
     public List<MeshRenderer> pipes = new List<MeshRenderer>();
-    //public float movementFactor = 4f;
+
     [SerializeField] float secondsBetweenSpawns = 3.5f;
     [SerializeField] float spawnSpeed = 0.5f;
 
