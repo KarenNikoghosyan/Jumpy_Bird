@@ -7,12 +7,19 @@ using UnityEngine.PlayerLoop;
 public class PipesMovement : MonoBehaviour
 {
     [SerializeField] float movementFactor = 4f;
-    [SerializeField] float movementSpeed = 1f; // todo remove later
+    [SerializeField] float movementSpeed = 0.1f; // todo remove later
     Rigidbody rigidBody;
+
+    List<GameObject> pipes;
+
+    void Awake()
+    {
+        rigidBody = GetComponent<Rigidbody>();
+    }
 
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();
+        pipes = FindObjectOfType<PipesSpawner>().pipes;
     }
 
     void FixedUpdate()
@@ -20,12 +27,15 @@ public class PipesMovement : MonoBehaviour
         PipeMovement();
     }
 
-    public void SpeedUpMovement(bool isValid2)
+    public void SpeedUpMovement(bool isValid)
     {
-        if (isValid2)
+        if (isValid)
         {
-            movementFactor += movementSpeed;
-            isValid2 = false; 
+            for (int i = 2; i < pipes.Count; i+=3)
+            {
+                pipes[i].GetComponent<PipesMovement>().movementFactor += movementSpeed;
+            }
+            isValid = false;
         }
     }
      

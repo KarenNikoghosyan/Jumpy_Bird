@@ -10,7 +10,7 @@ public class CollisionHandler : MonoBehaviour
 {
     public TextMeshProUGUI pipeScore;
 
-    bool isChangeable = true, isValid = true, isValid2 = true;
+    bool isChangeable = true, isValid = true;
     
     int score = 0;
 
@@ -65,9 +65,9 @@ public class CollisionHandler : MonoBehaviour
     {
         if (score % 10 == 0)
         {
-            FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable); // todo move this line of code to a start Method.
+            FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable);
             FindObjectOfType<PipesSpawner>().ChangeSpawnSpeed(isValid);
-            FindObjectOfType<PipesMovement>().SpeedUpMovement(isValid2);
+            FindObjectOfType<PipesMovement>().SpeedUpMovement(isValid);
         }
     }
 

@@ -693,8 +693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipes: []
   secondsBetweenSpawns: 3.5
-  movementFactor: 4
-  pipe: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
+  spawnSpeed: 0.1
+  pipePrefab: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
   pipesParentTransform: {fileID: 863299235}
   minPipeHeight: -8.8
   maxPipeHeight: 1

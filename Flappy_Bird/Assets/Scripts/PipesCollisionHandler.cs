@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PipesCollisionHandler : MonoBehaviour
 {
-    List<MeshRenderer> pipes;
+    List<GameObject> pipes;
     void Start()
     {
         pipes = FindObjectOfType<PipesSpawner>().pipes;    
