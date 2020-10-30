@@ -22,7 +22,7 @@ public class PipesSpawner : MonoBehaviour
 
     TextMeshProUGUI pipeScore;
     int numOfPipes = 0;
-
+    
     void Start()
     {
         pipeScore = FindObjectOfType<CollisionHandler>().pipeScore;

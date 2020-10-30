@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Environment
   - Score
+  - Trigger
   layers:
   - Default
   - TransparentFX
