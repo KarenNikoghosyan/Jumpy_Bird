@@ -824,7 +824,7 @@ MonoBehaviour:
   sounds:
   - name: Scroing Sound
     clip: {fileID: 8300000, guid: cd2a23c70f9e27a4fb1f8ac4f0298c79, type: 3}
-    volume: 0.35
+    volume: 0.45
     pitch: 1
     source: {fileID: 0}
   - name: Death Sound
@@ -834,7 +834,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jumping Sound
     clip: {fileID: 8300000, guid: ff72bb73981e2394bbd9b2c61773715c, type: 3}
-    volume: 0.1
+    volume: 0.2
     pitch: 1
     source: {fileID: 0}
 --- !u!1 &1562308242
@@ -1555,9 +1555,21 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4374159854025470379, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374159854025470379, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4374159854025470380, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
       propertyPath: jumpForce
-      value: 7
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374159854025470380, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
+      propertyPath: fallForce
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4374159854025470381, guid: 98d19d4f5bf283046a812d5adb17d270, type: 3}
       propertyPath: pipeScore

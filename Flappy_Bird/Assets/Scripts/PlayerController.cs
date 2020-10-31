@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float jumpForce = 7f;
+    [SerializeField] float jumpForce = 7.5f;
+    [SerializeField] float fallForce = 5f;
     Rigidbody rigidBody;
     
     void Start()
@@ -19,6 +20,11 @@ public class PlayerController : MonoBehaviour
         RespondToTouchInput();
     }
 
+    void FixedUpdate()
+    {
+        FallSpeed();    
+    }
+
     private void RespondToJumpInput()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -26,6 +32,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
     }
+
     private void RespondToTouchInput()
     {
         if (Input.touchCount > 0) 
@@ -36,11 +43,16 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
     private void Jump()
     {
         AudioManager.instance.Play("Jumping Sound");
         rigidBody.velocity = Vector3.zero;
         rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }   
+
+    private void FallSpeed()
+    {
+        rigidBody.AddForce(-Vector3.up * (fallForce * Time.fixedDeltaTime));
+    }
+
 }
