@@ -49,7 +49,7 @@ public class CollisionHandler : MonoBehaviour
         if (other.gameObject.tag == "Score")
         {
             AddScore();
-            UpdatePipeColorAndSpeed();
+            UpdatePipeColor();
         }
     }
 
@@ -64,13 +64,11 @@ public class CollisionHandler : MonoBehaviour
         score++;
         pipeScore.text = score.ToString();
     }
-    private void UpdatePipeColorAndSpeed()
+    private void UpdatePipeColor()
     {
         if (score % 10 == 0)
         {
             FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable);
-            FindObjectOfType<PipesSpawner>().ChangeSpawnSpeed(isValid);
-            FindObjectOfType<PipesMovement>().SpeedUpMovement(isValid);
         }
     }
 

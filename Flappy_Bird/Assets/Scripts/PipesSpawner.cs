@@ -8,11 +8,10 @@ using Random = UnityEngine.Random;
 
 public class PipesSpawner : MonoBehaviour
 {
-    public List<GameObject> pipes = new List<GameObject>();
+    public List<GameObject> pipes = new List<GameObject>(); // todo remove the list if not used by the time the game will be done.
     public Material material;
 
-    [SerializeField] float secondsBetweenSpawns = 3.5f;
-    [SerializeField] float spawnSpeed = 0.5f;
+    [SerializeField] float secondsBetweenSpawns = 2f;
 
     [SerializeField] GameObject pipePrefab;
     [SerializeField] Transform pipesParentTransform;
@@ -103,15 +102,6 @@ public class PipesSpawner : MonoBehaviour
                         break;
                 }
                 isChangeable = false;
-        }
-    }
-
-    public void ChangeSpawnSpeed(bool isValid)
-    {
-        if (isValid)
-        {
-            secondsBetweenSpawns += spawnSpeed;
-            isValid = false;
         }
     }
 
