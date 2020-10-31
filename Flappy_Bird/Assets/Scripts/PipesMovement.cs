@@ -11,10 +11,6 @@ public class PipesMovement : MonoBehaviour
 
     List<GameObject> pipes;
 
-    void Awake()
-    {
-    }
-
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();

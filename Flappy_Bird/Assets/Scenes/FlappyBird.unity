@@ -661,8 +661,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.6442509, z: 1}
-  m_Center: {x: 0, y: 0.32212543, z: 0}
+  m_Size: {x: 1, y: 1.0112381, z: 1}
+  m_Center: {x: 0, y: 0.005619049, z: 0}
 --- !u!23 &592312720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -830,6 +830,11 @@ MonoBehaviour:
   - name: Death Sound
     clip: {fileID: 8300000, guid: 0d798ef6608bbdb4580229a6547dcfa7, type: 3}
     volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: Jumping Sound
+    clip: {fileID: 8300000, guid: ff72bb73981e2394bbd9b2c61773715c, type: 3}
+    volume: 0.01
     pitch: 1
     source: {fileID: 0}
 --- !u!1 &1562308242
@@ -1028,7 +1033,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0

@@ -8,8 +8,6 @@ using Random = UnityEngine.Random;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] Rigidbody rigidbody;
-
     public TextMeshProUGUI pipeScore;
     bool isChangeable = true;
     int score = 0;
@@ -17,7 +15,6 @@ public class CollisionHandler : MonoBehaviour
 
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
         pipeScore.text = score.ToString();
         material = FindObjectOfType<PipesSpawner>().material;
         material.color = Color.yellow;
@@ -57,8 +54,7 @@ public class CollisionHandler : MonoBehaviour
     private void KillPlayer()
     {
         AudioManager.instance.Play("Death Sound");
-        //todo stop the player on death
-        Invoke("ReloadLevel", 1f); // todo remove this line of code - after adding main menu, pause and restart functionality.
+        Invoke("ReloadLevel", 0.2f); // todo remove this line of code - after adding main menu, pause and restart functionality.
     }
 
     private void ReloadLevel()

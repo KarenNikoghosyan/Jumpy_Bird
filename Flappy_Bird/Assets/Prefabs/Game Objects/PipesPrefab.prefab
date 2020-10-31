@@ -12128,9 +12128,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5174595340652149635}
   - component: {fileID: 7854582546525553144}
+  - component: {fileID: 7861931839757293671}
   - component: {fileID: -3996229147084376790}
   - component: {fileID: 8108185096043203525}
-  - component: {fileID: 7861931839757293671}
   m_Layer: 0
   m_Name: PipesPrefab
   m_TagString: Score
@@ -12170,6 +12170,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7861931839757293671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174595340652149636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 5, z: 2}
+  m_Center: {x: -1.2, y: 14.29, z: 0}
 --- !u!114 &-3996229147084376790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12195,16 +12208,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc97127a4f6ee7b4695fd28d983ed350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &7861931839757293671
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174595340652149636}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 5, z: 2}
-  m_Center: {x: -1.2, y: 14.29, z: 0}

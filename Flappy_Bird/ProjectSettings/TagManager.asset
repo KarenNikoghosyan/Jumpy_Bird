@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Environment
   - Score
+  - Pipe
   layers:
   - Default
   - TransparentFX
