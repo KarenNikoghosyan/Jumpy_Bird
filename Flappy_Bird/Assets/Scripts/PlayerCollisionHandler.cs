@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
-public class CollisionHandler : MonoBehaviour
+public class PlayerCollisionHandler : MonoBehaviour
 {
     public TextMeshProUGUI pipeScore;
     bool isChangeable = true;

@@ -24,7 +24,7 @@ public class PipesSpawner : MonoBehaviour
     
     void Start()
     {
-        pipeScore = FindObjectOfType<CollisionHandler>().pipeScore;
+        pipeScore = FindObjectOfType<PlayerCollisionHandler>().pipeScore;
         StartCoroutine(RepeatedlySpawnPipes());
     }
 
