@@ -9,12 +9,12 @@ public class PipesMovement : MonoBehaviour
     [SerializeField] float movementFactor = 7f;
     Rigidbody rigidBody;
 
-    List<GameObject> pipes;
+    //List<GameObject> pipes;
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
-        pipes = FindObjectOfType<PipesSpawner>().pipes;
+        //pipes = FindObjectOfType<PipesSpawner>().pipes;
     }
 
     void FixedUpdate()

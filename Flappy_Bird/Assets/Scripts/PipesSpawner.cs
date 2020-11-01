@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class PipesSpawner : MonoBehaviour
 {
-    public List<GameObject> pipes = new List<GameObject>(); // todo remove the list if not used by the time the game will be done.
+    //public List<GameObject> pipes = new List<GameObject>(); // todo remove the list if not used by the time the game will be done.
     public Material material;
 
     [SerializeField] float secondsBetweenSpawns = 2f;
@@ -110,7 +110,7 @@ public class PipesSpawner : MonoBehaviour
         while (true)
         {
             GameObject newPipe = PipeSpawner();
-            AddPipesToAList(newPipe);
+            //AddPipesToAList(newPipe);
             numOfPipes++;
             yield return new WaitForSeconds(secondsBetweenSpawns);
         }
@@ -124,8 +124,8 @@ public class PipesSpawner : MonoBehaviour
         return newPipe;
     }
 
-    private void AddPipesToAList(GameObject newPipe)
-    {
-        pipes.Add(newPipe);
-    }
+    //private void AddPipesToAList(GameObject newPipe)
+    //{
+        //pipes.Add(newPipe);
+    //}
 }

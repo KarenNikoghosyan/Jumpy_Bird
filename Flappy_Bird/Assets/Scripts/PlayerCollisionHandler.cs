@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
+    [SerializeField] ParticleSystem deathVFX;
     public TextMeshProUGUI pipeScore;
     bool isChangeable = true;
     int score = 0;
@@ -54,7 +55,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     private void KillPlayer()
     {
         AudioManager.instance.Play("Death Sound");
-        Invoke("ReloadLevel", 0.2f); // todo remove this line of code - after adding main menu, pause and restart functionality.
+        Invoke("ReloadLevel", 0.5f); // todo remove this line of code - after adding main menu, pause and restart functionality.
     }
 
     private void ReloadLevel()

@@ -167,7 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d7e20d309acb944cab9375016374872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipes: []
   material: {fileID: 2100000, guid: c12135786493ad94d9adcf06c8295d6a, type: 2}
   secondsBetweenSpawns: 2
   pipePrefab: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
@@ -823,18 +822,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Scroing Sound
-    clip: {fileID: 8300000, guid: cd2a23c70f9e27a4fb1f8ac4f0298c79, type: 3}
-    volume: 0.45
-    pitch: 1
-    source: {fileID: 0}
-  - name: Death Sound
-    clip: {fileID: 8300000, guid: 0d798ef6608bbdb4580229a6547dcfa7, type: 3}
+    clip: {fileID: 8300000, guid: 52633201299171d4990bacf1afbf5e85, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
+  - name: Death Sound
+    clip: {fileID: 8300000, guid: 7c3ff9bdc3c4c5c4e934adf1883c5749, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
   - name: Jumping Sound
-    clip: {fileID: 8300000, guid: ff72bb73981e2394bbd9b2c61773715c, type: 3}
-    volume: 0.2
+    clip: {fileID: 8300000, guid: 02a855e125cdf1e49ba5cbb84cb71aba, type: 3}
+    volume: 0.75
     pitch: 1
     source: {fileID: 0}
 --- !u!1 &1562308242
