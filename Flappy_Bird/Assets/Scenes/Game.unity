@@ -788,6 +788,14 @@ PrefabInstance:
       propertyPath: pipeScore
       value: 
       objectReference: {fileID: 408782320}
+    - target: {fileID: 990164984, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
+      propertyPath: jumpVFX
+      value: 
+      objectReference: {fileID: 990164983}
+    - target: {fileID: 990164985, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
+      propertyPath: jumpVFX
+      value: 
+      objectReference: {fileID: 990164983}
     - target: {fileID: 2904351826289718126, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
       propertyPath: m_Name
       value: Player
@@ -838,6 +846,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
+--- !u!198 &990164983 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7126289645246673573, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
+  m_PrefabInstance: {fileID: 990164982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1018384007
 GameObject:
   m_ObjectHideFlags: 0

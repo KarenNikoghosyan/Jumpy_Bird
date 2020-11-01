@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] float jumpForce = 7.5f;
     [SerializeField] float fallForce = 5f;
+    [SerializeField] ParticleSystem jumpVFX;
     Rigidbody rigidBody;
     
     void Start()
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
     private void Jump()
     {
         AudioManager.instance.Play("Jumping Sound");
+        jumpVFX.Play();
         rigidBody.velocity = Vector3.zero;
         rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }   

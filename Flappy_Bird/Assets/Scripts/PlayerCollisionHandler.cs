@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    [SerializeField] ParticleSystem deathVFX;
     public TextMeshProUGUI pipeScore;
     bool isChangeable = true;
     int score = 0;
