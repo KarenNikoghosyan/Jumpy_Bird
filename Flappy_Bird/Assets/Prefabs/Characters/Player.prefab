@@ -944,8 +944,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.20039086, z: 0.48164466}
-  m_Center: {x: -2.00301e-16, y: 0.6056722, z: -0.026063282}
+  m_Size: {x: 1.0318313, y: 0.20039074, z: 0.4492619}
+  m_Center: {x: -0.0029373567, y: 0.60567224, z: -0.028042726}
 --- !u!114 &990164984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 7.5
   fallForce: 5
-  jumpVFX: {fileID: 0}
+  jumpVFX: {fileID: 7126289645246673573}
 --- !u!1 &2904351826289718128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,5 +1292,10 @@ PrefabInstance:
 --- !u!4 &6938899772686203117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4940884351362868, guid: 90833758b5dd0e14c9a2e3df89c4d4c4, type: 3}
+  m_PrefabInstance: {fileID: 6942968570349117401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7126289645246673573 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198100719057022332, guid: 90833758b5dd0e14c9a2e3df89c4d4c4, type: 3}
   m_PrefabInstance: {fileID: 6942968570349117401}
   m_PrefabAsset: {fileID: 0}

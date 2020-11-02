@@ -49,6 +49,11 @@ public class PlayerCollisionHandler : MonoBehaviour
             AddScore();
             UpdatePipeColor();
         }
+
+        if (other.gameObject.tag == "Pipe")
+        {
+            KillPlayer();
+        }
     }
 
     private void KillPlayer()
