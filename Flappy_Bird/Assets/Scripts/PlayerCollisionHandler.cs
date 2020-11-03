@@ -58,9 +58,10 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void KillPlayer()
     {
+        GetComponent<PlayerController>().isDead = true;
         AudioManager.instance.Play("Death Sound");
         GetComponent<Animator>().SetBool("isDead", true);
-        Invoke("ReloadLevel", 0.5f); // todo remove this line of code - after adding main menu, pause and restart functionality.
+        Invoke("ReloadLevel", 0.7f); // todo remove this line of code - after adding main menu, pause and restart functionality.
     }
 
     private void ReloadLevel()

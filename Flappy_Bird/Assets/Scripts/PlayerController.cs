@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float fallForce = 5f;
     [SerializeField] ParticleSystem jumpVFX;
     Rigidbody rigidBody;
+
+    public bool isDead = false;
     
     void Start()
     {
@@ -17,8 +19,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        RespondToJumpInput();
-        RespondToTouchInput();
+        if (!isDead)
+        {
+            RespondToJumpInput();
+            RespondToTouchInput();
+        }
     }
 
     void FixedUpdate()
