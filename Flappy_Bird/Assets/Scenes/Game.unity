@@ -2302,10 +2302,10 @@ RectTransform:
   m_Father: {fileID: 1601229465}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.43422225, y: 0.7404445}
-  m_AnchorMax: {x: 0.5627594, y: 0.8605555}
-  m_AnchoredPosition: {x: 3.000061, y: 0}
-  m_SizeDelta: {x: 6.446045, y: 6.721863}
+  m_AnchorMin: {x: 0.4206852, y: 0.7404445}
+  m_AnchorMax: {x: 0.5753889, y: 0.85400003}
+  m_AnchoredPosition: {x: 0.9999695, y: 5.180542}
+  m_SizeDelta: {x: 6.8591614, y: 10.360962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &408782320
 MonoBehaviour:
@@ -2779,7 +2779,7 @@ GameObject:
   - component: {fileID: 486342986}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Environment
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3240,7 +3240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4956255927207046, guid: c04be9f92ebf58b46b2204ac3aaa8785, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.5
+      value: -15.400001
       objectReference: {fileID: 0}
     - target: {fileID: 4956255927207046, guid: c04be9f92ebf58b46b2204ac3aaa8785, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3414,7 +3414,7 @@ GameObject:
   - component: {fileID: 592312719}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Environment
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5941,6 +5941,14 @@ PrefabInstance:
       propertyPath: pipeScore
       value: 
       objectReference: {fileID: 408782320}
+    - target: {fileID: 990164984, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
+      propertyPath: splashVFX
+      value: 
+      objectReference: {fileID: 990164983}
+    - target: {fileID: 990164987, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2904351826289718126, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5991,6 +5999,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
+--- !u!198 &990164983 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1476652462077111346, guid: 505ed0998131b3c4dac6c93d24487a47, type: 3}
+  m_PrefabInstance: {fileID: 990164982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1002759500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6203,7 +6216,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jumping Sound
     clip: {fileID: 8300000, guid: 02a855e125cdf1e49ba5cbb84cb71aba, type: 3}
-    volume: 0.8
+    volume: 1
     pitch: 1
     source: {fileID: 0}
 --- !u!1001 &1036054511
@@ -7346,7 +7359,7 @@ GameObject:
   - component: {fileID: 1248184291}
   m_Layer: 0
   m_Name: Water
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8358,6 +8371,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Graphy]'
       objectReference: {fileID: 0}
+    - target: {fileID: 11496292, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_audioListener
+      value: 
+      objectReference: {fileID: 360006525}
+    - target: {fileID: 11496292, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_audioModuleState
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11496292, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_advancedModuleState
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 22424132, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.20019531
@@ -8469,6 +8494,10 @@ PrefabInstance:
     - target: {fileID: 22477518, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.20019531
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013357413722, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000010243477314, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10103,7 +10132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4508970561002598, guid: 21cba551342e0284a87bcb1672a662d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.800001
+      value: -15.1
       objectReference: {fileID: 0}
     - target: {fileID: 4508970561002598, guid: 21cba551342e0284a87bcb1672a662d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10111,7 +10140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4508970561002598, guid: 21cba551342e0284a87bcb1672a662d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.4
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 4508970561002598, guid: 21cba551342e0284a87bcb1672a662d2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -12051,7 +12080,7 @@ GameObject:
   - component: {fileID: 1888277920}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Environment
+  m_TagString: Sky
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12303,7 +12332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4949955557972128, guid: c7821bc923171f24094e69062402d005, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.128916
+      value: -17.300001
       objectReference: {fileID: 0}
     - target: {fileID: 4949955557972128, guid: c7821bc923171f24094e69062402d005, type: 3}
       propertyPath: m_LocalPosition.y

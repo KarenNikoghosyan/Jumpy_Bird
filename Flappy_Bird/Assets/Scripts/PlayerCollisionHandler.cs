@@ -8,10 +8,13 @@ using Random = UnityEngine.Random;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    public TextMeshProUGUI pipeScore;
     bool isChangeable = true, isDead = false;
-    int score = 0;
     Material material;
+    int score = 0;
+    
+    public TextMeshProUGUI pipeScore;
+
+    [SerializeField] ParticleSystem splashVFX;
 
     void Start()
     {
@@ -40,7 +43,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (!isDead) {
-            if (other.gameObject.tag == "Environment")
+            if (other.gameObject.tag == "Sky")
             {
                 KillPlayer();
             }
@@ -55,6 +58,12 @@ public class PlayerCollisionHandler : MonoBehaviour
             {
                 KillPlayer();
             }
+
+            if (other.gameObject.tag == "Water")
+            {
+                splashVFX.Play();
+                KillPlayer();
+            }
         }
     }
 
@@ -64,7 +73,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         isDead = true;
         AudioManager.instance.Play("Death Sound");
         GetComponent<Animator>().SetBool("isDead", true);
-        Invoke("ReloadLevel", 0.7f); // todo remove this line of code - after adding main menu, pause and restart functionality.
+        Invoke("ReloadLevel", 0.8f); // todo remove this line of code - after adding main menu, pause and restart functionality.
     }
 
     private void ReloadLevel()
