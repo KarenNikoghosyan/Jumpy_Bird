@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class PlayerCollisionHandler : MonoBehaviour
 {
     public TextMeshProUGUI pipeScore;
-    bool isChangeable = true;
+    bool isChangeable = true, isDead = false;
     int score = 0;
     Material material;
 
@@ -39,26 +39,29 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Environment")
-        {
-            KillPlayer();
-        }
+        if (!isDead) {
+            if (other.gameObject.tag == "Environment")
+            {
+                KillPlayer();
+            }
 
-        if (other.gameObject.tag == "Score")
-        {
-            AddScore();
-            UpdatePipeColor();
-        }
+            if (other.gameObject.tag == "Score")
+            {
+                AddScore();
+                UpdatePipeColor();
+            }
 
-        if (other.gameObject.tag == "Pipe")
-        {
-            KillPlayer();
+            if (other.gameObject.tag == "Pipe")
+            {
+                KillPlayer();
+            }
         }
     }
 
     private void KillPlayer()
     {
         GetComponent<PlayerController>().isDead = true;
+        isDead = true;
         AudioManager.instance.Play("Death Sound");
         GetComponent<Animator>().SetBool("isDead", true);
         Invoke("ReloadLevel", 0.7f); // todo remove this line of code - after adding main menu, pause and restart functionality.
