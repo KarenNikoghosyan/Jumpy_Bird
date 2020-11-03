@@ -6219,6 +6219,11 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: Water Splash Sound
+    clip: {fileID: 8300000, guid: 3f419c742d5de1f45a646db3f9e121a6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1001 &1036054511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13693,7 +13698,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 33e1b17de2fa0824181c02eeb752c4f8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0

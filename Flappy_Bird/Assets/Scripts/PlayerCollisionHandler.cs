@@ -45,6 +45,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         if (!isDead) {
             if (other.gameObject.tag == "Sky")
             {
+                AudioManager.instance.Play("Death Sound");
                 KillPlayer();
             }
 
@@ -56,11 +57,13 @@ public class PlayerCollisionHandler : MonoBehaviour
 
             if (other.gameObject.tag == "Pipe")
             {
+                AudioManager.instance.Play("Death Sound");
                 KillPlayer();
             }
 
             if (other.gameObject.tag == "Water")
             {
+                AudioManager.instance.Play("Water Splash Sound");
                 splashVFX.Play();
                 KillPlayer();
             }
@@ -71,7 +74,6 @@ public class PlayerCollisionHandler : MonoBehaviour
     {
         GetComponent<PlayerController>().isDead = true;
         isDead = true;
-        AudioManager.instance.Play("Death Sound");
         GetComponent<Animator>().SetBool("isDead", true);
         Invoke("ReloadLevel", 0.8f); // todo remove this line of code - after adding main menu, pause and restart functionality.
     }
