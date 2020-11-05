@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 885576473082851278}
   - component: {fileID: 1052855254814753726}
   m_Layer: 0
-  m_Name: Hornbill
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1968,7 +1968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4940884351362868, guid: 90833758b5dd0e14c9a2e3df89c4d4c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5857141
+      value: -0.87142813
       objectReference: {fileID: 0}
     - target: {fileID: 4940884351362868, guid: 90833758b5dd0e14c9a2e3df89c4d4c4, type: 3}
       propertyPath: m_LocalRotation.x
