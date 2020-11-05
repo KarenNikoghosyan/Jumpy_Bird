@@ -74,7 +74,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     {
         GetComponent<PlayerController>().isDead = true;
         isDead = true;
-        GetComponent<Animator>().SetBool("isDead", true);
+        GetComponent<Animator>().SetBool("Roll", true);
         Invoke("ReloadLevel", 0.8f); // todo remove this line of code - after adding main menu, pause and restart functionality.
     }
 

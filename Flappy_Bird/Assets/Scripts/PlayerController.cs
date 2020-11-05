@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
     private void Jump()
     {
         AudioManager.instance.Play("Jumping Sound");
+        GetComponent<Animator>().SetBool("Fly", true);
         jumpVFX.Play();
         rigidBody.velocity = Vector3.zero;
         rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
