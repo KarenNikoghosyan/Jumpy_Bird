@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    bool isChangeable = true, isDead = false;
+    bool isChangeable = true, isAlive = true;
     Material material;
     int score = 0;
     
@@ -21,6 +21,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         pipeScore.text = score.ToString();
         material = FindObjectOfType<PipesSpawner>().material;
         material.color = Color.yellow;
+        PipesMovement._stop = false;
     }
 
     void Update()
@@ -42,7 +43,7 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!isDead) {
+        if (!isAlive) { return; }
             if (other.gameObject.CompareTag("Sky"))
             {
                 AudioManager.instance.Play("Death Sound");
@@ -55,27 +56,41 @@ public class PlayerCollisionHandler : MonoBehaviour
                 UpdatePipeColor();
             }
 
-            if (other.gameObject.CompareTag("Pipe"))
-            {
-                AudioManager.instance.Play("Death Sound");
-                KillPlayer();
-            }
-
             if (other.gameObject.CompareTag("Water"))
             {
                 AudioManager.instance.Play("Water Splash Sound");
                 splashVFX.Play();
                 KillPlayer();
             }
+
+            if (other.gameObject.CompareTag("PipeBottom_Collider"))
+            {
+                AudioManager.instance.Play("Death Sound");
+                KillPlayer();
+            }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Pipe"))
+        {
+            StopPipesMovement();
         }
     }
 
     private void KillPlayer()
     {
         GetComponent<PlayerController>().isDead = true;
-        isDead = true;
         GetComponent<Animator>().SetBool("Roll", true);
+        isAlive = false;
         Invoke("ReloadLevel", 0.8f); // todo remove this line of code - after adding main menu, pause and restart functionality.
+    }
+    private void StopPipesMovement()
+    {
+        AudioManager.instance.Play("Death Sound");
+        GetComponent<PlayerController>().isDead = true;
+        GetComponent<Animator>().SetBool("Roll", true);
+        FindObjectOfType<PipesMovement>().PipeMovement(stop: true);
     }
 
     private void ReloadLevel()
