@@ -6,7 +6,7 @@ public class PipesCollisionHandler : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Finish")
+        if (other.gameObject.CompareTag("Finish"))
         {
             if (!enabled) { return; }
             ObjectPoolManager.DestroyPooled(gameObject);

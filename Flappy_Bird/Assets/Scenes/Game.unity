@@ -736,8 +736,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 1, z: 1}
+  m_Center: {x: 0.50000006, y: 0, z: 0}
 --- !u!1001 &77905370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10167,7 +10167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562308242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.8, y: 10.3, z: 0}
+  m_LocalPosition: {x: -30.7, y: 10.3, z: 0}
   m_LocalScale: {x: 2.6000001, y: 17.2, z: 3}
   m_Children: []
   m_Father: {fileID: 864550091}
@@ -10184,8 +10184,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 1, z: 1}
+  m_Center: {x: 0.50000006, y: 0, z: 0}
 --- !u!1001 &1588963453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14388,10 +14388,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -2845141251139867100, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 882759126232700606, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -14440,22 +14436,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 885576473082851278, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 885576473082851278, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 885576473082851278, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4377007600387907020, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: pipeScore
-      value: 
-      objectReference: {fileID: 408782320}
     - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
       propertyPath: pipeScore
       value: 

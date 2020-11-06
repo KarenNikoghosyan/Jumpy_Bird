@@ -43,25 +43,25 @@ public class PlayerCollisionHandler : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (!isDead) {
-            if (other.gameObject.tag == "Sky")
+            if (other.gameObject.CompareTag("Sky"))
             {
                 AudioManager.instance.Play("Death Sound");
                 KillPlayer();
             }
 
-            if (other.gameObject.tag == "Score")
+            if (other.gameObject.CompareTag("Score"))
             {
                 AddScore();
                 UpdatePipeColor();
             }
 
-            if (other.gameObject.tag == "Pipe")
+            if (other.gameObject.CompareTag("Pipe"))
             {
                 AudioManager.instance.Play("Death Sound");
                 KillPlayer();
             }
 
-            if (other.gameObject.tag == "Water")
+            if (other.gameObject.CompareTag("Water"))
             {
                 AudioManager.instance.Play("Water Splash Sound");
                 splashVFX.Play();
