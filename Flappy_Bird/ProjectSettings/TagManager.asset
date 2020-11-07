@@ -8,6 +8,7 @@ TagManager:
   - Pipe
   - Water
   - Sky
+  - PipeBottom_Collider
   layers:
   - Default
   - TransparentFX
