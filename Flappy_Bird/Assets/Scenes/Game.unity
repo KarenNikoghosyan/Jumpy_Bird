@@ -6247,8 +6247,13 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
-  - name: Pause Sound
+  - name: Resume Sound
     clip: {fileID: 8300000, guid: 7e7706e6e6033fa4db762340c990bbc6, type: 3}
+    volume: 0.7
+    pitch: 1
+    source: {fileID: 0}
+  - name: Pause Sound
+    clip: {fileID: 8300000, guid: 6989bbc0fddbfef48ab6535d1e22c568, type: 3}
     volume: 0.8
     pitch: 1
     source: {fileID: 0}
@@ -14245,22 +14250,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6551688929695224858, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6551688929763069373, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 2.2001953
-      objectReference: {fileID: 0}
-    - target: {fileID: 6551688929763069373, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.2578125
-      objectReference: {fileID: 0}
-    - target: {fileID: 6551688930720908141, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.42944336
-      objectReference: {fileID: 0}
     - target: {fileID: 6551688931468781577, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
       propertyPath: m_Name
       value: UI
