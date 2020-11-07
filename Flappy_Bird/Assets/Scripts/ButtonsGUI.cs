@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonsGUI : MonoBehaviour
 {
@@ -17,14 +18,16 @@ public class ButtonsGUI : MonoBehaviour
 
     public void PauseGame()
     {
-        AudioManager.instance.Play("Pause Sound");
-        musicPlayer.Pause();
-        Time.timeScale = 0;
-        inGameMenu.enabled = true;
-        inGame.enabled = false;
-        isEnabled = true;
+        if (!isEnabled)
+        {
+            AudioManager.instance.Play("Pause Sound");
+            musicPlayer.Pause();
+            Time.timeScale = 0;
+            inGameMenu.enabled = true;
+            inGame.enabled = false;
+            isEnabled = true;
+        }
     }
-
     public void ResumeGame()
     {
         if (isEnabled) {
@@ -35,5 +38,13 @@ public class ButtonsGUI : MonoBehaviour
             inGameMenu.enabled = false;
             isEnabled = false;
         }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+        musicPlayer.Stop();
+        musicPlayer.Play();
+        Time.timeScale = 1;
     }
 }
