@@ -95,7 +95,7 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void ReloadLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     private void AddScore()
