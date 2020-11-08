@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class ButtonsGUI : MonoBehaviour
 {
     AudioSource musicPlayer;
-    [SerializeField] Canvas inGameMenu , inGame;
+    [SerializeField] Canvas inGameMenu , inGame, quitMenu;
 
     bool isEnabled = false;
 
     void Awake()
     {
         inGameMenu.enabled = false;
+        quitMenu.enabled = false;
         musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
     }
 
@@ -42,9 +43,28 @@ public class ButtonsGUI : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         musicPlayer.Stop();
         musicPlayer.Play();
         Time.timeScale = 1;
     }
+
+    public void Home()
+    {
+        inGameMenu.enabled = false;
+        quitMenu.enabled = true;
+    }
+
+    public void QuitGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
+
+    public void ReturnToInGameMenu()
+    {
+        quitMenu.enabled = false;
+        inGameMenu.enabled = true;
+    }
+
 }
