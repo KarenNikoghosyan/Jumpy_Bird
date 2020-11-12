@@ -7,6 +7,8 @@ public class ButtonsGUI : MonoBehaviour
 {
     AudioSource musicPlayer;
     [SerializeField] Canvas inGameMenu , inGame, quitMenu;
+    [SerializeField] GameObject transition;
+    [SerializeField] float transitionTime = 1.1f;
 
     bool isEnabled = false;
 
@@ -57,7 +59,16 @@ public class ButtonsGUI : MonoBehaviour
 
     public void QuitGame()
     {
+        transition.SetActive(true);
+        StartCoroutine(LoadMenu());
         Time.timeScale = 1;
+        musicPlayer.Stop();
+        musicPlayer.Play();
+    }
+
+    IEnumerator LoadMenu()
+    {
+        yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene(0);
     }
 

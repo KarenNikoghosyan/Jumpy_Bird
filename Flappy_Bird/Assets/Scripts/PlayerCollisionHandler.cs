@@ -15,21 +15,34 @@ public class PlayerCollisionHandler : MonoBehaviour
     public TextMeshProUGUI pipeScore;
 
     [SerializeField] ParticleSystem splashVFX;
+    [SerializeField] GameObject graphy;
 
     void Start()
     {
         pipeScore.text = score.ToString();
+        ChangeMaterialColor();
+        PipesMovement._stop = false;
+    }
+
+    private void ChangeMaterialColor()
+    {
         material = FindObjectOfType<PipesSpawner>().material;
         material.color = Color.yellow;
-        PipesMovement._stop = false;
     }
 
     void Update()
     {
-        if (Debug.isDebugBuild) 
+        if (Debug.isDebugBuild)
         {
+            FPSCounter();
             DebugKeys();
         }
+    }
+
+    private void FPSCounter()
+    {
+        if (graphy == null) { return; }
+        graphy.SetActive(true);
     }
 
     private void DebugKeys()
