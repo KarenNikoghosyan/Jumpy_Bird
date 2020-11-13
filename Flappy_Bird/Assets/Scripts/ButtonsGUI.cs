@@ -14,8 +14,6 @@ public class ButtonsGUI : MonoBehaviour
 
     void Awake()
     {
-        inGameMenu.enabled = false;
-        quitMenu.enabled = false;
         musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
     }
 
@@ -26,8 +24,8 @@ public class ButtonsGUI : MonoBehaviour
             AudioManager.instance.Play("Pause Sound");
             musicPlayer.Pause();
             Time.timeScale = 0;
-            inGameMenu.enabled = true;
-            inGame.enabled = false;
+            inGameMenu.gameObject.SetActive(true);
+            inGame.gameObject.SetActive(false);
             isEnabled = true;
         }
     }
@@ -37,8 +35,8 @@ public class ButtonsGUI : MonoBehaviour
             AudioManager.instance.Play("Resume Sound");
             musicPlayer.UnPause();
             Time.timeScale = 1;
-            inGame.enabled = true;
-            inGameMenu.enabled = false;
+            inGame.gameObject.SetActive(true);
+            inGameMenu.gameObject.SetActive(false);
             isEnabled = false;
         }
     }
@@ -53,8 +51,8 @@ public class ButtonsGUI : MonoBehaviour
 
     public void Home()
     {
-        inGameMenu.enabled = false;
-        quitMenu.enabled = true;
+        inGameMenu.gameObject.SetActive(false);
+        quitMenu.gameObject.SetActive(true);
     }
 
     public void QuitGame()
@@ -74,8 +72,8 @@ public class ButtonsGUI : MonoBehaviour
 
     public void ReturnToInGameMenu()
     {
-        quitMenu.enabled = false;
-        inGameMenu.enabled = true;
+        quitMenu.gameObject.SetActive(false);
+        inGameMenu.gameObject.SetActive(true);
     }
 
 }

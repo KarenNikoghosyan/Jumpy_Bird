@@ -9,11 +9,6 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     [SerializeField] GameObject transition;
     [SerializeField] float transitionTime = 2f;
 
-    void Awake()
-    {
-        quitMenu.enabled = false;
-    }
-
     public void StartGame()
     {
         AudioManager.instance.Play("Start Game Sound");
@@ -28,8 +23,8 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     public void OpenQuitMenu()
     {
-        splashButtons.enabled = false;
-        quitMenu.enabled = true;
+        splashButtons.gameObject.SetActive(false);
+        quitMenu.gameObject.SetActive(true);
     }
 
     public void QuitGame()
@@ -39,7 +34,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     public void CloseQuitMenu()
     {
-        quitMenu.enabled = false;
-        splashButtons.enabled = true;
+        quitMenu.gameObject.SetActive(false);
+        splashButtons.gameObject.SetActive(true);
     }
 }
