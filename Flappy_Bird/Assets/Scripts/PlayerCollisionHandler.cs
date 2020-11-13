@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    bool isChangeable = true, isAlive = true;
+    bool isChangeable = true, isAlive = true, isDead = false;
     Material material;
     int score = 0;
     
@@ -96,7 +96,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         GetComponent<PlayerController>().isDead = true;
         GetComponent<Animator>().SetBool("Roll", true);
         isAlive = false;
-        Invoke("ReloadLevel", 0.8f); // todo remove this line of code - after adding main menu, pause and restart functionality.
+        Invoke("OpenGameOverMenu", 0.8f);
     }
     private void StopPipesMovement()
     {
@@ -106,9 +106,10 @@ public class PlayerCollisionHandler : MonoBehaviour
         FindObjectOfType<PipesMovement>().PipeMovement(stop: true);
     }
 
-    private void ReloadLevel()
+    private void OpenGameOverMenu()
     {
-        SceneManager.LoadScene(1);
+        isDead = true;
+        FindObjectOfType<ButtonsGUI>().GameOverMenu(isDead);
     }
 
     private void AddScore()

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonsGUI : MonoBehaviour
 {
     AudioSource musicPlayer;
-    [SerializeField] Canvas inGameMenu , inGame, quitMenu;
+    [SerializeField] Canvas inGameMenu , inGame, quitMenu, gameOverMenu;
     [SerializeField] GameObject transition;
     [SerializeField] float transitionTime = 1.1f;
 
@@ -62,6 +62,17 @@ public class ButtonsGUI : MonoBehaviour
         Time.timeScale = 1;
         musicPlayer.Stop();
         musicPlayer.Play();
+    }
+
+    public void GameOverMenu(bool isDead)
+    {
+        if (isDead)
+        {
+            Time.timeScale = 0;
+            inGame.gameObject.SetActive(false);
+            gameOverMenu.gameObject.SetActive(true);
+            isDead = false;
+        }
     }
 
     IEnumerator LoadMenu()
