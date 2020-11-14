@@ -23,17 +23,20 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     public void OpenQuitMenu()
     {
+        AudioManager.instance.Play("Click Sound");
         splashButtons.gameObject.SetActive(false);
         quitMenu.gameObject.SetActive(true);
     }
 
     public void QuitGame()
     {
+        AudioManager.instance.Play("Click Sound");
         Application.Quit();
     }
 
     public void CloseQuitMenu()
     {
+        AudioManager.instance.Play("Click Sound");
         quitMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
     }

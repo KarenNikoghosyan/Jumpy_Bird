@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonsGUI : MonoBehaviour
+public class GameButtonsGUI : MonoBehaviour
 {
     AudioSource musicPlayer;
     [SerializeField] Canvas inGameMenu , inGame, quitMenu, gameOverMenu;
@@ -43,6 +43,7 @@ public class ButtonsGUI : MonoBehaviour
 
     public void RestartGame()
     {
+        AudioManager.instance.Play("Click Sound");
         SceneManager.LoadScene(1);
         musicPlayer.Stop();
         musicPlayer.Play();
@@ -51,6 +52,7 @@ public class ButtonsGUI : MonoBehaviour
 
     public void Home()
     {
+        AudioManager.instance.Play("Click Sound");
         inGameMenu.gameObject.SetActive(false);
         quitMenu.gameObject.SetActive(true);
     }
@@ -58,6 +60,7 @@ public class ButtonsGUI : MonoBehaviour
     public void QuitGame()
     {
         transition.SetActive(true);
+        AudioManager.instance.Play("Click Sound");
         StartCoroutine(LoadMenu());
         Time.timeScale = 1;
         musicPlayer.Stop();
@@ -83,6 +86,7 @@ public class ButtonsGUI : MonoBehaviour
 
     public void ReturnToInGameMenu()
     {
+        AudioManager.instance.Play("Click Sound");
         quitMenu.gameObject.SetActive(false);
         inGameMenu.gameObject.SetActive(true);
     }

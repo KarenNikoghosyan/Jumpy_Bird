@@ -109,7 +109,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     private void OpenGameOverMenu()
     {
         isDead = true;
-        FindObjectOfType<ButtonsGUI>().GameOverMenu(isDead);
+        FindObjectOfType<GameButtonsGUI>().GameOverMenu(isDead);
     }
 
     private void AddScore()

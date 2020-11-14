@@ -1453,6 +1453,11 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: Click Sound
+    clip: {fileID: 8300000, guid: bcbe3944468e4564784c712007c68c42, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!4 &1441850088
 Transform:
   m_ObjectHideFlags: 0

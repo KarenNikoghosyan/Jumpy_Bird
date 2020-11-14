@@ -6257,6 +6257,11 @@ MonoBehaviour:
     volume: 0.8
     pitch: 1
     source: {fileID: 0}
+  - name: Click Sound
+    clip: {fileID: 8300000, guid: bcbe3944468e4564784c712007c68c42, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1001 &1036054511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14259,6 +14264,78 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 345623917, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353128334759263775, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219128455884449483, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219128455884449483, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219128455884449483, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219128455884449483, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219128455884449483, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.3239346
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219128455884449483, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.07420922
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219128455884449483, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.6760653
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219128455884449483, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.92579067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715697068038391669, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993934907701811065, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.065026
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993934907701811065, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.93190366
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993934907701811065, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096957965264151922, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_fontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096957965264151922, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220000823363833606, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220000823363833606, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6551688931468781577, guid: b92897bf7ebb46642a9cea25a60072a9, type: 3}
       propertyPath: m_Name
       value: UI
