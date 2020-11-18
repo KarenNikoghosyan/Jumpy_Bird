@@ -26,18 +26,25 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         AudioManager.instance.Play("Click Sound");
         splashButtons.gameObject.SetActive(false);
         quitMenu.gameObject.SetActive(true);
+        quitMenu.GetComponentInChildren<Animator>().SetBool("open", true);
     }
 
     public void QuitGame()
     {
-        AudioManager.instance.Play("Click Sound");
         Application.Quit();
     }
 
     public void CloseQuitMenu()
     {
         AudioManager.instance.Play("Click Sound");
+        quitMenu.GetComponentInChildren<Animator>().SetBool("open", false);
+        Invoke("CloseQuitMenuDelay", 0.4f);
+    }
+
+    private void CloseQuitMenuDelay()
+    {
         quitMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
     }
+
 }
