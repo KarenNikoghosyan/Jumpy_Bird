@@ -83,6 +83,7 @@ public class GameButtonsGUI : MonoBehaviour
             Time.timeScale = 0;
             inGame.gameObject.SetActive(false);
             gameOverMenu.gameObject.SetActive(true);
+            gameOverMenu.GetComponentInChildren<Animator>().SetBool("open", true);
             isDead = false;
         }
     }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 50867801}
   - component: {fileID: 50867803}
   - component: {fileID: 50867802}
+  - component: {fileID: 1667389906}
   m_Layer: 0
   m_Name: In Game Menu
   m_TagString: Untagged
@@ -27,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 50867800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1426640789}
   - {fileID: 164657891710172306}
@@ -80,6 +81,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1667389906
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50867800}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1097277bb1a4b8442bfc73edb1e9de21, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &168410546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1749,7 @@ GameObject:
   - component: {fileID: 1219128455884449483}
   - component: {fileID: 1749626568312932499}
   - component: {fileID: 4968695514750487061}
+  - component: {fileID: 1858606457}
   m_Layer: 0
   m_Name: Game Over Menu
   m_TagString: Untagged
@@ -1745,7 +1766,7 @@ RectTransform:
   m_GameObject: {fileID: 54469062014149910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1993934907701811065}
   - {fileID: 6220000823363833606}
@@ -1753,8 +1774,8 @@ RectTransform:
   m_Father: {fileID: 3434970171702329487}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.35550553, y: 0.16368665}
-  m_AnchorMax: {x: 0.6444944, y: 0.8363133}
+  m_AnchorMin: {x: 0.3239346, y: 0.07420922}
+  m_AnchorMax: {x: 0.6760653, y: 0.92579067}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1796,6 +1817,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1858606457
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54469062014149910}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abdca6e7b01043d4899868657c141c18, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &353128334759263775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,7 +2337,7 @@ RectTransform:
   m_AnchorMin: {x: 0.19635405, y: 0.13921319}
   m_AnchorMax: {x: 0.39124033, y: 0.3050337}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -0.0000076293945, y: -0.000015258789}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8164671458001547159
 CanvasRenderer:
@@ -3172,9 +3212,9 @@ RectTransform:
   m_Father: {fileID: 1219128455884449483}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.06656115, y: 0.6698395}
-  m_AnchorMax: {x: 0.93343884, y: 0.931861}
-  m_AnchoredPosition: {x: -1.2000732, y: 0}
+  m_AnchorMin: {x: 0.065026, y: 0.6698395}
+  m_AnchorMax: {x: 0.93190366, y: 0.931861}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4324588042655007498
@@ -3232,8 +3272,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
