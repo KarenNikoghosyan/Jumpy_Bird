@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        FallSpeed();    
+        FallSpeed();
     }
 
     private void RespondToJumpInput()

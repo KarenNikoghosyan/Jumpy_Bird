@@ -23,22 +23,31 @@ public class GameButtonsGUI : MonoBehaviour
         {
             AudioManager.instance.Play("Pause Sound");
             musicPlayer.Pause();
-            Time.timeScale = 0;
+            Time.timeScale = 0; ;
             inGameMenu.gameObject.SetActive(true);
             inGame.gameObject.SetActive(false);
+            inGameMenu.GetComponentInChildren<Animator>().SetBool("open", true);
             isEnabled = true;
         }
     }
+
     public void ResumeGame()
     {
         if (isEnabled) {
             AudioManager.instance.Play("Resume Sound");
             musicPlayer.UnPause();
             Time.timeScale = 1;
-            inGame.gameObject.SetActive(true);
-            inGameMenu.gameObject.SetActive(false);
+            inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
+            StartCoroutine(ResumeGameAnimator());
             isEnabled = false;
         }
+    }
+
+    IEnumerator ResumeGameAnimator()
+    {
+        yield return new WaitForSeconds(0.4f);
+        inGame.gameObject.SetActive(true);
+        inGameMenu.gameObject.SetActive(false);
     }
 
     public void RestartGame()

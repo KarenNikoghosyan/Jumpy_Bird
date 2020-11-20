@@ -38,11 +38,12 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     {
         AudioManager.instance.Play("Click Sound");
         quitMenu.GetComponentInChildren<Animator>().SetBool("open", false);
-        Invoke("CloseQuitMenuDelay", 0.4f);
+        StartCoroutine(CloseQuitMenuDelay());
     }
 
-    private void CloseQuitMenuDelay()
+    IEnumerator CloseQuitMenuDelay()
     {
+        yield return new WaitForSeconds(0.4f);
         quitMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
     }
