@@ -31,7 +31,7 @@ public class GameButtonsGUI : MonoBehaviour
         }
     }
 
-    public void ResumeGame()
+    public void ResumeGameButton()
     {
         if (isEnabled) {
             AudioManager.instance.Play("Resume Sound");
@@ -45,12 +45,12 @@ public class GameButtonsGUI : MonoBehaviour
 
     IEnumerator ResumeGameAnimator()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSecondsRealtime(0.4f);
         inGame.gameObject.SetActive(true);
         inGameMenu.gameObject.SetActive(false);
     }
 
-    public void RestartGame()
+    public void RestartGameButton()
     {
         AudioManager.instance.Play("Click Sound");
         SceneManager.LoadScene(1);
@@ -59,11 +59,19 @@ public class GameButtonsGUI : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void Home()
+    public void HomeButton()
     {
         AudioManager.instance.Play("Click Sound");
+        inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
+        StartCoroutine(OpenQuitMenuDelay());
+    }
+
+    IEnumerator OpenQuitMenuDelay()
+    {
+        yield return new WaitForSecondsRealtime(0.4f);
         inGameMenu.gameObject.SetActive(false);
         quitMenu.gameObject.SetActive(true);
+        quitMenu.GetComponentInChildren<Animator>().SetBool("open", true);
     }
 
     public void QuitGame()
@@ -74,6 +82,11 @@ public class GameButtonsGUI : MonoBehaviour
         Time.timeScale = 1;
         musicPlayer.Stop();
         musicPlayer.Play();
+    }
+    IEnumerator LoadMenu()
+    {
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene(0);
     }
 
     public void GameOverMenu(bool isDead)
@@ -88,17 +101,13 @@ public class GameButtonsGUI : MonoBehaviour
         }
     }
 
-    IEnumerator LoadMenu()
-    {
-        yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(0);
-    }
 
     public void ReturnToInGameMenu()
     {
         AudioManager.instance.Play("Click Sound");
         quitMenu.gameObject.SetActive(false);
         inGameMenu.gameObject.SetActive(true);
+        inGameMenu.GetComponentInChildren<Animator>().SetBool("open", true);
     }
 
 }
