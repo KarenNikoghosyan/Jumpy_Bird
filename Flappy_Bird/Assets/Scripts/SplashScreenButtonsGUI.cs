@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Michsky.UI.ModernUIPack;
 
 public class SplashScreenButtonsGUI : MonoBehaviour
 {
     [SerializeField] Canvas splashButtons, quitMenu, settingsMenu;
     [SerializeField] GameObject transition;
-    [SerializeField] float transitionTime = 2f, musicVolume;
+    [SerializeField] float transitionTime = 2f;
     [SerializeField] AudioSource audioSource;
     [SerializeField] SliderManager sliderManager;
+    [SerializeField] Button muteButton;
+    [SerializeField] Sprite audioOff, audioOn;
+    [SerializeField] Camera audioListener;
+    bool audioSwitcher = true;
 
     void Start()
     {
@@ -66,12 +71,30 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     {
         settingsMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
-    }
-    
+    }  
   
     public void VolumeSlider()
     {
         // Invoked when the value of the slider changes.
         audioSource.volume = sliderManager.mainSlider.value;
+    }
+
+    public void MuteButton()
+    {
+        if (audioSwitcher)
+        {
+            muteButton.GetComponent<Image>().sprite = audioOff;
+            audioListener.GetComponent<AudioListener>().enabled = false;
+            audioSource.Pause();
+            audioSwitcher = false;
+        }
+
+        else
+        {
+            muteButton.GetComponent<Image>().sprite = audioOn;
+            audioListener.GetComponent<AudioListener>().enabled = true;
+            audioSource.Play();
+            audioSwitcher = true;
+        }
     }
 }
