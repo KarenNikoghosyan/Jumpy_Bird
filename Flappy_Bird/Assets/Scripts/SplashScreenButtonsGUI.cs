@@ -17,13 +17,19 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     [SerializeField] GameObject transition;
     [SerializeField] float transitionTime = 2f;
 
-    [Header("Settings Menu")]
+    [Header("Volume Slider Setting")]
     [SerializeField] SliderManager sliderManager;
+
+    [Header("Sound Setting")]
     [SerializeField] Button muteButton;
     [SerializeField] Sprite audioOff, audioOn;
     [SerializeField] TextMeshProUGUI muteText;
+
+    [Header("Battery Mode Setting")]
+    [SerializeField] Toggle batteryToggle;
     
     bool audioSwitcher = true;
+    bool BatteryMode = false;
     
     AudioSource audioSource;
 
@@ -31,6 +37,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     {
         MusicVolumeSlider();
         SoundSetting();
+        BatterySetting();
     }
 
     private void MusicVolumeSlider()
@@ -48,8 +55,16 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     {
         //Gets the mute or unmute setting
         audioSwitcher = PlayerPrefs.GetInt("Mute SFX") == 1 ? true : false;
-        //Turns the sound on or off depends on the saved setting
+        //Toggles the sound on or off depends on the saved setting
         MuteButton();
+    }
+
+    private void BatterySetting()
+    {
+        //Gets the current battery toggle mode
+        BatteryMode = PlayerPrefs.GetInt("Battery Toggle") == 1 ? true : false;
+        //Toggles the battery setting depending on the saved setting
+        BatteryModeToggle();
     }
 
     public void StartGame()
@@ -95,15 +110,23 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     {
         splashButtons.gameObject.SetActive(false);
         settingsMenu.gameObject.SetActive(true);
+        settingsMenu.GetComponentInChildren<Animator>().SetBool("open", true);
     }
 
     public void CloseSettingsMenuButton()
     {
-        settingsMenu.gameObject.SetActive(false);
-        splashButtons.gameObject.SetActive(true);
         //Saves the volume setting
         PlayerPrefs.SetFloat("SliderVolume", audioSource.volume);
-    }  
+        settingsMenu.GetComponentInChildren<Animator>().SetBool("open", false);
+        StartCoroutine(CloseSettingsMenuDelay());
+    }
+
+    IEnumerator CloseSettingsMenuDelay()
+    {
+        yield return new WaitForSeconds(0.4f);
+        settingsMenu.gameObject.SetActive(false);
+        splashButtons.gameObject.SetActive(true);
+    }
   
     public void VolumeSlider()
     {
@@ -143,5 +166,35 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         audioSwitcher = true;
         //Saves the mute or unmute setting
         PlayerPrefs.SetInt("Mute SFX", 0);
+    }
+
+    public void BatteryModeToggle()
+    {
+        if (BatteryMode)
+        {
+            BatteryModeOn();
+        }
+
+        else
+        {
+            BatteryModeOff();
+        }
+    }
+
+    private void BatteryModeOn()
+    {
+        batteryToggle.isOn = true;
+        Application.targetFrameRate = 30;
+        BatteryMode = false;
+        PlayerPrefs.SetInt("Battery Toggle", 1);
+        print("30");
+    }
+    private void BatteryModeOff()
+    {
+        batteryToggle.isOn = false;
+        Application.targetFrameRate = 60;
+        BatteryMode = true;
+        PlayerPrefs.SetInt("Battery Toggle", 0);
+        print("60");
     }
 }
