@@ -10,7 +10,7 @@ public class PlayerCollisionHandler : MonoBehaviour
 {
     bool isChangeable = true, isAlive = true, isDead = false;
     Material material;
-    int score = 0;
+    public int score = 0;
     
     public TextMeshProUGUI pipeScore;
 

@@ -2,19 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameButtonsGUI : MonoBehaviour
 {
-    AudioSource musicPlayer;
-    [SerializeField] Canvas inGameMenu , inGame, quitMenu, gameOverMenu;
+    [Header("Canvas")]
+    [SerializeField] Canvas inGameMenu;
+    [SerializeField] Canvas inGame;
+    [SerializeField] Canvas quitMenu;
+    [SerializeField] Canvas gameOverMenu;
+
+    [Header("Transition Animation")]
     [SerializeField] GameObject transition;
     [SerializeField] float transitionTime = 1.1f;
 
+    [Header("Score")]
+    [SerializeField] TextMeshProUGUI highscoreText;
+
     bool isEnabled = false;
+    int highscore = 0, score = 0;
+
+    AudioSource musicPlayer;
 
     void Awake()
     {
-        musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
+            musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
     }
 
     public void PauseGame()
@@ -97,7 +109,25 @@ public class GameButtonsGUI : MonoBehaviour
             inGame.gameObject.SetActive(false);
             gameOverMenu.gameObject.SetActive(true);
             gameOverMenu.GetComponentInChildren<Animator>().SetBool("open", true);
+            HighScore();
             isDead = false;
+        }
+    }
+
+    private void HighScore()
+    {
+        score = FindObjectOfType<PlayerCollisionHandler>().score;
+
+        if (score > PlayerPrefs.GetInt("Highscore"))
+        {
+            highscore = score;
+            PlayerPrefs.SetInt("Highscore", highscore);
+            highscoreText.text = highscore.ToString();
+        }
+
+        else
+        {
+            highscoreText.text = PlayerPrefs.GetInt("Highscore").ToString();
         }
     }
 

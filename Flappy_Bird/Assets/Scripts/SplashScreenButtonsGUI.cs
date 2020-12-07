@@ -13,7 +13,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     [SerializeField] Canvas quitMenu;
     [SerializeField] Canvas settingsMenu;
 
-    [Header("transition Animation")]
+    [Header("Transition Animation")]
     [SerializeField] GameObject transition;
     [SerializeField] float transitionTime = 2f;
 
@@ -42,9 +42,11 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     private void MusicVolumeSlider()
     {
-        //Adds a listener to the main slider and invokes a method when the value changes.
         audioSource = GameObject.Find("Music Player").GetComponent<AudioSource>();
+        //Adds a listener to the main slider and invokes a method when the value changes.
         sliderManager.onValueChanged.AddListener(delegate { VolumeSlider(); });
+        //Checks if Slidervolume is null, if there's no key it uses a default value
+        if (!PlayerPrefs.HasKey("SliderVolume")) { PlayerPrefs.SetFloat("SliderVolume", 0.15f); }
         //Gets the volume slider value and volume
         audioSource.volume = PlayerPrefs.GetFloat("SliderVolume");
         //Changes the slider value
@@ -168,6 +170,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         PlayerPrefs.SetInt("Mute SFX", 0);
     }
 
+    //Toggles the battery mode
     public void BatteryModeToggle()
     {
         if (BatteryMode)
@@ -187,7 +190,6 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         Application.targetFrameRate = 30;
         BatteryMode = false;
         PlayerPrefs.SetInt("Battery Toggle", 1);
-        print("30");
     }
     private void BatteryModeOff()
     {
@@ -195,6 +197,5 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         Application.targetFrameRate = 60;
         BatteryMode = true;
         PlayerPrefs.SetInt("Battery Toggle", 0);
-        print("60");
     }
 }
