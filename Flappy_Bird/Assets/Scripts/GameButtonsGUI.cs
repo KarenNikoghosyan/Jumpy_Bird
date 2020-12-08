@@ -18,6 +18,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     [Header("Score")]
     [SerializeField] TextMeshProUGUI highscoreText;
+    [SerializeField] TextMeshProUGUI currentScore;
 
     bool isEnabled = false;
     int highscore = 0, score = 0;
@@ -109,14 +110,15 @@ public class GameButtonsGUI : MonoBehaviour
             inGame.gameObject.SetActive(false);
             gameOverMenu.gameObject.SetActive(true);
             gameOverMenu.GetComponentInChildren<Animator>().SetBool("open", true);
-            HighScore();
+            SetScoreAndHighScore();
             isDead = false;
         }
     }
 
-    private void HighScore()
+    private void SetScoreAndHighScore()
     {
         score = FindObjectOfType<PlayerCollisionHandler>().score;
+        currentScore.text = score.ToString();
 
         if (score > PlayerPrefs.GetInt("Highscore"))
         {
