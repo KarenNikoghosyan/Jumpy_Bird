@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
@@ -42,10 +43,14 @@ public class PlayerController : MonoBehaviour
 
     private void RespondToTouchInput()
     {
+    
         if (Input.touchCount > 0) 
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
+
+            if (EventSystem.current.IsPointerOverGameObject() ||
+                EventSystem.current.currentSelectedGameObject != null) { return; }
                 Jump();
             }
         }

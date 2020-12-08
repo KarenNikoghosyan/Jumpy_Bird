@@ -27,7 +27,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     void Awake()
     {
-            musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
+        musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
     }
 
     public void PauseGame()
