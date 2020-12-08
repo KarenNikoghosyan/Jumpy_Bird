@@ -1690,7 +1690,6 @@ MonoBehaviour:
   quitMenu: {fileID: 3248110073980280580}
   settingsMenu: {fileID: 2945282719692023639}
   transition: {fileID: 3248110074576184607}
-  transitionTime: 2
   sliderManager: {fileID: 8169645525877184642}
   muteButton: {fileID: 1230554009}
   audioOff: {fileID: 21300000, guid: 926ba8c521b1b15409d411a1b8842bc0, type: 3}
@@ -2625,6 +2624,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &430421480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249272355739082956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0da1bc8e23cf34aa1a66b59e29653a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3719676820861024618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,6 +2834,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cc9735360b08a74f84904965c007f84, type: 3}
+--- !u!1 &3249272355739082956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1162298282029136, guid: 0cc9735360b08a74f84904965c007f84, type: 3}
+  m_PrefabInstance: {fileID: 3248110074642174108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3318261162569336170 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224984358971348470, guid: 0cc9735360b08a74f84904965c007f84, type: 3}
@@ -2993,11 +3009,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 532be6a4fe92da84781b0746078bbd33, type: 3}
---- !u!224 &8352306141709563966 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224254108528985524, guid: 532be6a4fe92da84781b0746078bbd33, type: 3}
-  m_PrefabInstance: {fileID: 8139675520622378378}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8169645525877184642 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114145321544017160, guid: 532be6a4fe92da84781b0746078bbd33, type: 3}
@@ -3009,3 +3020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ebbd33be3a73ca40aa6a4371ff9a6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &8352306141709563966 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224254108528985524, guid: 532be6a4fe92da84781b0746078bbd33, type: 3}
+  m_PrefabInstance: {fileID: 8139675520622378378}
+  m_PrefabAsset: {fileID: 0}

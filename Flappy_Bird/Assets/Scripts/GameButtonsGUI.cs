@@ -13,8 +13,8 @@ public class GameButtonsGUI : MonoBehaviour
     [SerializeField] Canvas gameOverMenu;
 
     [Header("Transition Animation")]
-    [SerializeField] GameObject transition;
-    [SerializeField] float transitionTime = 1.1f;
+    [SerializeField] GameObject transition1;
+    [SerializeField] GameObject transition2;
 
     [Header("Score")]
     [SerializeField] TextMeshProUGUI highscoreText;
@@ -66,10 +66,9 @@ public class GameButtonsGUI : MonoBehaviour
     public void RestartGameButton()
     {
         AudioManager.instance.Play("Click Sound");
-        SceneManager.LoadScene(1);
+        transition2.SetActive(true);
         musicPlayer.Stop();
         musicPlayer.Play();
-        Time.timeScale = 1;
     }
 
     public void HomeButton()
@@ -89,17 +88,11 @@ public class GameButtonsGUI : MonoBehaviour
 
     public void QuitGame()
     {
-        transition.SetActive(true);
+        transition1.SetActive(true);
+
         AudioManager.instance.Play("Click Sound");
-        StartCoroutine(LoadMenu());
-        Time.timeScale = 1;
         musicPlayer.Stop();
         musicPlayer.Play();
-    }
-    IEnumerator LoadMenu()
-    {
-        yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(0);
     }
 
     public void GameOverMenu(bool isDead)
@@ -110,12 +103,12 @@ public class GameButtonsGUI : MonoBehaviour
             inGame.gameObject.SetActive(false);
             gameOverMenu.gameObject.SetActive(true);
             gameOverMenu.GetComponentInChildren<Animator>().SetBool("open", true);
-            SetScoreAndHighScore();
+            HighScore();
             isDead = false;
         }
     }
 
-    private void SetScoreAndHighScore()
+    private void HighScore()
     {
         score = FindObjectOfType<PlayerCollisionHandler>().score;
         currentScore.text = score.ToString();

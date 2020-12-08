@@ -15,7 +15,6 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     [Header("Transition Animation")]
     [SerializeField] GameObject transition;
-    [SerializeField] float transitionTime = 2f;
 
     [Header("Volume Slider Setting")]
     [SerializeField] SliderManager sliderManager;
@@ -73,12 +72,6 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     {
         AudioManager.instance.Play("Start Game Sound");
         transition.SetActive(true);
-        Invoke("LoadLevel", transitionTime);
-    }
-
-    private void LoadLevel()
-    {
-        SceneManager.LoadScene(1);
     }
 
     public void OpenQuitMenu()
