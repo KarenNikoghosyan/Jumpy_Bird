@@ -85,8 +85,6 @@ public class GameButtonsGUI : MonoBehaviour
     {
         AudioManager.instance.Play("Click Sound");
         transition2.SetActive(true);
-        musicPlayer.Stop();
-        musicPlayer.Play();
     }
 
     public void HomeButton()

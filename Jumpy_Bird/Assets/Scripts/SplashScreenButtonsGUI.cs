@@ -26,6 +26,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     [Header("Battery Mode Setting")]
     [SerializeField] Toggle batteryToggle;
+    [SerializeField] TextMeshProUGUI on_offToggle;
     
     bool audioSwitcher = true;
     bool BatteryMode = false;
@@ -52,6 +53,12 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         sliderManager.mainSlider.value = PlayerPrefs.GetFloat("SliderVolume");
     }
 
+    public void VolumeSlider()
+    {
+        // Invoked when the value of the slider changes.
+        musicPlayer.volume = sliderManager.mainSlider.value;
+    }
+
     private void SoundSetting()
     {
         //Gets the mute or unmute setting
@@ -60,12 +67,77 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         MuteButton();
     }
 
+    //Toggles the mute button
+    public void MuteButton()
+    {
+        if (audioSwitcher)
+        {
+            MuteSound();
+        }
+
+        else
+        {
+            UnmuteSound();
+        }
+    }
+
+    private void MuteSound()
+    {
+        muteButton.GetComponent<Image>().sprite = audioOff;
+        muteText.text = "Unmute";
+        AudioListener.volume = 0f;
+        audioSwitcher = false;
+        //Saves the mute or unmute setting
+        PlayerPrefs.SetInt("Mute SFX", 1);
+    }
+    private void UnmuteSound()
+    {
+        muteButton.GetComponent<Image>().sprite = audioOn;
+        muteText.text = "Mute";
+        AudioListener.volume = 1f;
+        audioSwitcher = true;
+        //Saves the mute or unmute setting
+        PlayerPrefs.SetInt("Mute SFX", 0);
+    }
+
     private void BatterySetting()
     {
         //Gets the current battery toggle mode
         BatteryMode = PlayerPrefs.GetInt("Battery Toggle") == 1 ? true : false;
         //Toggles the battery setting depending on the saved setting
         BatteryModeToggle();
+    }
+
+    //Toggles the battery mode
+    public void BatteryModeToggle()
+    {
+        if (BatteryMode)
+        {
+            BatteryModeOn();
+        }
+
+        else
+        {
+            BatteryModeOff();
+        }
+    }
+
+    private void BatteryModeOn()
+    {
+        batteryToggle.isOn = true;
+        on_offToggle.text = "ON";
+        Application.targetFrameRate = 30;
+        BatteryMode = false;
+        PlayerPrefs.SetInt("Battery Toggle", 1);
+    }
+
+    private void BatteryModeOff()
+    {
+        batteryToggle.isOn = false;
+        on_offToggle.text = "OFF";
+        Application.targetFrameRate = 60;
+        BatteryMode = true;
+        PlayerPrefs.SetInt("Battery Toggle", 0);
     }
 
     public void StartGame()
@@ -123,74 +195,5 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         settingsMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
-    }
-  
-    public void VolumeSlider()
-    {
-        // Invoked when the value of the slider changes.
-        musicPlayer.volume = sliderManager.mainSlider.value;
-    }
-
-    //Toggles the mute button
-    public void MuteButton()
-    {
-        if (audioSwitcher)
-        {
-            MuteSound();
-        }
-
-        else
-        {
-            UnmuteSound();
-        }
-    }
-
-
-    private void MuteSound()
-    {
-        muteButton.GetComponent<Image>().sprite = audioOff;
-        muteText.text = "Unmute";
-        AudioListener.volume = 0f;
-        audioSwitcher = false;
-        //Saves the mute or unmute setting
-        PlayerPrefs.SetInt("Mute SFX", 1);
-    }
-    private void UnmuteSound()
-    {
-        muteButton.GetComponent<Image>().sprite = audioOn;
-        muteText.text = "Mute";
-        AudioListener.volume = 1f;
-        audioSwitcher = true;
-        //Saves the mute or unmute setting
-        PlayerPrefs.SetInt("Mute SFX", 0);
-    }
-
-    //Toggles the battery mode
-    public void BatteryModeToggle()
-    {
-        if (BatteryMode)
-        {
-            BatteryModeOn();
-        }
-
-        else
-        {
-            BatteryModeOff();
-        }
-    }
-
-    private void BatteryModeOn()
-    {
-        batteryToggle.isOn = true;
-        Application.targetFrameRate = 30;
-        BatteryMode = false;
-        PlayerPrefs.SetInt("Battery Toggle", 1);
-    }
-    private void BatteryModeOff()
-    {
-        batteryToggle.isOn = false;
-        Application.targetFrameRate = 60;
-        BatteryMode = true;
-        PlayerPrefs.SetInt("Battery Toggle", 0);
     }
 }
