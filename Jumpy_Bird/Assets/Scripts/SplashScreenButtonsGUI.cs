@@ -103,6 +103,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     public void SettingsButton()
     {
+        AudioManager.instance.Play("Click Sound");
         splashButtons.gameObject.SetActive(false);
         settingsMenu.gameObject.SetActive(true);
         settingsMenu.GetComponentInChildren<Animator>().SetBool("open", true);
@@ -110,6 +111,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     public void CloseSettingsMenuButton()
     {
+        AudioManager.instance.Play("Click Sound");
         //Saves the volume setting
         PlayerPrefs.SetFloat("SliderVolume", audioSource.volume);
         settingsMenu.GetComponentInChildren<Animator>().SetBool("open", false);
