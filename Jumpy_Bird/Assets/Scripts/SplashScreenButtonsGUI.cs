@@ -30,7 +30,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     bool audioSwitcher = true;
     bool BatteryMode = false;
     
-    AudioSource audioSource;
+    AudioSource musicPlayer;
 
     void Start()
     {
@@ -41,13 +41,13 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     private void MusicVolumeSlider()
     {
-        audioSource = GameObject.Find("Music Player").GetComponent<AudioSource>();
+        musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
         //Adds a listener to the main slider and invokes a method when the value changes.
         sliderManager.onValueChanged.AddListener(delegate { VolumeSlider(); });
         //Checks if Slidervolume is null, if there's no key it uses a default value
         if (!PlayerPrefs.HasKey("SliderVolume")) { PlayerPrefs.SetFloat("SliderVolume", 0.15f); }
         //Gets the volume slider value and volume
-        audioSource.volume = PlayerPrefs.GetFloat("SliderVolume");
+        musicPlayer.volume = PlayerPrefs.GetFloat("SliderVolume");
         //Changes the slider value
         sliderManager.mainSlider.value = PlayerPrefs.GetFloat("SliderVolume");
     }
@@ -113,7 +113,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     {
         AudioManager.instance.Play("Click Sound");
         //Saves the volume setting
-        PlayerPrefs.SetFloat("SliderVolume", audioSource.volume);
+        PlayerPrefs.SetFloat("SliderVolume", musicPlayer.volume);
         settingsMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(CloseSettingsMenuDelay());
     }
@@ -128,7 +128,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     public void VolumeSlider()
     {
         // Invoked when the value of the slider changes.
-        audioSource.volume = sliderManager.mainSlider.value;
+        musicPlayer.volume = sliderManager.mainSlider.value;
     }
 
     //Toggles the mute button

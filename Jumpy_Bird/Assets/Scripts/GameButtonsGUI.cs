@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Michsky.UI.ModernUIPack;
+using System;
 
 public class GameButtonsGUI : MonoBehaviour
 {
     [Header("Canvas")]
-    [SerializeField] Canvas inGameMenu;
     [SerializeField] Canvas inGame;
+    [SerializeField] Canvas inGameMenu;
     [SerializeField] Canvas quitMenu;
     [SerializeField] Canvas gameOverMenu;
+    [SerializeField] Canvas settingsMenu;
 
     [Header("Transition Animation")]
     [SerializeField] GameObject transition1;
@@ -20,6 +23,9 @@ public class GameButtonsGUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI highscoreText;
     [SerializeField] TextMeshProUGUI currentScore;
 
+    [Header("Volume Slider Setting")]
+    [SerializeField] SliderManager sliderManager;
+
     bool isEnabled = false;
     int highscore = 0, score = 0;
 
@@ -27,15 +33,28 @@ public class GameButtonsGUI : MonoBehaviour
 
     void Awake()
     {
-        musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
+        MusicVolumeSlider();
     }
 
+    private void MusicVolumeSlider()
+    {
+        musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
+        musicPlayer.volume = PlayerPrefs.GetFloat("SliderVolume");
+        sliderManager.mainSlider.value = PlayerPrefs.GetFloat("SliderVolume");
+        sliderManager.onValueChanged.AddListener(delegate { VolumeSlider(); });
+    }
+
+    public void VolumeSlider()
+    {
+        // Invoked when the value of the slider changes.
+        musicPlayer.volume = sliderManager.mainSlider.value;
+    }
+    
     public void PauseGame()
     {
         if (!isEnabled)
         {
             AudioManager.instance.Play("Pause Sound");
-            musicPlayer.Pause();
             Time.timeScale = 0; ;
             inGameMenu.gameObject.SetActive(true);
             inGame.gameObject.SetActive(false);
@@ -48,7 +67,6 @@ public class GameButtonsGUI : MonoBehaviour
     {
         if (isEnabled) {
             AudioManager.instance.Play("Resume Sound");
-            musicPlayer.UnPause();
             Time.timeScale = 1;
             inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
             StartCoroutine(ResumeGameAnimator());
@@ -77,7 +95,6 @@ public class GameButtonsGUI : MonoBehaviour
         inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(OpenQuitMenuDelay());
     }
-
     IEnumerator OpenQuitMenuDelay()
     {
         yield return new WaitForSecondsRealtime(0.4f);
@@ -85,14 +102,42 @@ public class GameButtonsGUI : MonoBehaviour
         quitMenu.gameObject.SetActive(true);
         quitMenu.GetComponentInChildren<Animator>().SetBool("open", true);
     }
+    public void CloseQuitMenu()
+    {
+        AudioManager.instance.Play("Click Sound");
+        quitMenu.gameObject.SetActive(false);
+        inGameMenu.gameObject.SetActive(true);
+        inGameMenu.GetComponentInChildren<Animator>().SetBool("open", true);
+    }
+
+    public void SettingsButton()
+    {
+        AudioManager.instance.Play("Click Sound");
+        inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
+        StartCoroutine(SettingsButtonDelay());
+    }
+
+    IEnumerator SettingsButtonDelay()
+    {
+        yield return new WaitForSecondsRealtime(0.4f);
+        inGameMenu.gameObject.SetActive(false);
+        settingsMenu.gameObject.SetActive(true);
+        settingsMenu.GetComponentInChildren<Animator>().SetBool("open", true);
+    }
+
+    public void CloseSettingsButton()
+    {
+        PlayerPrefs.SetFloat("SliderVolume", musicPlayer.volume);
+        AudioManager.instance.Play("Click Sound");
+        settingsMenu.gameObject.SetActive(false);
+        inGameMenu.gameObject.SetActive(true);
+        inGameMenu.GetComponentInChildren<Animator>().SetBool("open", true);
+    }
 
     public void QuitGame()
     {
-        transition1.SetActive(true);
-
         AudioManager.instance.Play("Click Sound");
-        musicPlayer.Stop();
-        musicPlayer.Play();
+        transition1.SetActive(true);
     }
 
     public void GameOverMenu(bool isDead)
@@ -125,14 +170,4 @@ public class GameButtonsGUI : MonoBehaviour
             highscoreText.text = PlayerPrefs.GetInt("Highscore").ToString();
         }
     }
-
-
-    public void ReturnToInGameMenu()
-    {
-        AudioManager.instance.Play("Click Sound");
-        quitMenu.gameObject.SetActive(false);
-        inGameMenu.gameObject.SetActive(true);
-        inGameMenu.GetComponentInChildren<Animator>().SetBool("open", true);
-    }
-
 }
