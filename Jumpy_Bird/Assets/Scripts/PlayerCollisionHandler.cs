@@ -15,6 +15,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     public TextMeshProUGUI pipeScore;
 
     [SerializeField] ParticleSystem splashVFX;
+    [SerializeField] ParticleSystem highscoreVFX;
     [SerializeField] GameObject graphy;
 
     void Start()
@@ -117,7 +118,18 @@ public class PlayerCollisionHandler : MonoBehaviour
         AudioManager.instance.Play("Scroing Sound");
         score++;
         pipeScore.text = score.ToString();
+        HighScoreParticles();
     }
+
+    public void HighScoreParticles()
+    {
+        if (score == PlayerPrefs.GetInt("Highscore") + 1)
+        {
+            AudioManager.instance.Play("HighScore");
+            highscoreVFX.Play();
+        }
+    }
+
     private void UpdatePipeColor()
     {
         if (score % 10 == 0)

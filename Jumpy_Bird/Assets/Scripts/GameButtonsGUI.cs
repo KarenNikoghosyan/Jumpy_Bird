@@ -138,6 +138,7 @@ public class GameButtonsGUI : MonoBehaviour
         transition1.SetActive(true);
     }
 
+
     public void GameOverMenu(bool isDead)
     {
         if (isDead)
@@ -168,4 +169,5 @@ public class GameButtonsGUI : MonoBehaviour
             highscoreText.text = PlayerPrefs.GetInt("Highscore").ToString();
         }
     }
+
 }
