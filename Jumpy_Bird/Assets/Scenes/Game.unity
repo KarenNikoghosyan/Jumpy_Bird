@@ -13706,6 +13706,14 @@ PrefabInstance:
       propertyPath: graphy
       value: 
       objectReference: {fileID: 1384667494}
+    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
+      propertyPath: massOnDeath
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
+      propertyPath: fallForce
+      value: 100000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
 --- !u!1001 &1169794482326639373

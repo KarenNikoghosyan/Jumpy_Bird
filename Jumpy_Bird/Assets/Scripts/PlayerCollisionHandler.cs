@@ -99,6 +99,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         isAlive = false;
         Invoke("OpenGameOverMenu", 0.8f);
     }
+
     private void StopPipesMovement()
     {
         AudioManager.instance.Play("Death Sound");
