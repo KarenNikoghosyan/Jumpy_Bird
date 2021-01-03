@@ -5998,7 +5998,7 @@ MonoBehaviour:
   sounds:
   - name: Scroing Sound
     clip: {fileID: 8300000, guid: 52633201299171d4990bacf1afbf5e85, type: 3}
-    volume: 0.5
+    volume: 0.65
     pitch: 1
     source: {fileID: 0}
   - name: Death Sound
@@ -6008,7 +6008,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jumping Sound
     clip: {fileID: 8300000, guid: 02a855e125cdf1e49ba5cbb84cb71aba, type: 3}
-    volume: 1
+    volume: 0.65
     pitch: 1
     source: {fileID: 0}
   - name: Water Splash Sound
