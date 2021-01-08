@@ -11,14 +11,15 @@ public class PipesSpawner : MonoBehaviour
 
     public Material material;
 
-    [SerializeField] float secondsBetweenSpawns = 2f;
+    //points to a single memory location which affects all the pipes
+    public static float secondsBetweenSpawns = 2f;
 
     [SerializeField] GameObject pipePrefab;
     [SerializeField] Transform pipesParentTransform;
 
     [SerializeField] float minPipeHeight = -8.8f;
     [SerializeField] float maxPipeHeight = 1f;
-    
+
     void Start()
     {
         StartCoroutine(RepeatedlySpawnPipes());

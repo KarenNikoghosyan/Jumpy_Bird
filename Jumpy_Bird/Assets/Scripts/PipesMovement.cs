@@ -6,7 +6,8 @@ using UnityEngine.PlayerLoop;
 
 public class PipesMovement : MonoBehaviour
 {
-    [SerializeField] float movementFactor = 7f;
+    //points to a single memory location which affects all the pipes
+    public static float movementFactor = 7f;
     Rigidbody rigidBody;
 
     public static bool _stop = false;

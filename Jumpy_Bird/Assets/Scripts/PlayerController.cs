@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float jumpForce = 7.5f;
-    [SerializeField] float fallForce = 5f;
+    [SerializeField] float fallForce = 100f;
     [SerializeField] ParticleSystem jumpVFX;
     Rigidbody rigidBody;
 

@@ -20,9 +20,16 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     void Start()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         pipeScore.text = score.ToString();
         ChangeMaterialColor();
         PipesMovement._stop = false;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        PipesSpawner.secondsBetweenSpawns = 2f;
+        PipesMovement.movementFactor = 7f;
     }
 
     private void ChangeMaterialColor()
@@ -136,7 +143,35 @@ public class PlayerCollisionHandler : MonoBehaviour
         if (score % 10 == 0)
         {
             FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable);
+            SpeedUpPipes();
         }
     }
 
+    //Pipes speed based on the current score.
+    private void SpeedUpPipes()
+    {
+        switch (score)
+        {
+            case 10:
+                PipesSpawner.secondsBetweenSpawns = 1.9f;
+                PipesMovement.movementFactor = 7.5f;
+                break;
+            case 20:
+                PipesSpawner.secondsBetweenSpawns = 1.7f;
+                PipesMovement.movementFactor = 8.5f;
+                break;
+            case 30:
+                PipesSpawner.secondsBetweenSpawns = 1.5f;
+                PipesMovement.movementFactor = 9.5f;
+                break;
+            case 40:
+                PipesSpawner.secondsBetweenSpawns = 1.45f;
+                PipesMovement.movementFactor = 10.5f;
+                break;
+            case 50:
+                PipesSpawner.secondsBetweenSpawns = 1.4f;
+                PipesMovement.movementFactor = 11.5f;
+                break;
+        }
+    }
 }

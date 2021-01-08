@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: "Gaminity\u2122"
   productName: Jumpy Bird
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -126,7 +126,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.8.8
+  bundleVersion: 0.9.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -271,7 +271,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: e1a2dd6f875a7be4c9b723d2e1d1be46, type: 3}
+      m_Icon: {fileID: 2800000, guid: 490558f4035655a4389ac114546496a7, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

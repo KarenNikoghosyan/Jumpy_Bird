@@ -22,12 +22,13 @@ public class GameButtonsGUI : MonoBehaviour
     [Header("Score")]
     [SerializeField] TextMeshProUGUI highscoreText;
     [SerializeField] TextMeshProUGUI currentScore;
+    [SerializeField] TextMeshProUGUI currentMenuScore;
 
     [Header("Volume Slider Setting")]
     [SerializeField] SliderManager sliderManager;
 
     bool isEnabled = false;
-    int highscore = 0, score = 0;
+    int highscore = 0;
 
     AudioSource musicPlayer;
 
@@ -57,10 +58,17 @@ public class GameButtonsGUI : MonoBehaviour
             AudioManager.instance.Play("Pause Sound");
             Time.timeScale = 0; ;
             inGameMenu.gameObject.SetActive(true);
+            ShowCurrentScore();
             inGame.gameObject.SetActive(false);
             inGameMenu.GetComponentInChildren<Animator>().SetBool("open", true);
             isEnabled = true;
         }
+    }
+
+    void ShowCurrentScore()
+    {
+        int score = FindObjectOfType<PlayerCollisionHandler>().score;
+        currentMenuScore.text = score.ToString();
     }
 
     public void ResumeGameButton()
@@ -154,7 +162,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     private void HighScore()
     {
-        score = FindObjectOfType<PlayerCollisionHandler>().score;
+        int score = FindObjectOfType<PlayerCollisionHandler>().score;
         currentScore.text = score.ToString();
 
         if (score > PlayerPrefs.GetInt("Highscore"))
