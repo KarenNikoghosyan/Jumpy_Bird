@@ -30,6 +30,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     
     bool audioSwitcher = true;
     bool BatteryMode = false;
+    bool isPlaying = false;
     
     AudioSource musicPlayer;
 
@@ -142,8 +143,10 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     public void StartGame()
     {
+        if (isPlaying) { return; }
         AudioManager.instance.Play("Start Game Sound");
         transition.SetActive(true);
+        isPlaying = true;
     }
 
     public void OpenQuitMenu()
