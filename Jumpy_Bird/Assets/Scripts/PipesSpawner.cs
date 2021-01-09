@@ -17,8 +17,8 @@ public class PipesSpawner : MonoBehaviour
     [SerializeField] GameObject pipePrefab;
     [SerializeField] Transform pipesParentTransform;
 
-    [SerializeField] float minPipeHeight = -8.8f;
-    [SerializeField] float maxPipeHeight = 1f;
+    [SerializeField] float minPipeHeight = -11f;
+    [SerializeField] float maxPipeHeight = -2.2f;
 
     void Start()
     {
