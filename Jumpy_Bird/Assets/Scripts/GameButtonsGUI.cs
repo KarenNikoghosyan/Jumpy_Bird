@@ -50,7 +50,15 @@ public class GameButtonsGUI : MonoBehaviour
         // Invoked when the value of the slider changes.
         musicPlayer.volume = sliderManager.mainSlider.value;
     }
-    
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }    
+    }
+
     public void PauseGame()
     {
         if (!isEnabled)

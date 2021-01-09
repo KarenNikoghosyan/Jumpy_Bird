@@ -141,6 +141,14 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         PlayerPrefs.SetInt("Battery Toggle", 0);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            OpenQuitMenu();
+        }
+    }
+
     public void StartGame()
     {
         if (isPlaying) { return; }
