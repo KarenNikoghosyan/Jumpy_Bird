@@ -10,7 +10,7 @@ public class PlayerCollisionHandler : MonoBehaviour
 {
     bool isChangeable = true, isAlive = true, isDead = false;
     Material material;
-    public int score = 0;
+    private int score = 0;
     
     public TextMeshProUGUI pipeScore;
 
@@ -173,5 +173,11 @@ public class PlayerCollisionHandler : MonoBehaviour
                 PipesMovement.movementFactor = 11.5f;
                 break;
         }
+    }
+
+    //returns score value
+    public int getScore()
+    {
+        return score;
     }
 }

@@ -22,6 +22,7 @@ public class PipesSpawner : MonoBehaviour
 
     void Start()
     {
+        // create x amount. then delete.
         StartCoroutine(RepeatedlySpawnPipes());
     }
 

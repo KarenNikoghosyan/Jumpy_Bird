@@ -75,7 +75,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     void ShowCurrentScore()
     {
-        int score = FindObjectOfType<PlayerCollisionHandler>().score;
+        int score = FindObjectOfType<PlayerCollisionHandler>().getScore();
         currentMenuScore.text = score.ToString();
     }
 
@@ -170,7 +170,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     private void HighScore()
     {
-        int score = FindObjectOfType<PlayerCollisionHandler>().score;
+        int score = FindObjectOfType<PlayerCollisionHandler>().getScore();
         currentScore.text = score.ToString();
 
         if (score > PlayerPrefs.GetInt("Highscore"))
