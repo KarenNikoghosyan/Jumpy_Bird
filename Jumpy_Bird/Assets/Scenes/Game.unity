@@ -825,10 +825,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: c12135786493ad94d9adcf06c8295d6a, type: 2}
-  pipePrefab: {fileID: 5174595340652149636, guid: c5cff486e4aafe441a791b52cfb366eb, type: 3}
+  pipePrefab: {fileID: 3272177354800441164, guid: 66ce82766aa265c4baaf63b38a2c022a, type: 3}
   pipesParentTransform: {fileID: 863299235}
   minPipeHeight: -11
-  maxPipeHeight: -2.2
+  maxPipeHeight: -2
 --- !u!65 &71796198
 BoxCollider:
   m_ObjectHideFlags: 0
