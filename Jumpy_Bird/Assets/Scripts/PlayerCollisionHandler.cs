@@ -8,9 +8,10 @@ using Random = UnityEngine.Random;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    bool isChangeable = true, isAlive = true, isDead = false;
+    bool isChangeable = true, isAlive = true, isDead = false, isSpeed = false, isHighScore = false;
     Material material;
     private int score = 0;
+    float textDelay = 1.5f;
     
     public TextMeshProUGUI pipeScore;
 
@@ -135,6 +136,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         {
             AudioManager.instance.Play("HighScore");
             highscoreVFX.Play();
+            FindObjectOfType<GameButtonsGUI>().ShowHighScoreText(isHighScore);
         }
     }
 
@@ -143,6 +145,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         if (score % 10 == 0)
         {
             FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable);
+            FindObjectOfType<GameButtonsGUI>().ShowSpeedText(isSpeed);
             SpeedUpPipes();
         }
     }

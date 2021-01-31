@@ -14,6 +14,8 @@ public class GameButtonsGUI : MonoBehaviour
     [SerializeField] Canvas quitMenu;
     [SerializeField] Canvas gameOverMenu;
     [SerializeField] Canvas settingsMenu;
+    [SerializeField] Canvas speedText;
+    [SerializeField] Canvas highScoreText;
 
     [Header("Transition Animation")]
     [SerializeField] GameObject transition1;
@@ -29,6 +31,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     bool isEnabled = false;
     int highscore = 0;
+    float textDelay = 1.5f;
 
     AudioSource musicPlayer;
 
@@ -184,6 +187,36 @@ public class GameButtonsGUI : MonoBehaviour
         {
             highscoreText.text = PlayerPrefs.GetInt("Highscore").ToString();
         }
+    }
+
+    public void ShowSpeedText(bool isSpeed)
+    {
+        StartCoroutine(SpeedText());
+        isSpeed = false;
+    }
+
+    IEnumerator SpeedText()
+    {
+        inGame.gameObject.SetActive(false);
+        speedText.gameObject.SetActive(true);
+        yield return new WaitForSecondsRealtime(textDelay);
+        speedText.gameObject.SetActive(false);
+        inGame.gameObject.SetActive(true);
+    }
+
+    public void ShowHighScoreText(bool isHighScore)
+    {
+        StartCoroutine(HighScoreText());
+        isHighScore = false;
+    }
+
+    IEnumerator HighScoreText()
+    {
+        inGame.gameObject.SetActive(false);
+        highScoreText.gameObject.SetActive(true);
+        yield return new WaitForSecondsRealtime(textDelay);
+        highScoreText.gameObject.SetActive(false);
+        inGame.gameObject.SetActive(true);
     }
 
 }
