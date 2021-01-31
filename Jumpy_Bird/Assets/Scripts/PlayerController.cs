@@ -18,19 +18,16 @@ public class PlayerController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if(Time.timeScale == 0) { return; }
+        if (Time.timeScale == 0) { return; }
         if (!isDead)
         {
             RespondToJumpInput();
             RespondToTouchInput();
+            FallSpeed();
         }
-    }
-
-    void FixedUpdate()
-    {
-        FallSpeed();
+        
     }
 
     private void RespondToJumpInput()
