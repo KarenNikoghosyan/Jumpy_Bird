@@ -20046,13 +20046,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Splash Screen UI
       objectReference: {fileID: 0}
-    - target: {fileID: 3248110074968525266, guid: d56b6f9e23a06af40965596120510628, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3248110074968525268, guid: d56b6f9e23a06af40965596120510628, type: 3}
-      propertyPath: m_text
-      value: Start
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d56b6f9e23a06af40965596120510628, type: 3}
