@@ -18661,6 +18661,14 @@ PrefabInstance:
       propertyPath: pipeScore
       value: 
       objectReference: {fileID: 408782320}
+    - target: {fileID: 4673380249026353389, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
+      propertyPath: fallForce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673380249026353389, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
+      propertyPath: jumpForce
+      value: 7.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
 --- !u!1001 &1169794482326639373

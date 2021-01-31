@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
     private void FallSpeed()
     {
-        rigidBody.AddForce(Vector3.down * (fallForce * Time.fixedDeltaTime));
+        rigidBody.AddForce(fallForce * Time.fixedDeltaTime * Vector3.down);
     }
 
 }
