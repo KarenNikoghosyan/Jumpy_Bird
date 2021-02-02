@@ -12,10 +12,34 @@ public class PlayerController : MonoBehaviour
     Rigidbody rigidBody;
 
     public bool isDead = false;
+    bool isJumped = false;
     
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        IsInputBoolean();
+    }
+
+    private void IsInputBoolean()
+    {
+        //checks keyboard(space key) or a mouse click(left click)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        {
+            isJumped = true;
+        }
+
+        //checks touch input
+        if (Input.touchCount > 0)
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                isJumped = true;
+            }
+        }
     }
 
     void FixedUpdate()
@@ -32,24 +56,24 @@ public class PlayerController : MonoBehaviour
 
     private void RespondToJumpInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isJumped)
         {
+
+        if (EventSystem.current.IsPointerOverGameObject() ||
+            EventSystem.current.currentSelectedGameObject != null) { return; }
             Jump();
+            isJumped = false;
         }
     }
 
     private void RespondToTouchInput()
     {
-    
-        if (Input.touchCount > 0) 
+        if (isJumped) 
         {
-            if (Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-
-            if (EventSystem.current.IsPointerOverGameObject() ||
-                EventSystem.current.currentSelectedGameObject != null) { return; }
-                Jump();
-            }
+        if (EventSystem.current.IsPointerOverGameObject() ||
+            EventSystem.current.currentSelectedGameObject != null) { return; }
+            Jump();
+            isJumped = false;
         }
     }
     private void Jump()

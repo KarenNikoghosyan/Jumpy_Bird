@@ -18661,6 +18661,22 @@ PrefabInstance:
       propertyPath: pipeScore
       value: 
       objectReference: {fileID: 408782320}
+    - target: {fileID: 4414018268384657227, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
+      propertyPath: lengthInSec
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579741138026930333, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579741138026930333, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579741138026930333, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4673380249026353389, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
       propertyPath: fallForce
       value: 100
