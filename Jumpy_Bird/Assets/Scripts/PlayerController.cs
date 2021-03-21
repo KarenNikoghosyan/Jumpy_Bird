@@ -6,17 +6,17 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float jumpForce = 7.5f;
-    [SerializeField] float fallForce = 100f;
-    [SerializeField] ParticleSystem jumpVFX;
-    Rigidbody rigidBody;
+    [SerializeField] private float jumpForce = 7.5f;
+    [SerializeField] private float fallForce = 100f;
+    [SerializeField] private ParticleSystem jumpVFX;
+    Rigidbody _rigidBody;
 
     public bool isDead = false;
-    bool isJumped = false;
+    bool _isJumped = false;
     
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();
+        _rigidBody = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         //checks keyboard(space key) or a mouse click(left click)
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            isJumped = true;
+            _isJumped = true;
         }
 
         //checks touch input
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                isJumped = true;
+                _isJumped = true;
             }
         }
     }
@@ -56,24 +56,23 @@ public class PlayerController : MonoBehaviour
 
     private void RespondToJumpInput()
     {
-        if (isJumped)
+        if (_isJumped)
         {
-
-        if (EventSystem.current.IsPointerOverGameObject() ||
-            EventSystem.current.currentSelectedGameObject != null) { return; }
+            if (EventSystem.current.IsPointerOverGameObject() ||
+                EventSystem.current.currentSelectedGameObject != null) { return; }
             Jump();
-            isJumped = false;
+            _isJumped = false;
         }
     }
 
     private void RespondToTouchInput()
     {
-        if (isJumped) 
+        if (_isJumped) 
         {
-        if (EventSystem.current.IsPointerOverGameObject() ||
-            EventSystem.current.currentSelectedGameObject != null) { return; }
+            if (EventSystem.current.IsPointerOverGameObject() ||
+                EventSystem.current.currentSelectedGameObject != null) { return; }
             Jump();
-            isJumped = false;
+            _isJumped = false;
         }
     }
     private void Jump()
@@ -81,13 +80,13 @@ public class PlayerController : MonoBehaviour
         AudioManager.instance.Play("Jumping Sound");
         GetComponent<Animator>().SetBool("Fly", true);
         jumpVFX.Play();
-        rigidBody.velocity = Vector3.zero;
-        rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        _rigidBody.velocity = Vector3.zero;
+        _rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }   
 
     private void FallSpeed()
     {
-        rigidBody.AddForce(Vector3.down * (fallForce * Time.fixedDeltaTime));
+        _rigidBody.AddForce(Vector3.down * (fallForce * Time.fixedDeltaTime));
     }
 
 }

@@ -102,7 +102,7 @@ public class PipesSpawner : MonoBehaviour
 
     IEnumerator RepeatedlySpawnPipes()
     {
-        while (!PipesMovement._stop)
+        while (!PipesMovement.Stop && PlayerCollisionHandler.IsAlive)
         {
             GameObject newPipe = PipeSpawner();
             yield return new WaitForSeconds(secondsBetweenSpawns);

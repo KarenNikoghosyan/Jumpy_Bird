@@ -10,7 +10,7 @@ public class PipesMovement : MonoBehaviour
     public static float movementFactor = 7f;
     Rigidbody rigidBody;
 
-    public static bool _stop = false;
+    public static bool Stop = false;
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class PipesMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (_stop) return;
+        if (Stop || !PlayerCollisionHandler.IsAlive) return;
         PipeMovement();
     }
 
@@ -27,7 +27,7 @@ public class PipesMovement : MonoBehaviour
     {
         if (stop) 
         {
-            _stop = true;
+            Stop = true;
             return;  
         }
         Vector3 currentPosX = new Vector3((transform.position.x - (movementFactor * Time.fixedDeltaTime)), transform.position.y, 0f);

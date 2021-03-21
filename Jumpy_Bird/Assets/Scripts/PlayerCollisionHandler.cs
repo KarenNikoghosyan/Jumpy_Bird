@@ -8,7 +8,8 @@ using Random = UnityEngine.Random;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    bool isChangeable = true, isAlive = true, isDead = false, isSpeed = false, isHighScore = false;
+    bool isChangeable = true, isDead = false, isSpeed = false, isHighScore = false;
+    public static bool IsAlive = true;
     Material material;
     private int score = 0;
     float textDelay = 1.5f;
@@ -24,7 +25,8 @@ public class PlayerCollisionHandler : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
         pipeScore.text = score.ToString();
         ChangeMaterialColor();
-        PipesMovement._stop = false;
+        PipesMovement.Stop = false;
+        IsAlive = true;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -65,7 +67,14 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!isAlive) { return; }
+        if (other.gameObject.CompareTag("Water"))
+        {
+            AudioManager.instance.Play("Water Splash Sound");
+            splashVFX.Play();
+            KillPlayer();
+        }
+        
+        if (!IsAlive) { return; }
             if (other.gameObject.CompareTag("Sky"))
             {
                 AudioManager.instance.Play("Death Sound");
@@ -76,13 +85,6 @@ public class PlayerCollisionHandler : MonoBehaviour
             {
                 AddScore();
                 UpdatePipeColor();
-            }
-
-            if (other.gameObject.CompareTag("Water"))
-            {
-                AudioManager.instance.Play("Water Splash Sound");
-                splashVFX.Play();
-                KillPlayer();
             }
 
             if (other.gameObject.CompareTag("PipeBottom_Collider"))
@@ -104,8 +106,8 @@ public class PlayerCollisionHandler : MonoBehaviour
     {
         GetComponent<PlayerController>().isDead = true;
         GetComponent<Animator>().SetBool("Roll", true);
-        isAlive = false;
-        Invoke("OpenGameOverMenu", 0.8f);
+        IsAlive = false;
+        Invoke("OpenGameOverMenu", 1.5f);
     }
 
     private void StopPipesMovement()
@@ -179,7 +181,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     }
 
     //returns score value
-    public int getScore()
+    public int GetScore()
     {
         return score;
     }

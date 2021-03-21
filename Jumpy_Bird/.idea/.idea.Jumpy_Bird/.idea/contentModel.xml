@@ -138,6 +138,9 @@
               </e>
             </e>
           </e>
+          <e p="Pixel Font - Tripfive" t="Include">
+            <e p="_README.txt" t="Include" />
+          </e>
           <e p="Plugins" t="Include">
             <e p="Pixelplacement" t="Include">
               <e p="iTween" t="Include">
