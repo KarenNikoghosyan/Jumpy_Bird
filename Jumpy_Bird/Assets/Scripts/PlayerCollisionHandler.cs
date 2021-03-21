@@ -15,9 +15,9 @@ public class PlayerCollisionHandler : MonoBehaviour
     
     public TextMeshProUGUI pipeScore;
 
-    [SerializeField] ParticleSystem splashVFX;
-    [SerializeField] ParticleSystem highscoreVFX;
-    [SerializeField] GameObject graphy;
+    [SerializeField] private ParticleSystem splashVFX;
+    [SerializeField] private ParticleSystem highscoreVFX;
+    [SerializeField] private GameObject graphy;
 
     void Start()
     {

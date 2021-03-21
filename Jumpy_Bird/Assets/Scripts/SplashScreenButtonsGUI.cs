@@ -9,24 +9,24 @@ using TMPro;
 public class SplashScreenButtonsGUI : MonoBehaviour
 {
     [Header("Canvas")]
-    [SerializeField] Canvas splashButtons;
-    [SerializeField] Canvas quitMenu;
-    [SerializeField] Canvas settingsMenu;
+    [SerializeField] private Canvas splashButtons;
+    [SerializeField] private Canvas quitMenu;
+    [SerializeField] private Canvas settingsMenu;
 
     [Header("Transition Animation")]
-    [SerializeField] GameObject transition;
+    [SerializeField] private GameObject transition;
 
     [Header("Volume Slider Setting")]
-    [SerializeField] SliderManager sliderManager;
+    [SerializeField] private SliderManager sliderManager;
 
     [Header("Sound Setting")]
-    [SerializeField] Button muteButton;
-    [SerializeField] Sprite audioOff, audioOn;
-    [SerializeField] TextMeshProUGUI muteText;
+    [SerializeField] private Button muteButton;
+    [SerializeField] private Sprite audioOff, audioOn;
+    [SerializeField] private TextMeshProUGUI muteText;
 
     [Header("Battery Mode Setting")]
-    [SerializeField] Toggle batteryToggle;
-    [SerializeField] TextMeshProUGUI on_offToggle;
+    [SerializeField] private Toggle batteryToggle;
+    [SerializeField] private TextMeshProUGUI onOffToggle;
     
     bool audioSwitcher = true;
     bool BatteryMode = false;
@@ -126,7 +126,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     private void BatteryModeOn()
     {
         batteryToggle.isOn = true;
-        on_offToggle.text = "ON";
+        onOffToggle.text = "ON";
         Application.targetFrameRate = 30;
         BatteryMode = false;
         PlayerPrefs.SetInt("Battery Toggle", 1);
@@ -135,7 +135,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     private void BatteryModeOff()
     {
         batteryToggle.isOn = false;
-        on_offToggle.text = "OFF";
+        onOffToggle.text = "OFF";
         Application.targetFrameRate = 60;
         BatteryMode = true;
         PlayerPrefs.SetInt("Battery Toggle", 0);

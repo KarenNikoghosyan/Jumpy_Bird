@@ -9,25 +9,25 @@ using System;
 public class GameButtonsGUI : MonoBehaviour
 {
     [Header("Canvas")]
-    [SerializeField] Canvas inGame;
-    [SerializeField] Canvas inGameMenu;
-    [SerializeField] Canvas quitMenu;
-    [SerializeField] Canvas gameOverMenu;
-    [SerializeField] Canvas settingsMenu;
-    [SerializeField] Canvas speedText;
-    [SerializeField] Canvas highScoreText;
+    [SerializeField] private Canvas inGame;
+    [SerializeField] private Canvas inGameMenu;
+    [SerializeField] private Canvas quitMenu;
+    [SerializeField] private Canvas gameOverMenu;
+    [SerializeField] private Canvas settingsMenu;
+    [SerializeField] private Canvas speedText;
+    [SerializeField] private Canvas highScoreText;
 
     [Header("Transition Animation")]
-    [SerializeField] GameObject transition1;
-    [SerializeField] GameObject transition2;
+    [SerializeField] private GameObject transition1;
+    [SerializeField] private GameObject transition2;
 
     [Header("Score")]
-    [SerializeField] TextMeshProUGUI highscoreText;
-    [SerializeField] TextMeshProUGUI currentScore;
-    [SerializeField] TextMeshProUGUI currentMenuScore;
+    [SerializeField] private TextMeshProUGUI highscoreText;
+    [SerializeField] private TextMeshProUGUI currentScore;
+    [SerializeField] private TextMeshProUGUI currentMenuScore;
 
     [Header("Volume Slider Setting")]
-    [SerializeField] SliderManager sliderManager;
+    [SerializeField] private SliderManager sliderManager;
 
     bool isEnabled = false;
     int highscore = 0;
