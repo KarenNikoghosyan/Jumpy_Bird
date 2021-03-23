@@ -4,13 +4,27 @@
     <list default="true" id="ddafe6d8-7420-4732-9055-edd9b8d7c4c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Splash Screen UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Splash Screen UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Cloud_cumulus.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Cloud_cumulus.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_Strato.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_Strato.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_Swirls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_Swirls.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_cumulonimbus.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_cumulonimbus.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_cumulus_puffy.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_cumulus_puffy.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_stratus.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/3LE Low Poly Cloud Pack/Models/Materials/Clouds_stratus.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game Icon/JumpyBird1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game Icon/JumpyBird1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/PipesPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/PipesPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Gloabal Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/Gloabal Volume Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Splash Screen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Splash Screen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PipesMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PipesMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PipesSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PipesSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skybox/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +34,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
       <set>
@@ -27,17 +49,24 @@
       </set>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CloudCollisionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/75/a16de815/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cc/a5da24d3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pipes/NormalPipe.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pipe.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PipesSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PipesMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CloudCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PipesSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1olJdGD3ZXzmrwSj9K4yGBtkRW3" />

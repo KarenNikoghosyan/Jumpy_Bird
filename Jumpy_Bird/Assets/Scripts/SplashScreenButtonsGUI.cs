@@ -37,7 +37,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     
     AudioSource musicPlayer;
 
-    void Start()
+    private void Start()
     {
         MusicVolumeSlider();
         SoundSetting();
@@ -144,7 +144,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         PlayerPrefs.SetInt("Battery Toggle", 0);
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {

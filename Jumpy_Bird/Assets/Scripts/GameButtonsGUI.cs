@@ -35,7 +35,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     AudioSource musicPlayer;
 
-    void Awake()
+    private void Awake()
     {
         MusicVolumeSlider();
     }
@@ -54,7 +54,7 @@ public class GameButtonsGUI : MonoBehaviour
         musicPlayer.volume = sliderManager.mainSlider.value;
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -76,7 +76,7 @@ public class GameButtonsGUI : MonoBehaviour
         }
     }
 
-    void ShowCurrentScore()
+    private void ShowCurrentScore()
     {
         int score = FindObjectOfType<PlayerCollisionHandler>().GetScore();
         currentMenuScore.text = score.ToString();

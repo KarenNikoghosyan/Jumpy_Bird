@@ -14,12 +14,12 @@ public class PlayerController : MonoBehaviour
     public bool isDead = false;
     bool _isJumped = false;
     
-    void Start()
+    private void Start()
     {
         _rigidBody = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    private void Update()
     {
         IsInputBoolean();
     }
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (Time.timeScale == 0) { return; }
         if (!isDead)

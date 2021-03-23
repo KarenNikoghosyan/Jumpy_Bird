@@ -19,11 +19,42 @@ public class PipesSpawner : MonoBehaviour
 
     [SerializeField] private float minPipeHeight = -11f;
     [SerializeField] private float maxPipeHeight = -2f;
+    
+    private bool isCoroutineStarted = false;
 
     void Start()
     {
         PipesMovement.Stop = false;
-        StartCoroutine(RepeatedlySpawnPipes());
+        CloudCollisionHandler.isFirstTouch = false;
+    }
+
+    private void Update()
+    {
+        if (CloudCollisionHandler.isFirstTouch)
+        {
+            if (!isCoroutineStarted)
+            {
+                StartCoroutine(RepeatedlySpawnPipes());
+            }
+        }
+    }
+
+    IEnumerator RepeatedlySpawnPipes()
+    {
+        while (!PipesMovement.Stop && CloudCollisionHandler.isFirstTouch)
+        {
+            isCoroutineStarted = true;
+            GameObject newPipe = PipeSpawner();
+            yield return new WaitForSeconds(secondsBetweenSpawns);
+        }
+    }
+    
+    private GameObject PipeSpawner()
+    {
+        float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
+        GameObject newPipe = ObjectPoolManager.CreatePooled(pipePrefab, new Vector3(2f, randomYRange, 0f), Quaternion.identity);
+        newPipe.transform.parent = pipesParentTransform;
+        return newPipe;
     }
 
     public void SetRandomColor(bool isChangeable)
@@ -100,22 +131,4 @@ public class PipesSpawner : MonoBehaviour
                 isChangeable = false;
         }
     }
-
-    IEnumerator RepeatedlySpawnPipes()
-    {
-        while (!PipesMovement.Stop)
-        {
-            GameObject newPipe = PipeSpawner();
-            yield return new WaitForSeconds(secondsBetweenSpawns);
-        }
-    }
-
-    private GameObject PipeSpawner()
-    {
-        float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
-        GameObject newPipe = ObjectPoolManager.CreatePooled(pipePrefab, new Vector3(2f, randomYRange, 0f), Quaternion.identity);
-        newPipe.transform.parent = pipesParentTransform;
-        return newPipe;
-    }
-
 }

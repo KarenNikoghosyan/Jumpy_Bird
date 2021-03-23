@@ -12,12 +12,12 @@ public class PipesMovement : MonoBehaviour
 
     public static bool Stop = false;
 
-    void Start()
+    private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (Stop) return;
         PipeMovement();

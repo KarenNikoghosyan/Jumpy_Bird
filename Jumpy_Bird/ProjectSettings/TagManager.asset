@@ -9,6 +9,8 @@ TagManager:
   - Water
   - Sky
   - PipeBottom_Collider
+  - Cloud
+  - PipeTop_Collider
   layers:
   - Default
   - TransparentFX
