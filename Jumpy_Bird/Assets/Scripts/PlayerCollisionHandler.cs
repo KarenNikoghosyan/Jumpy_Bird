@@ -8,12 +8,11 @@ using Random = UnityEngine.Random;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    bool isChangeable = true, isDead = false, isSpeed = false, isHighScore = false;
-    public static bool IsAlive = true;
+    bool isChangeable = true, isDead = false, isAlive = true, isSpeed = false, isHighScore = false;
     Material material;
     private int score = 0;
     float textDelay = 1.5f;
-    
+
     public TextMeshProUGUI pipeScore;
 
     [SerializeField] private ParticleSystem splashVFX;
@@ -26,7 +25,6 @@ public class PlayerCollisionHandler : MonoBehaviour
         pipeScore.text = score.ToString();
         ChangeMaterialColor();
         PipesMovement.Stop = false;
-        IsAlive = true;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -52,7 +50,8 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void FPSCounter()
     {
-        if (graphy == null) { return; }
+        if (graphy == null) return;
+        
         graphy.SetActive(true);
     }
 
@@ -73,25 +72,26 @@ public class PlayerCollisionHandler : MonoBehaviour
             splashVFX.Play();
             KillPlayer();
         }
+
+        if (!isAlive) return;
         
-        if (!IsAlive) { return; }
-            if (other.gameObject.CompareTag("Sky"))
-            {
-                AudioManager.instance.Play("Death Sound");
-                KillPlayer();
-            }
+        if (other.gameObject.CompareTag("Sky"))
+        {
+            AudioManager.instance.Play("Death Sound");
+            KillPlayer();
+        }
 
-            if (other.gameObject.CompareTag("Score"))
-            {
-                AddScore();
-                UpdatePipeColor();
-            }
+        if (other.gameObject.CompareTag("Score"))
+        {
+            AddScore();
+            UpdatePipeColor();
+        }
 
-            if (other.gameObject.CompareTag("PipeBottom_Collider"))
-            {
-                AudioManager.instance.Play("Death Sound");
-                KillPlayer();
-            }
+        if (other.gameObject.CompareTag("PipeBottom_Collider"))
+        {
+            AudioManager.instance.Play("Death Sound");
+            KillPlayer();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -106,7 +106,8 @@ public class PlayerCollisionHandler : MonoBehaviour
     {
         GetComponent<PlayerController>().isDead = true;
         GetComponent<Animator>().SetBool("Roll", true);
-        IsAlive = false;
+        isAlive = false;
+        PipesMovement.Stop = true;
         Invoke("OpenGameOverMenu", 1.5f);
     }
 

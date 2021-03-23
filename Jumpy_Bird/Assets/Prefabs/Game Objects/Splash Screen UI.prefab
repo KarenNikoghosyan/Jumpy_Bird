@@ -1838,7 +1838,7 @@ MonoBehaviour:
   audioOn: {fileID: 21300000, guid: 2d3f084ca744c034682d0147d7247963, type: 3}
   muteText: {fileID: 314401269}
   batteryToggle: {fileID: 803322975}
-  on_offToggle: {fileID: 647919015}
+  onOffToggle: {fileID: 0}
 --- !u!1 &3248110073980280576
 GameObject:
   m_ObjectHideFlags: 0

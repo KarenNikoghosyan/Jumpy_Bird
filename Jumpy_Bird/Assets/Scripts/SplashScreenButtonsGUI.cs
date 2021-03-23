@@ -28,6 +28,9 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     [SerializeField] private Toggle batteryToggle;
     [SerializeField] private TextMeshProUGUI onOffToggle;
     
+    [Header("In Game Debug Console")]
+    [SerializeField] private GameObject inGameDebugConsole;
+    
     bool audioSwitcher = true;
     bool BatteryMode = false;
     bool isPlaying = false;
@@ -40,7 +43,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         SoundSetting();
         BatterySetting();
     }
-
+    
     private void MusicVolumeSlider()
     {
         musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
@@ -147,6 +150,18 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         {
             OpenQuitMenu();
         }
+
+        if (Debug.isDebugBuild)
+        {
+            DebugConsole();
+        }
+    }
+    
+    private void DebugConsole()
+    {
+        if (inGameDebugConsole == null) return;
+        
+        inGameDebugConsole.SetActive(true);
     }
 
     public void StartGame()

@@ -19,7 +19,7 @@ public class PipesMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Stop || !PlayerCollisionHandler.IsAlive) return;
+        if (Stop) return;
         PipeMovement();
     }
 
