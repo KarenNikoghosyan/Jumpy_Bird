@@ -31,9 +31,13 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     [Header("In Game Debug Console")]
     [SerializeField] private GameObject inGameDebugConsole;
     
+    [Header("Audio Text")]
+    [SerializeField] private TMP_InputField themeText;
+    
     bool audioSwitcher = true;
     bool BatteryMode = false;
     bool isPlaying = false;
+    private int i;
     
     AudioSource musicPlayer;
 
@@ -42,6 +46,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         MusicVolumeSlider();
         SoundSetting();
         BatterySetting();
+        i = GetComponent<ThemeManager>().GetIndex();
     }
     
     private void MusicVolumeSlider()
@@ -50,11 +55,11 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         //Adds a listener to the main slider and invokes a method when the value changes.
         sliderManager.onValueChanged.AddListener(delegate { VolumeSlider(); });
         //Checks if Slidervolume is null, if there's no key it uses a default value
-        if (!PlayerPrefs.HasKey("SliderVolume")) { PlayerPrefs.SetFloat("SliderVolume", 0.15f); }
+        if (!PlayerPrefs.HasKey(Constants.SLIDER_VOLUME)) { PlayerPrefs.SetFloat(Constants.SLIDER_VOLUME, 0.15f); }
         //Gets the volume slider value and volume
-        musicPlayer.volume = PlayerPrefs.GetFloat("SliderVolume");
+        musicPlayer.volume = PlayerPrefs.GetFloat(Constants.SLIDER_VOLUME);
         //Changes the slider value
-        sliderManager.mainSlider.value = PlayerPrefs.GetFloat("SliderVolume");
+        sliderManager.mainSlider.value = PlayerPrefs.GetFloat(Constants.SLIDER_VOLUME);
     }
 
     public void VolumeSlider()
@@ -66,7 +71,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     private void SoundSetting()
     {
         //Gets the mute or unmute setting
-        audioSwitcher = PlayerPrefs.GetInt("Mute SFX") == 1 ? true : false;
+        audioSwitcher = PlayerPrefs.GetInt(Constants.MUTE_SFX) == 1 ? true : false;
         //Toggles the sound on or off depends on the saved setting
         MuteButton();
     }
@@ -92,7 +97,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         AudioListener.volume = 0f;
         audioSwitcher = false;
         //Saves the mute or unmute setting
-        PlayerPrefs.SetInt("Mute SFX", 1);
+        PlayerPrefs.SetInt(Constants.MUTE_SFX, 1);
     }
     private void UnmuteSound()
     {
@@ -101,13 +106,13 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         AudioListener.volume = 1f;
         audioSwitcher = true;
         //Saves the mute or unmute setting
-        PlayerPrefs.SetInt("Mute SFX", 0);
+        PlayerPrefs.SetInt(Constants.MUTE_SFX, 0);
     }
 
     private void BatterySetting()
     {
         //Gets the current battery toggle mode
-        BatteryMode = PlayerPrefs.GetInt("Battery Toggle") == 1 ? true : false;
+        BatteryMode = PlayerPrefs.GetInt(Constants.BATTERY_TOGGLE) == 1 ? true : false;
         //Toggles the battery setting depending on the saved setting
         BatteryModeToggle();
     }
@@ -132,7 +137,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         onOffToggle.text = "ON";
         Application.targetFrameRate = 30;
         BatteryMode = false;
-        PlayerPrefs.SetInt("Battery Toggle", 1);
+        PlayerPrefs.SetInt(Constants.BATTERY_TOGGLE, 1);
     }
 
     private void BatteryModeOff()
@@ -141,7 +146,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         onOffToggle.text = "OFF";
         Application.targetFrameRate = 60;
         BatteryMode = true;
-        PlayerPrefs.SetInt("Battery Toggle", 0);
+        PlayerPrefs.SetInt(Constants.BATTERY_TOGGLE, 0);
     }
 
     private void Update()
@@ -205,13 +210,18 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         splashButtons.gameObject.SetActive(false);
         settingsMenu.gameObject.SetActive(true);
         settingsMenu.GetComponentInChildren<Animator>().SetBool("open", true);
+        themeText.text = "Theme " + (i + 1);
     }
 
     public void CloseSettingsMenuButton()
     {
         AudioManager.instance.Play("Click Sound");
+        
         //Saves the volume setting
-        PlayerPrefs.SetFloat("SliderVolume", musicPlayer.volume);
+        PlayerPrefs.SetFloat(Constants.SLIDER_VOLUME, musicPlayer.volume);
+        i = GetComponent<ThemeManager>().GetIndex();
+        PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
+        
         settingsMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(CloseSettingsMenuDelay());
     }

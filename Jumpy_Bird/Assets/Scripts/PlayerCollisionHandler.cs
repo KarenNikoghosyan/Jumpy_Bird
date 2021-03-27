@@ -171,8 +171,12 @@ public class PlayerCollisionHandler : MonoBehaviour
         if (score % 10 == 0)
         {
             _pipesSpawner.SetRandomColor(isChangeable);
-            _gameButtonsGUI.ShowSpeedText(isSpeed);
             SpeedUpPipes();
+
+            if (score <= 50)
+            {
+                _gameButtonsGUI.ShowSpeedText(isSpeed);
+            }
         }
     }
 

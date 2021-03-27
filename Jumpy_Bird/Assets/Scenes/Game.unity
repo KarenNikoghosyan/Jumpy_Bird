@@ -9126,7 +9126,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jumping Sound
     clip: {fileID: 8300000, guid: 02a855e125cdf1e49ba5cbb84cb71aba, type: 3}
-    volume: 0.65
+    volume: 0.6
     pitch: 1
     source: {fileID: 0}
   - name: Water Splash Sound
@@ -19716,18 +19716,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2650940169749478116, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: SizeModule.y.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650940169749478116, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: SizeModule.z.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: temp
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
       propertyPath: graphy
       value: 
@@ -19736,38 +19724,6 @@ PrefabInstance:
       propertyPath: scoreUI
       value: 
       objectReference: {fileID: 1218171577}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: pipeScore
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4414018268384657227, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: lengthInSec
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579741138026930333, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579741138026930333, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579741138026930333, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673380249026353389, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: fallForce
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673380249026353389, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: jumpForce
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8727963640673566349, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
 --- !u!1001 &1169794482326639373

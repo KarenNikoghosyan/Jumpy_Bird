@@ -11,6 +11,14 @@
           <e p="Allsky" t="Include">
             <e p="allsky_readme.txt" t="Include" />
           </e>
+          <e p="Confetti FX 2" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ConfCycler.cs" t="Include" />
+                <e p="ConfSceneSelect.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Flat Screen Transitions" t="Include">
             <e p="Read Me.txt" t="Include" />
             <e p="Scripts" t="Include">
@@ -438,6 +446,7 @@
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
           <e p="CloudCollisionHandler.cs" t="Include" />
+          <e p="Constants.cs" t="Include" />
           <e p="GameButtonsGUI.cs" t="Include" />
           <e p="MusicPlayer.cs" t="Include" />
           <e p="ObjectPool.cs" t="Include" />
@@ -450,6 +459,7 @@
           <e p="SceneLoader.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
           <e p="SplashScreenButtonsGUI.cs" t="Include" />
+          <e p="ThemeManager.cs" t="Include" />
         </e>
       </e>
       <e p="IngameDebugConsole.Editor.csproj" t="IncludeRecursive" />

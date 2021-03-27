@@ -45,8 +45,8 @@ public class GameButtonsGUI : MonoBehaviour
     private void MusicVolumeSlider()
     {
         musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
-        musicPlayer.volume = PlayerPrefs.GetFloat("SliderVolume");
-        sliderManager.mainSlider.value = PlayerPrefs.GetFloat("SliderVolume");
+        musicPlayer.volume = PlayerPrefs.GetFloat(Constants.SLIDER_VOLUME);
+        sliderManager.mainSlider.value = PlayerPrefs.GetFloat(Constants.SLIDER_VOLUME);
         sliderManager.onValueChanged.AddListener(delegate { VolumeSlider(); });
     }
 
@@ -146,7 +146,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     public void CloseSettingsButton()
     {
-        PlayerPrefs.SetFloat("SliderVolume", musicPlayer.volume);
+        PlayerPrefs.SetFloat(Constants.SLIDER_VOLUME, musicPlayer.volume);
         AudioManager.instance.Play("Click Sound");
         settingsMenu.gameObject.SetActive(false);
         inGameMenu.gameObject.SetActive(true);
@@ -158,8 +158,7 @@ public class GameButtonsGUI : MonoBehaviour
         AudioManager.instance.Play("Click Sound");
         transition1.SetActive(true);
     }
-
-
+    
     public void GameOverMenu(bool isDead)
     {
         if (isDead)
@@ -178,16 +177,16 @@ public class GameButtonsGUI : MonoBehaviour
         int score = FindObjectOfType<PlayerCollisionHandler>().GetScore();
         currentScore.text = score.ToString();
 
-        if (score > PlayerPrefs.GetInt("Highscore"))
+        if (score > PlayerPrefs.GetInt(Constants.HIGHSCORE))
         {
             highscore = score;
-            PlayerPrefs.SetInt("Highscore", highscore);
+            PlayerPrefs.SetInt(Constants.HIGHSCORE, highscore);
             highscoreText.text = highscore.ToString();
         }
 
         else
         {
-            highscoreText.text = PlayerPrefs.GetInt("Highscore").ToString();
+            highscoreText.text = PlayerPrefs.GetInt(Constants.HIGHSCORE).ToString();
         }
     }
 
