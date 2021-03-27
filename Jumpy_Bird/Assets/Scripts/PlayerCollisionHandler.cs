@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
+using MText;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
@@ -13,17 +14,27 @@ public class PlayerCollisionHandler : MonoBehaviour
     private int score = 0;
     float textDelay = 1.5f;
 
-    public TextMeshProUGUI pipeScore;
+    private PipesSpawner _pipesSpawner;
+    private GameButtonsGUI _gameButtonsGUI;
 
+    [Header("Score")]
+    [SerializeField] private Modular3DText scoreUI;
+    
+    [Header("VFX")]
     [SerializeField] private ParticleSystem splashVFX;
     [SerializeField] private ParticleSystem highscoreVFX;
+    
+    [Header("Graphy")]
     [SerializeField] private GameObject graphy;
 
     private void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        pipeScore.text = score.ToString();
+        scoreUI.UpdateText(score);
         ChangeMaterialColor();
+        
+        _pipesSpawner = FindObjectOfType<PipesSpawner>();
+        _gameButtonsGUI = FindObjectOfType<GameButtonsGUI>();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -59,7 +70,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             score += 9;
-            pipeScore.text = score.ToString();
+            scoreUI.UpdateText(score);
         }
     }
 
@@ -134,14 +145,14 @@ public class PlayerCollisionHandler : MonoBehaviour
     private void OpenGameOverMenu()
     {
         isDead = true;
-        FindObjectOfType<GameButtonsGUI>().GameOverMenu(isDead);
+        _gameButtonsGUI.GameOverMenu(isDead);
     }
 
     private void AddScore()
     {
         AudioManager.instance.Play("Scroing Sound");
         score++;
-        pipeScore.text = score.ToString();
+        scoreUI.UpdateText(score);
         HighScoreParticles();
     }
 
@@ -159,8 +170,8 @@ public class PlayerCollisionHandler : MonoBehaviour
     {
         if (score % 10 == 0)
         {
-            FindObjectOfType<PipesSpawner>().SetRandomColor(isChangeable);
-            FindObjectOfType<GameButtonsGUI>().ShowSpeedText(isSpeed);
+            _pipesSpawner.SetRandomColor(isChangeable);
+            _gameButtonsGUI.ShowSpeedText(isSpeed);
             SpeedUpPipes();
         }
     }

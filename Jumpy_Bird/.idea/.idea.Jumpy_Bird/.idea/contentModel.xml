@@ -332,6 +332,79 @@
               <e p="EmojiOne Attribution.txt" t="Include" />
             </e>
           </e>
+          <e p="Tiny Giant Studios" t="Include">
+            <e p="Modular 3D Text" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="Font Creator" t="Include">
+                    <e p="MText_FontExporter.cs" t="Include" />
+                    <e p="MText_MeshAssetExporter.cs" t="Include" />
+                    <e p="MText_NewFontCharacterRange.cs" t="Include" />
+                    <e p="MText_ObjExporter.cs" t="Include" />
+                  </e>
+                  <e p="Modular3DTextEditor.cs" t="Include" />
+                  <e p="MText_CharacterDrawer.cs" t="Include" />
+                  <e p="MText_FindResource.cs" t="Include" />
+                  <e p="MText_FontEditor.cs" t="Include" />
+                  <e p="MText_LoopAnimationEditor.cs" t="Include" />
+                  <e p="MText_UI_ButtonEditor.cs" t="Include" />
+                  <e p="MText_UI_HorizontalSelectorEditor.cs" t="Include" />
+                  <e p="Mtext_UI_InputStringEditor.cs" t="Include" />
+                  <e p="MText_UI_ListEditor.cs" t="Include" />
+                  <e p="MText_UI_SliderEditor.cs" t="Include" />
+                  <e p="MText_UI_ToggleEditor.cs" t="Include" />
+                  <e p="MText_Window.cs" t="Include" />
+                </e>
+                <e p="Examples" t="Include">
+                  <e p="Countdown.cs" t="Include" />
+                  <e p="DamageText.cs" t="Include" />
+                  <e p="StatusToolTip.cs" t="Include" />
+                  <e p="Typewriter.cs" t="Include" />
+                </e>
+                <e p="Modular3DText.cs" t="Include" />
+                <e p="Modules" t="Include">
+                  <e p="MText_Module_AddRigidBody.cs" t="Include" />
+                  <e p="MText_Module_PlayParticles.cs" t="Include" />
+                  <e p="MText_Module_PositionChange.cs" t="Include" />
+                  <e p="MText_Module_RemoveRigidBody.cs" t="Include" />
+                  <e p="MText_Module_ScaleChange.cs" t="Include" />
+                </e>
+                <e p="MText_Character.cs" t="Include" />
+                <e p="MText_Font.cs" t="Include" />
+                <e p="MText_GetCharacterObject.cs" t="Include" />
+                <e p="MText_KernPair.cs" t="Include" />
+                <e p="MText_KernPairHolder.cs" t="Include" />
+                <e p="MText_Letter.cs" t="Include" />
+                <e p="MText_LoopAnimation.cs" t="Include" />
+                <e p="MText_MenuItem.cs" t="Include" />
+                <e p="MText_Module.cs" t="Include" />
+                <e p="MText_ModuleContainer.cs" t="Include" />
+                <e p="MText_Pool.cs" t="Include" />
+                <e p="MText_PoolItem.cs" t="Include" />
+                <e p="MText_TextUpdater.cs" t="Include" />
+                <e p="MText_UI_Button.cs" t="Include" />
+                <e p="MText_UI_HorizontalSelector.cs" t="Include" />
+                <e p="Mtext_UI_InputString.cs" t="Include" />
+                <e p="MText_UI_List.cs" t="Include" />
+                <e p="MText_UI_ListEditorHelper.cs" t="Include" />
+                <e p="MText_UI_RaycastSelector.cs" t="Include" />
+                <e p="MText_UI_Slider.cs" t="Include" />
+                <e p="MText_UI_SliderHandle.cs" t="Include" />
+                <e p="MText_UI_Toggle.cs" t="Include" />
+                <e p="MText_Utilities.cs" t="Include" />
+                <e p="Sample Scene" t="Include">
+                  <e p="MText_SampleScene_Announcement.cs" t="Include" />
+                  <e p="MText_SampleScene_Cursor.cs" t="Include" />
+                  <e p="MText_SampleScene_FontTest.cs" t="Include" />
+                  <e p="MText_SampleScene_ListTest.cs" t="Include" />
+                  <e p="MText_SampleScene_VRCam.cs" t="Include" />
+                </e>
+                <e p="Utilities" t="Include">
+                  <e p="MText_Settings.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Editor" t="Include">
           <e p="uGUITools.cs" t="Include" />

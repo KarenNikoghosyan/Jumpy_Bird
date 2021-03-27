@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using Michsky.UI.ModernUIPack;
 using System;
+using MText;
 
 public class GameButtonsGUI : MonoBehaviour
 {
@@ -14,14 +15,15 @@ public class GameButtonsGUI : MonoBehaviour
     [SerializeField] private Canvas quitMenu;
     [SerializeField] private Canvas gameOverMenu;
     [SerializeField] private Canvas settingsMenu;
-    [SerializeField] private Canvas speedText;
     [SerializeField] private Canvas highScoreText;
 
     [Header("Transition Animation")]
     [SerializeField] private GameObject transition1;
     [SerializeField] private GameObject transition2;
 
-    [Header("Score")]
+    [Header("Score")] 
+    [SerializeField] private Modular3DText scoreUI;
+    [SerializeField] private Modular3DText speedMessageUI;
     [SerializeField] private TextMeshProUGUI highscoreText;
     [SerializeField] private TextMeshProUGUI currentScore;
     [SerializeField] private TextMeshProUGUI currentMenuScore;
@@ -39,7 +41,7 @@ public class GameButtonsGUI : MonoBehaviour
     {
         MusicVolumeSlider();
     }
-
+    
     private void MusicVolumeSlider()
     {
         musicPlayer = GameObject.Find("Music Player").GetComponent<AudioSource>();
@@ -198,10 +200,18 @@ public class GameButtonsGUI : MonoBehaviour
     IEnumerator SpeedText()
     {
         inGame.gameObject.SetActive(false);
-        speedText.gameObject.SetActive(true);
+        scoreUI.gameObject.SetActive(false);
+        
+        speedMessageUI.gameObject.SetActive(true);
+        speedMessageUI.GetComponent<Typewriter>().StartTyping();
+
         yield return new WaitForSecondsRealtime(textDelay);
-        speedText.gameObject.SetActive(false);
+        
+        speedMessageUI.gameObject.SetActive(false);
+        speedMessageUI.UpdateText("");
+        
         inGame.gameObject.SetActive(true);
+        scoreUI.gameObject.SetActive(true);
     }
 
     public void ShowHighScoreText(bool isHighScore)
@@ -214,7 +224,9 @@ public class GameButtonsGUI : MonoBehaviour
     {
         inGame.gameObject.SetActive(false);
         highScoreText.gameObject.SetActive(true);
+        
         yield return new WaitForSecondsRealtime(textDelay);
+        
         highScoreText.gameObject.SetActive(false);
         inGame.gameObject.SetActive(true);
     }
