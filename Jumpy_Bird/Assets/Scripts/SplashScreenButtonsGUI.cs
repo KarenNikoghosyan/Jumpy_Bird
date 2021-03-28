@@ -24,21 +24,16 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     [SerializeField] private Sprite audioOff, audioOn;
     [SerializeField] private TextMeshProUGUI muteText;
 
-    [Header("Battery Mode Setting")]
-    [SerializeField] private Toggle batteryToggle;
-    [SerializeField] private TextMeshProUGUI onOffToggle;
-    
+    [Header("Battery Mode Setting")] 
+    [SerializeField] private SwitchManager switchManager;
+
     [Header("In Game Debug Console")]
     [SerializeField] private GameObject inGameDebugConsole;
-    
-    [Header("Audio Text")]
-    [SerializeField] private TMP_InputField themeText;
-    
+
     bool audioSwitcher = true;
-    bool BatteryMode = false;
-    bool isPlaying = false;
-    private int i;
     
+    bool isPlaying = false;
+
     AudioSource musicPlayer;
 
     private void Start()
@@ -46,7 +41,6 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         MusicVolumeSlider();
         SoundSetting();
         BatterySetting();
-        i = GetComponent<ThemeManager>().GetIndex();
     }
     
     private void MusicVolumeSlider()
@@ -55,7 +49,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         //Adds a listener to the main slider and invokes a method when the value changes.
         sliderManager.onValueChanged.AddListener(delegate { VolumeSlider(); });
         //Checks if Slidervolume is null, if there's no key it uses a default value
-        if (!PlayerPrefs.HasKey(Constants.SLIDER_VOLUME)) { PlayerPrefs.SetFloat(Constants.SLIDER_VOLUME, 0.15f); }
+        if (!PlayerPrefs.HasKey(Constants.SLIDER_VOLUME)) { PlayerPrefs.SetFloat(Constants.SLIDER_VOLUME, 0.35f); }
         //Gets the volume slider value and volume
         musicPlayer.volume = PlayerPrefs.GetFloat(Constants.SLIDER_VOLUME);
         //Changes the slider value
@@ -96,6 +90,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         muteText.text = "Unmute";
         AudioListener.volume = 0f;
         audioSwitcher = false;
+        
         //Saves the mute or unmute setting
         PlayerPrefs.SetInt(Constants.MUTE_SFX, 1);
     }
@@ -105,47 +100,29 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         muteText.text = "Mute";
         AudioListener.volume = 1f;
         audioSwitcher = true;
+        
         //Saves the mute or unmute setting
         PlayerPrefs.SetInt(Constants.MUTE_SFX, 0);
     }
 
     private void BatterySetting()
     {
+        Application.targetFrameRate = !PlayerPrefs.HasKey(Constants.FRAMERATES) ? 60 : PlayerPrefs.GetInt(Constants.FRAMERATES);
         //Gets the current battery toggle mode
-        BatteryMode = PlayerPrefs.GetInt(Constants.BATTERY_TOGGLE) == 1 ? true : false;
-        //Toggles the battery setting depending on the saved setting
-        BatteryModeToggle();
+        switchManager.isOn = PlayerPrefs.GetInt(Constants.BATTERY_TOGGLE) == 1 ? true : false;
     }
-
-    //Toggles the battery mode
-    public void BatteryModeToggle()
+    
+    public void BatteryModeOn()
     {
-        if (BatteryMode)
-        {
-            BatteryModeOn();
-        }
-
-        else
-        {
-            BatteryModeOff();
-        }
-    }
-
-    private void BatteryModeOn()
-    {
-        batteryToggle.isOn = true;
-        onOffToggle.text = "ON";
         Application.targetFrameRate = 30;
-        BatteryMode = false;
+        PlayerPrefs.SetInt(Constants.FRAMERATES, 30);
         PlayerPrefs.SetInt(Constants.BATTERY_TOGGLE, 1);
     }
 
-    private void BatteryModeOff()
+    public void BatteryModeOff()
     {
-        batteryToggle.isOn = false;
-        onOffToggle.text = "OFF";
         Application.targetFrameRate = 60;
-        BatteryMode = true;
+        PlayerPrefs.SetInt(Constants.FRAMERATES, 60);
         PlayerPrefs.SetInt(Constants.BATTERY_TOGGLE, 0);
     }
 
@@ -210,7 +187,6 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         splashButtons.gameObject.SetActive(false);
         settingsMenu.gameObject.SetActive(true);
         settingsMenu.GetComponentInChildren<Animator>().SetBool("open", true);
-        themeText.text = "Theme " + (i + 1);
     }
 
     public void CloseSettingsMenuButton()
@@ -219,8 +195,6 @@ public class SplashScreenButtonsGUI : MonoBehaviour
         
         //Saves the volume setting
         PlayerPrefs.SetFloat(Constants.SLIDER_VOLUME, musicPlayer.volume);
-        i = GetComponent<ThemeManager>().GetIndex();
-        PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
         
         settingsMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(CloseSettingsMenuDelay());

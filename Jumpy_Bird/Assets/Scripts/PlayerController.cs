@@ -3,20 +3,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using MText;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Forces")]
     [SerializeField] private float jumpForce = 7.5f;
     [SerializeField] private float fallForce = 100f;
+    
+    [Header("Particles")]
     [SerializeField] private ParticleSystem jumpVFX;
-    Rigidbody _rigidBody;
-
+    
+    [Header("Modular3DText")]
+    [SerializeField] private Modular3DText startMessage;
+    
+    [Header("IsDead")]
     public bool isDead = false;
+    
+    Rigidbody _rigidBody;
+    
     bool _isJumped = false;
     
     private void Start()
     {
+        StartCoroutine(MessageDelay());
         _rigidBody = GetComponent<Rigidbody>();
+    }
+    
+    IEnumerator MessageDelay()
+    {
+        yield return new WaitForSecondsRealtime(5f);
+        startMessage.UpdateText("Touch The Screen To Start");
     }
 
     private void Update()
@@ -62,6 +79,7 @@ public class PlayerController : MonoBehaviour
                 EventSystem.current.currentSelectedGameObject != null) { return; }
             Jump();
             _isJumped = false;
+            startMessage.gameObject.SetActive(false);
         }
     }
 
@@ -73,6 +91,7 @@ public class PlayerController : MonoBehaviour
                 EventSystem.current.currentSelectedGameObject != null) { return; }
             Jump();
             _isJumped = false;
+            startMessage.gameObject.SetActive(false);
         }
     }
     private void Jump()

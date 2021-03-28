@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Michsky.UI.ModernUIPack;
 
 public class ThemeManager : MonoBehaviour
 {
     private AudioSource audioSource;
-    [SerializeField] private TMP_InputField themeText;
+    [SerializeField] private HorizontalSelector horizontalSelector;
     [SerializeField] private AudioClip[] audioClips = new AudioClip[15];
 
     private int i;
@@ -28,36 +29,42 @@ public class ThemeManager : MonoBehaviour
 
     public void RightArrow()
     {
+        horizontalSelector.ForwardClick();
         i++;
 
         if (i == audioClips.Length)
         {
             i = 0;
-            themeText.text = "Theme " + (i + 1);
+            horizontalSelector.index = i;
         }
         
         audioSource.clip = audioClips[i];
         audioSource.Play();
-        themeText.text = "Theme " + (i + 1);
+        horizontalSelector.index = i;
+        
+        PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
     }
 
     public void LeftArrow()
     {
+        horizontalSelector.PreviousClick();
         i--;
 
         if (i == -1)
         {
             i = audioClips.Length - 1;
-            themeText.text = "Theme " + (i + 1);
+            horizontalSelector.index = i;
         }
         
         audioSource.clip = audioClips[i];
         audioSource.Play();
-        themeText.text = "Theme " + (i + 1);
+        horizontalSelector.index = i;
+        
+        PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
     }
 
-    public int GetIndex()
+    public void ChangeThemeText()
     {
-        return i;
+        horizontalSelector.defaultIndex = i;
     }
 }

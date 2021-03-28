@@ -3,13 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using MText;
 
 public class CloudCollisionHandler : MonoBehaviour
 {
+    [Header("Particles")]
     [SerializeField] private ParticleSystem waterSplashVFX;
-    [SerializeField] private Modular3DText startMessage;
-    
+
     private Rigidbody cloudRigidbody;
     private bool isKinematic = true;
 
@@ -17,18 +16,11 @@ public class CloudCollisionHandler : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(MessageDelay());
         isFirstTouch = false;
         cloudRigidbody = GetComponent<Rigidbody>();
         cloudRigidbody.isKinematic = true;
     }
-
-    IEnumerator MessageDelay()
-    {
-        yield return new WaitForSecondsRealtime(5f);
-        startMessage.UpdateText("Touch The Screen To Start");
-    }
-
+    
     private void Update()
     {
         if (!isKinematic) return;
@@ -53,7 +45,6 @@ public class CloudCollisionHandler : MonoBehaviour
                 
                 isFirstTouch = true;
                 isKinematic = false;
-                startMessage.gameObject.SetActive(false);
             }
         }
     }
@@ -67,7 +58,6 @@ public class CloudCollisionHandler : MonoBehaviour
             
             isFirstTouch = true;
             isKinematic = false;
-            startMessage.gameObject.SetActive(false);
         }
     }
 

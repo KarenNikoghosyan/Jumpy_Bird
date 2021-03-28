@@ -9,7 +9,7 @@ using MText;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    bool isChangeable = true, isDead = false, isAlive = true, isSpeed = false, isHighScore = false;
+    private bool isChangeable = true, isDead = false, isAlive = true, isSpeed = false;
     Material material;
     private int score = 0;
     float textDelay = 1.5f;
@@ -22,7 +22,10 @@ public class PlayerCollisionHandler : MonoBehaviour
     
     [Header("VFX")]
     [SerializeField] private ParticleSystem splashVFX;
-    [SerializeField] private ParticleSystem highscoreVFX;
+
+    [Header("Confetti VFX")] 
+    [SerializeField] private Modular3DText highscore;
+    [SerializeField] private ParticleSystem[] confettiParticles = new ParticleSystem[5];
     
     [Header("Graphy")]
     [SerializeField] private GameObject graphy;
@@ -158,11 +161,29 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     public void HighScoreParticles()
     {
-        if (score == PlayerPrefs.GetInt("Highscore") + 1)
+        if (score == PlayerPrefs.GetInt(Constants.HIGHSCORE) + 1 && PlayerPrefs.GetInt(Constants.HIGHSCORE) != 0)
         {
             AudioManager.instance.Play("HighScore");
-            highscoreVFX.Play();
-            FindObjectOfType<GameButtonsGUI>().ShowHighScoreText(isHighScore);
+            StartCoroutine(PlayConfettiVFX());
+        }
+    }
+
+    IEnumerator PlayConfettiVFX()
+    {
+        highscore.gameObject.SetActive(true);
+        
+        for (int i = 0; i < confettiParticles.Length; i++)
+        {
+            confettiParticles[i].Play();
+        }
+
+        yield return new WaitForSecondsRealtime(2.7f);
+        
+        highscore.gameObject.SetActive(false);
+
+        for (int i = 0; i < confettiParticles.Length; i++)
+        {
+            confettiParticles[i].Stop();
         }
     }
 

@@ -110,6 +110,7 @@
                 <e p="SwitchManagerEditor.cs" t="Include" />
               </e>
               <e p="Toggle" t="Include">
+                <e p="CustomToggle.cs" t="Include" />
                 <e p="ToggleAnim.cs" t="Include" />
               </e>
               <e p="Tooltip" t="Include">

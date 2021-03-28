@@ -10,4 +10,5 @@ public class Constants : MonoBehaviour
     public static String SLIDER_VOLUME = "SliderVolume";
     public static String HIGHSCORE = "Highscore";
     public static String THEME_INDEX = "ThemeIndex";
+    public static String FRAMERATES = "FrameRates";
 }
