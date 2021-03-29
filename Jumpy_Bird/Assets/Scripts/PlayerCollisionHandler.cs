@@ -171,6 +171,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     IEnumerator PlayConfettiVFX()
     {
         highscore.gameObject.SetActive(true);
+        highscore.GetComponent<Animator>().SetBool("open", true);
         
         for (int i = 0; i < confettiParticles.Length; i++)
         {
@@ -178,6 +179,10 @@ public class PlayerCollisionHandler : MonoBehaviour
         }
 
         yield return new WaitForSecondsRealtime(2.7f);
+        
+        highscore.GetComponent<Animator>().SetBool("open", false);
+
+        yield return new WaitForSecondsRealtime(0.5f);
         
         highscore.gameObject.SetActive(false);
 

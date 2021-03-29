@@ -12,6 +12,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     [SerializeField] private Canvas splashButtons;
     [SerializeField] private Canvas quitMenu;
     [SerializeField] private Canvas settingsMenu;
+    [SerializeField] private Canvas creditsMenu;
 
     [Header("Transition Animation")]
     [SerializeField] private GameObject transition;
@@ -204,6 +205,28 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     {
         yield return new WaitForSeconds(0.4f);
         settingsMenu.gameObject.SetActive(false);
+        splashButtons.gameObject.SetActive(true);
+    }
+
+    public void OpenCreditsMenu()
+    {
+        AudioManager.instance.Play("Click Sound");
+        splashButtons.gameObject.SetActive(false);
+        creditsMenu.gameObject.SetActive(true);
+        creditsMenu.GetComponentInChildren<Animator>().SetBool("open", true);
+    }
+
+    public void CloseCreditsMenu()
+    {
+        AudioManager.instance.Play("Click Sound");
+        creditsMenu.GetComponentInChildren<Animator>().SetBool("open", false);
+        StartCoroutine(CloseCreditsMenuDelay());
+    }
+
+    IEnumerator CloseCreditsMenuDelay()
+    {
+        yield return new WaitForSeconds(0.4f);
+        creditsMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
     }
 }

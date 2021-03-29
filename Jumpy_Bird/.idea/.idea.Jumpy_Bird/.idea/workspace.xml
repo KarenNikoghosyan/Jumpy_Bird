@@ -3,222 +3,576 @@
   <component name="ChangeListManager">
     <list default="true" id="ddafe6d8-7420-4732-9055-edd9b8d7c4c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Demo/Materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Demo/Materials/Ground.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Demo/Materials/Ground2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Demo/Materials/Ground2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/centerglow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/centerglow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/cloud.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/cloud.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/conf_basic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/conf_basic.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/conf_basic_trail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/conf_basic_trail.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/conf_lit_noshape.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Basics/conf_lit_noshape.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Themed/conf_easter.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Themed/conf_easter.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Themed/conf_halloween.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Themed/conf_halloween.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Themed/conf_xmas.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Confetti FX 2/Materials/Themed/conf_xmas.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-BoldItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-BoldItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-ExtraBold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-ExtraBold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-ExtraBoldItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-ExtraBoldItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Italic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Italic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Light SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Light SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-LightItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-LightItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Semibold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-Semibold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-SemiboldItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Flat Screen Transitions/Fonts/OpenSans-SemiboldItalic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Animations/Input Field/Standard.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Animations/Input Field/Standard.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Animations/Modal Window/Style 1/Standard.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Animations/Modal Window/Style 1/Standard.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Animations/Toggle/Standard Toggle.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Animations/Toggle/Standard Toggle.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/ContextMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/ContextMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Button Header.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Button Header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Button Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Button Header.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Dropdown Header.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Dropdown Header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Dropdown Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Dropdown Header.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Button.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Button.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Context Menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Context Menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Context Menu.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Context Menu.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Dropdown.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Dropdown.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Dropdown.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Dropdown.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Gradient.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Gradient.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Gradient.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Gradient.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Horizontal Selector.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Horizontal Selector.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Horizontal Selector.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Horizontal Selector.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Icon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Icon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Input Field.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Input Field.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Input Field.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Input Field.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Modal Window.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Modal Window.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Modal Window.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Modal Window.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Notification.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Notification.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Notification.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Notification.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Progress Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Progress Bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Progress Bar.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Progress Bar.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Slider.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Slider.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Slider.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Slider.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Switch.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Switch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Switch.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Switch.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Toggle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Toggle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Toggle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Toggle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Tooltip.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Tooltip.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Tooltip.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Tooltip.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor UI Manager.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor UI Manager.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor UI Manager.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor UI Manager.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Window Manager.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Window Manager.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Window Manager.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Window Manager.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Gradient Header.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Gradient Header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Gradient Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Gradient Header.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Notification Header.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Notification Header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Notification Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Notification Header.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Resources Active.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Resources Active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Resources Active.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Resources Active.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Resources Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Resources Normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Resources Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Resources Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Settings Active.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Settings Active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Settings Active.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Settings Active.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Settings Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Settings Normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Settings Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Settings Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Slider Header.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Slider Header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Slider Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Slider Header.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Header.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Header.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Off.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/CM Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/CM Header.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Content Active.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Content Active.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Content Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Content Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Context Menu Header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Context Menu Header.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Data Active.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Data Active.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Data Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Data Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Animated Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Animated Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Hamburger Menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Hamburger Menu.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Scroll Bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Editor Scroll Bar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/HS Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/HS Header.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Hamburger Menu Header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Hamburger Menu Header.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Horizontal Selector Header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Horizontal Selector Header.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Indicator Active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Indicator Active.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Indicator Item Filled.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Indicator Item Filled.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Indicator Item Outline.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Indicator Item Outline.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Indicator Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Indicator Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Items Active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Items Active.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Items Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Items Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/MW Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/MW Header.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Modal Window Header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Modal Window Header.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/PB Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/PB Header.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Progress Bar Header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Progress Bar Header.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Saving Active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Saving Active.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Saving Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Saving Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Off Dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Off Dark.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Off.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch Off.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch On.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch On.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch On.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Switch On.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Tooltip Header.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Tooltip Header.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Tooltip Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Tooltip Header.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/InitMUIP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/InitMUIP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/UIManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/UIManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Read Me.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Read Me.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Brown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Brown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Gray.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Night.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Night.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Orange.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Pink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Red.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/White.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Brown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Brown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Gray.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Night.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Night.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Orange.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Pink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Red.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Standard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/White.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Gray.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Standard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Brown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Brown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Gray.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Night.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Night.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Orange.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Pink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Red.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Standard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/White.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Brown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Brown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Gray.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Night.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Night.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Orange.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Pink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Red.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Standard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/White.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Brown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Brown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Gray.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Night.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Night.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Orange.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Pink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Red.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/White.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Blue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Brown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Brown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Gray.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Green.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Night.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Night.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Orange.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Pink.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Purple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Red.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Standard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/White.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Dropdown - Multi Select.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Dropdown - Multi Select.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Left).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Left).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Middle).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Middle).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Right).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Right).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Multi-Line.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Multi-Line.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Left).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Left).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Middle).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Middle).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Right).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Right).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/WM Header.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/WM Header.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Window Manager Header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/Icons/Window Manager Header.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/UIManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Editor/UIManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Hamburger Menu.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Hamburger Menu.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Heart Pop.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Heart Pop.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Load.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Load.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Lock.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Lock.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Message Bubbles.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Message Bubbles.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/No to Yes.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/No to Yes.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Notification Bell.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Notification Bell.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Sand Clock.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Sand Clock.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Slider.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Slider.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Window.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Window.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Yes to No.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Animated Icon/Yes to No.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Gradient/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Only Icon/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Gradient/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline Only Icon/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline With Icon/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - Outline/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic - With Icon/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Basic/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Only Icon/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Radial - Outline Only Icon/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Gradient/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline Gradient/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded - Outline/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Brown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Brown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Gray.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Gray.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Night.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Night.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/White.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Button/Rounded/White.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Context Menu.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Context Menu/Context Menu Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Context Menu/Context Menu Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Context Menu/Context Menu.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Context Menu/Context Menu.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Dropdown - Multi Select.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Dropdown - Multi Select.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Dropdown Item.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Dropdown Item.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Dropdown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Dropdown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Multi Select Dropdown Item.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Dropdown/Multi Select Dropdown Item.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Editor/Custom Skin Dark.guiskin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Editor/Custom Skin Dark.guiskin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Editor/Custom Skin Light.guiskin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Editor/Custom Skin Light.guiskin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Editor/MUI Skin Dark.guiskin.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Editor/MUI Skin Dark.guiskin.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Horizontal Selector.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Horizontal Selector/Horizontal Selector.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Horizontal Selector/Horizontal Selector.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Horizontal Selector/Indicator Item.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Horizontal Selector/Indicator Item.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Left).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Left).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Middle).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Middle).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Right).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Fading (Right).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Multi-Line.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Multi-Line.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Left).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Left).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Middle).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Middle).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Right).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Input Field/Input Field - Standard (Right).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/List View.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/List View/List View.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/List View/List View.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/MUIP Manager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/MUIP Manager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard (Value).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard (Value).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard (Regular).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard (Regular).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/UI Manager Presets/Default.preset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/UI Manager Presets/Default.preset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Animated Icon/AnimatedIconHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Animated Icon/AnimatedIconHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicIconEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicIconEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicWithIconEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicWithIconEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerIconEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerIconEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerWithIconEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerWithIconEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Context Menu/ContextMenuContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Context Menu/ContextMenuContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Context Menu/ContextMenuManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Context Menu/ContextMenuManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/CustomDropdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/CustomDropdown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/CustomDropdownEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/CustomDropdownEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/DropdownMultiSelectEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/DropdownMultiSelectEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Horizontal Selector/HorizontalSelectorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Horizontal Selector/HorizontalSelectorEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Input Field/CustomInputField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Input Field/CustomInputField.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Modal Window/ModalWindowManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Modal Window/ModalWindowManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Notification/NotificationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Notification/NotificationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Notification/NotificationManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Notification/NotificationManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Notification/NotificationStacking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Notification/NotificationStacking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Progress Bar/ProgressBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Progress Bar/ProgressBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Progress Bar/ProgressBarEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Progress Bar/ProgressBarEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Rendering/Ripple.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Rendering/Ripple.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Rendering/UIGradient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Rendering/UIGradient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Rendering/UIGradientEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Rendering/UIGradientEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/RadialSlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/RadialSlider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/RadialSliderEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/RadialSliderEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/SliderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/SliderManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/SliderManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/SliderManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Switch/SwitchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Switch/SwitchManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Switch/SwitchManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Switch/SwitchManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Tooltip/TooltipManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Tooltip/TooltipManagerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerAnimatedIcon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerAnimatedIcon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerContextMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerContextMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerContextMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerContextMenu.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerDropdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerDropdown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerHSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerHSelector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerInputField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerInputField.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerModalWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerModalWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerNotification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerNotification.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerProgressBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerProgressBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerProgressBarLoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerProgressBarLoop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerScrollbar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerScrollbar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerSlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerSlider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerSwitch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerToggle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerToggle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerTooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/UI Manager/UIManagerTooltip.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Window/WindowManagerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Window/WindowManagerButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Window/WindowManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Window/WindowManagerEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Modal Window.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Modal Window/Style 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Modal Window/Style 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Modal Window/Style 2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Modal Window/Style 2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Movable Window.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Movable Window/Movable Window.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Movable Window/Movable Window.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Notification.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Notification/Fading Notification.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Notification/Fading Notification.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Notification/Popup Notification.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Notification/Popup Notification.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Notification/Sliding Notification.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Notification/Sliding Notification.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Other.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Other/Canvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Other/Canvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop).meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Radial Material.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Radial Material.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Radial Pie.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Radial Pie.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Radial Run.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Radial Run.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Radial Trapez.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Radial Trapez.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Standard Fastly.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Standard Fastly.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Standard Run.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar (Loop)/PB Loop - Standard Run.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial (Bold).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial (Bold).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial (Light).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial (Light).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial (Regular).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial (Regular).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial (Thin).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial (Thin).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial Filled Horizontal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial Filled Horizontal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial Filled Vertical.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Radial Filled Vertical.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Progress Bar/PB - Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Scrollbar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Scrollbar/Scrollbar.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Scrollbar/Scrollbar.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Gradient.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Gradient/Slider - Gradient (Popup).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Gradient/Slider - Gradient (Popup).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Gradient/Slider - Gradient (Value).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Gradient/Slider - Gradient (Value).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Gradient/Slider - Gradient.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Gradient/Slider - Gradient.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Outline.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Outline/Slider - Outline (Popup).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Outline/Slider - Outline (Popup).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Outline/Slider - Outline (Value).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Outline/Slider - Outline (Value).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Outline/Slider - Outline.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Outline/Slider - Outline.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Radial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Radial/Slider - Radial (Gradient).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Radial/Slider - Radial (Gradient).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Radial/Slider - Radial.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Radial/Slider - Radial.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Range.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Range/Slider - Range.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Range/Slider - Range.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard (Popup).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard (Popup).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard (Value).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard (Value).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Slider/Standard/Slider - Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Switch.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Switch/Switch - Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Switch/Switch - Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard (Bold).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard (Bold).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard (Light).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard (Light).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard (Regular).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard (Regular).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle - Standard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle Group Panel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Toggle/Toggle Group Panel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Tooltip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Tooltip/Tooltip.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Tooltip/Tooltip.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Window Manager.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Window Manager/Window Manager.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/Window Manager/Window Manager.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicIconEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicIconEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicWithIconEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicWithIconEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerIconEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerIconEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerWithIconEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerWithIconEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Context Menu/ContextMenuManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Context Menu/ContextMenuManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/CustomDropdownEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/CustomDropdownEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/DropdownMultiSelectEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Dropdown/DropdownMultiSelectEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Horizontal Selector/HorizontalSelectorEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Horizontal Selector/HorizontalSelectorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Modal Window/ModalWindowManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Modal Window/ModalWindowManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Notification/NotificationManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Notification/NotificationManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Progress Bar/ProgressBarEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Progress Bar/ProgressBarEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Rendering/UIGradientEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Rendering/UIGradientEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/RadialSliderEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/RadialSliderEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/SliderManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Slider/SliderManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Switch/SwitchManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Switch/SwitchManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Toggle/CustomToggle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Toggle/CustomToggle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Toggle/ToggleAnim.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Toggle/ToggleAnim.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Tooltip/TooltipManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Tooltip/TooltipManagerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Window/WindowManagerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Window/WindowManagerEditor.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 1x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 1x.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 2x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 2x.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 4x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 4x.png.meta" afterDir="false" />
@@ -227,24 +581,14 @@
       <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 7x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 7x.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 8x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 8x.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 9x.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Textures/Border/Radial/32px/Radial Outline 32px - 9x.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_LoopAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_LoopAnimation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/HighScore.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/HighScore.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/HighScore.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/HighScore.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/VertexColor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/VertexColor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Game UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Game UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Splash Screen UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Splash Screen UI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CloudCollisionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CloudCollisionHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Animations/Game Scene/HIGHSCORE/HIGHSCORE.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Animations/Game Scene/HIGHSCORE/HIGHSCORE.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Animations/Game Scene/Menu Canvas/In Game Menu.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Animations/Game Scene/Menu Canvas/In Game Menu.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,12 +630,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CloudCollisionHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_LoopAnimation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1olJdGD3ZXzmrwSj9K4yGBtkRW3" />

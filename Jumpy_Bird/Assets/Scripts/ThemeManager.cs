@@ -38,12 +38,11 @@ public class ThemeManager : MonoBehaviour
             horizontalSelector.index = i;
         }
         
-        audioSource.clip = audioClips[i];
-        audioSource.Play();
-        horizontalSelector.index = i;
-        
+        PlayAudioSource();
+
         PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
     }
+    
 
     public void LeftArrow()
     {
@@ -56,11 +55,16 @@ public class ThemeManager : MonoBehaviour
             horizontalSelector.index = i;
         }
         
+        PlayAudioSource();
+        
+        PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
+    }
+    
+    private void PlayAudioSource()
+    {
         audioSource.clip = audioClips[i];
         audioSource.Play();
         horizontalSelector.index = i;
-        
-        PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
     }
 
     public void ChangeThemeText()

@@ -32,6 +32,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     bool isEnabled = false;
     int highscore = 0;
+    private PlayerCollisionHandler playerCollisionHandler;
 
     AudioSource musicPlayer;
 
@@ -52,6 +53,11 @@ public class GameButtonsGUI : MonoBehaviour
     {
         // Invoked when the value of the slider changes.
         musicPlayer.volume = sliderManager.mainSlider.value;
+    }
+
+    public void Start()
+    {
+        playerCollisionHandler = FindObjectOfType<PlayerCollisionHandler>();
     }
 
     private void Update()
@@ -172,7 +178,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     private void HighScore()
     {
-        int score = FindObjectOfType<PlayerCollisionHandler>().GetScore();
+        int score = playerCollisionHandler.GetScore();
         currentScore.text = score.ToString();
 
         if (score > PlayerPrefs.GetInt(Constants.HIGHSCORE))
