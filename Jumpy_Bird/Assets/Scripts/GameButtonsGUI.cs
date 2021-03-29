@@ -31,7 +31,6 @@ public class GameButtonsGUI : MonoBehaviour
     [SerializeField] private SliderManager sliderManager;
 
     bool isEnabled = false;
-    int highscore = 0;
     private PlayerCollisionHandler playerCollisionHandler;
 
     AudioSource musicPlayer;
@@ -108,6 +107,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     public void RestartGameButton()
     {
+        SaveHighScore();
         AudioManager.instance.Play("Click Sound");
         transition2.SetActive(true);
     }
@@ -159,8 +159,19 @@ public class GameButtonsGUI : MonoBehaviour
 
     public void QuitGame()
     {
+        SaveHighScore();
         AudioManager.instance.Play("Click Sound");
         transition1.SetActive(true);
+    }
+    
+    public void SaveHighScore()
+    {
+        int score = playerCollisionHandler.GetScore();
+        
+        if (score > PlayerPrefs.GetInt(Constants.HIGHSCORE))
+        {
+            PlayerPrefs.SetInt(Constants.HIGHSCORE, score);
+        }
     }
     
     public void GameOverMenu(bool isDead)
@@ -171,21 +182,21 @@ public class GameButtonsGUI : MonoBehaviour
             inGame.gameObject.SetActive(false);
             gameOverMenu.gameObject.SetActive(true);
             gameOverMenu.GetComponentInChildren<Animator>().SetBool("open", true);
-            HighScore();
+            
+            ShowHighScore();
             isDead = false;
         }
     }
 
-    private void HighScore()
+    private void ShowHighScore()
     {
         int score = playerCollisionHandler.GetScore();
         currentScore.text = score.ToString();
 
         if (score > PlayerPrefs.GetInt(Constants.HIGHSCORE))
         {
-            highscore = score;
-            PlayerPrefs.SetInt(Constants.HIGHSCORE, highscore);
-            highscoreText.text = highscore.ToString();
+            PlayerPrefs.SetInt(Constants.HIGHSCORE, score);
+            highscoreText.text = score.ToString();
         }
 
         else

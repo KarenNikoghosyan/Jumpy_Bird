@@ -75,6 +75,11 @@ public class PlayerCollisionHandler : MonoBehaviour
             score += 9;
             scoreUI.UpdateText(score);
         }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            PlayerPrefs.SetInt(Constants.HIGHSCORE, 0);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -156,10 +161,10 @@ public class PlayerCollisionHandler : MonoBehaviour
         AudioManager.instance.Play("Scroing Sound");
         score++;
         scoreUI.UpdateText(score);
-        HighScoreParticles();
+        ShowHighScoreParticles();
     }
 
-    public void HighScoreParticles()
+    public void ShowHighScoreParticles()
     {
         if (score == PlayerPrefs.GetInt(Constants.HIGHSCORE) + 1 && PlayerPrefs.GetInt(Constants.HIGHSCORE) != 0)
         {
