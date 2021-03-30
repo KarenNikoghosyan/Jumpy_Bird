@@ -2,10 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddafe6d8-7420-4732-9055-edd9b8d7c4c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/VertexColor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/VertexColor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/MUIP Manager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Resources/MUIP Manager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 1.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 10.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 10.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 11.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 11.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 12.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 12.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 13.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 13.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 14.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 14.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 15.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 15.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 2.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 3.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 4.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 4.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 5.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 5.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 6.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 6.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 7.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 7.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 8.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 8.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 9.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Themes/Theme 9.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Game UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Game UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Splash Screen UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game Objects/Splash Screen UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Splash Screen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Splash Screen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Animations/Game Scene/HIGHSCORE/HIGHSCORE Position Animation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Animations/Game Scene/HIGHSCORE/HIGHSCORE Position Animation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +86,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CloudCollisionHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_LoopAnimation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DropDownMenuAnimation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1olJdGD3ZXzmrwSj9K4yGBtkRW3" />

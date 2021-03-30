@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     
     IEnumerator MessageDelay()
     {
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(4f);
         startMessage.UpdateText("Touch The Screen To Start");
     }
 

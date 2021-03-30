@@ -449,6 +449,7 @@
           <e p="AudioManager.cs" t="Include" />
           <e p="CloudCollisionHandler.cs" t="Include" />
           <e p="Constants.cs" t="Include" />
+          <e p="DropDownMenuAnimation.cs" t="Include" />
           <e p="GameButtonsGUI.cs" t="Include" />
           <e p="MusicPlayer.cs" t="Include" />
           <e p="ObjectPool.cs" t="Include" />

@@ -11171,7 +11171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218171575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3000001, y: 15.900001, z: -2.7}
+  m_LocalPosition: {x: 1.3000001, y: 16.5, z: -2.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1308006758}
@@ -13659,7 +13659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464859698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3000001, y: 11.5, z: -2.7}
+  m_LocalPosition: {x: 1.3000001, y: 14.7, z: -2.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1848763965}
@@ -17453,8 +17453,8 @@ MonoBehaviour:
   autoSaveMesh: 0
   font: {fileID: 11400000, guid: 637d54d6580183d4b9b82a1f6a968829, type: 2}
   oldFont: {fileID: 11400000, guid: 637d54d6580183d4b9b82a1f6a968829, type: 2}
-  material: {fileID: 2100000, guid: a6e380532fddfda4885323d3f6e539f7, type: 2}
-  oldMaterial: {fileID: 2100000, guid: a6e380532fddfda4885323d3f6e539f7, type: 2}
+  material: {fileID: 670224309865224971, guid: 664f51be6337d7e47b1bf1843bb2ccbb, type: 3}
+  oldMaterial: {fileID: 670224309865224971, guid: 664f51be6337d7e47b1bf1843bb2ccbb, type: 3}
   fontSize: {x: 8, y: 8, z: 50}
   oldFontSize: {x: 8, y: 8, z: 50}
   textDirection: 1

@@ -1,0 +1,51 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class DropDownMenuAnimation : MonoBehaviour
+{
+    [SerializeField] private Button settingsButton;
+    [SerializeField] private Button creditsButton;
+
+    private bool isOpen = false;
+
+    private void Awake()
+    {
+        settingsButton.GetComponent<Animator>().keepAnimatorControllerStateOnDisable = true;
+        creditsButton.GetComponent<Animator>().keepAnimatorControllerStateOnDisable = true;
+    }
+
+    public void OpenCloseDropDownMenu()
+    {
+        if (!isOpen)
+        {
+            settingsButton.gameObject.SetActive(true);
+            creditsButton.gameObject.SetActive(true);
+            
+            settingsButton.GetComponent<Animator>().SetBool("open", true);
+            creditsButton.GetComponent<Animator>().SetBool("open", true);
+            
+            isOpen = true;
+        }
+
+        else
+        {
+            settingsButton.GetComponent<Animator>().SetBool("open", false);
+            creditsButton.GetComponent<Animator>().SetBool("open", false);
+
+            StartCoroutine(CloseDropDownMenuDelay());
+            
+            isOpen = false;
+        }
+    }
+
+    IEnumerator CloseDropDownMenuDelay()
+    {
+        yield return new WaitForSecondsRealtime(0.4f);
+        
+        settingsButton.gameObject.SetActive(false);
+        creditsButton.gameObject.SetActive(false);
+    }
+}

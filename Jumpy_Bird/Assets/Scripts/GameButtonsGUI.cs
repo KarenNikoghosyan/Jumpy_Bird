@@ -6,6 +6,7 @@ using TMPro;
 using Michsky.UI.ModernUIPack;
 using System;
 using MText;
+using UnityEngine.UI;
 
 public class GameButtonsGUI : MonoBehaviour
 {
@@ -30,6 +31,9 @@ public class GameButtonsGUI : MonoBehaviour
     [Header("Volume Slider Setting")]
     [SerializeField] private SliderManager sliderManager;
 
+    [Header("Input Field")] 
+    [SerializeField] private TMP_InputField currentlyPlaying;
+
     bool isEnabled = false;
     private PlayerCollisionHandler playerCollisionHandler;
 
@@ -37,6 +41,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     private void Awake()
     {
+        playerCollisionHandler = FindObjectOfType<PlayerCollisionHandler>();
         MusicVolumeSlider();
     }
     
@@ -52,11 +57,6 @@ public class GameButtonsGUI : MonoBehaviour
     {
         // Invoked when the value of the slider changes.
         musicPlayer.volume = sliderManager.mainSlider.value;
-    }
-
-    public void Start()
-    {
-        playerCollisionHandler = FindObjectOfType<PlayerCollisionHandler>();
     }
 
     private void Update()
@@ -138,6 +138,8 @@ public class GameButtonsGUI : MonoBehaviour
         AudioManager.instance.Play("Click Sound");
         inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(SettingsButtonDelay());
+
+        currentlyPlaying.text = PlayerPrefs.GetString(Constants.CURRENTLY_PLAYING);
     }
 
     IEnumerator SettingsButtonDelay()
@@ -163,7 +165,7 @@ public class GameButtonsGUI : MonoBehaviour
         AudioManager.instance.Play("Click Sound");
         transition1.SetActive(true);
     }
-    
+
     public void SaveHighScore()
     {
         int score = playerCollisionHandler.GetScore();

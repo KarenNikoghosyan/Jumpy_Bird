@@ -19,7 +19,8 @@ public class ThemeManager : MonoBehaviour
     {
         audioSource = GameObject.Find("Music Player").GetComponent<AudioSource>();
         i = !PlayerPrefs.HasKey(Constants.THEME_INDEX) ? 0 : PlayerPrefs.GetInt(Constants.THEME_INDEX);
-        
+        PlayerPrefs.SetString(Constants.CURRENTLY_PLAYING, audioClips[i].name);
+
         if (isPlaying) return;
        
         audioSource.clip = audioClips[i];
@@ -41,6 +42,7 @@ public class ThemeManager : MonoBehaviour
         PlayAudioSource();
 
         PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
+        PlayerPrefs.SetString(Constants.CURRENTLY_PLAYING, audioClips[i].name);
     }
     
 
@@ -58,6 +60,7 @@ public class ThemeManager : MonoBehaviour
         PlayAudioSource();
         
         PlayerPrefs.SetInt(Constants.THEME_INDEX, i);
+        PlayerPrefs.SetString(Constants.CURRENTLY_PLAYING, audioClips[i].name);
     }
     
     private void PlayAudioSource()
