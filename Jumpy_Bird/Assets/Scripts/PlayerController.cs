@@ -7,29 +7,26 @@ using MText;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Forces")]
+    [Header("Forces")] 
     [SerializeField] private float jumpForce = 7.5f;
-    [SerializeField] private float fallForce = 100f;
-    
-    [Header("Particles")]
-    [SerializeField] private ParticleSystem jumpVFX;
-    
-    [Header("Modular3DText")]
-    [SerializeField] private Modular3DText startMessage;
-    
-    [Header("IsDead")]
-    public bool isDead = false;
-    
+   
+    [Header("Particles")] [SerializeField] private ParticleSystem jumpVFX;
+
+    [Header("Modular3DText")] [SerializeField]
+    private Modular3DText startMessage;
+
+    [Header("IsDead")] public bool isDead = false;
+
     Rigidbody _rigidBody;
-    
+
     bool _isJumped = false;
-    
+
     private void Start()
     {
         StartCoroutine(MessageDelay());
         _rigidBody = GetComponent<Rigidbody>();
     }
-    
+
     IEnumerator MessageDelay()
     {
         yield return new WaitForSecondsRealtime(4f);
@@ -61,14 +58,16 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Time.timeScale == 0) { return; }
+        if (Time.timeScale == 0)
+        {
+            return;
+        }
+
         if (!isDead)
         {
             RespondToJumpInput();
             RespondToTouchInput();
-            FallSpeed();
         }
-        
     }
 
     private void RespondToJumpInput()
@@ -76,8 +75,9 @@ public class PlayerController : MonoBehaviour
         if (_isJumped)
         {
             if (EventSystem.current.IsPointerOverGameObject() ||
-                EventSystem.current.currentSelectedGameObject != null) { return; }
-            Jump();
+                EventSystem.current.currentSelectedGameObject != null) return;
+
+                Jump();
             _isJumped = false;
             startMessage.gameObject.SetActive(false);
         }
@@ -85,27 +85,23 @@ public class PlayerController : MonoBehaviour
 
     private void RespondToTouchInput()
     {
-        if (_isJumped) 
+        if (_isJumped)
         {
             if (EventSystem.current.IsPointerOverGameObject() ||
-                EventSystem.current.currentSelectedGameObject != null) { return; }
-            Jump();
+                EventSystem.current.currentSelectedGameObject != null) return;
+
+                Jump();
             _isJumped = false;
             startMessage.gameObject.SetActive(false);
         }
     }
+
     private void Jump()
     {
         AudioManager.instance.Play("Jumping Sound");
         GetComponent<Animator>().SetBool("Fly", true);
         jumpVFX.Play();
-        _rigidBody.velocity = Vector3.zero;
-        _rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-    }   
-
-    private void FallSpeed()
-    {
-        _rigidBody.AddForce(Vector3.down * (fallForce * Time.fixedDeltaTime));
+        
+        _rigidBody.velocity = Vector3.up * jumpForce;
     }
-
 }

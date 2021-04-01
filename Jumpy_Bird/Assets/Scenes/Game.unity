@@ -21092,38 +21092,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1464859700}
     - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiLeft
-      value: 
-      objectReference: {fileID: 1694964099}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiRight
-      value: 
-      objectReference: {fileID: 1712093710}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiMiddle
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiTopLeft
-      value: 
-      objectReference: {fileID: 1694964099}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiTopRight
-      value: 
-      objectReference: {fileID: 1712093710}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiBottomLeft
-      value: 
-      objectReference: {fileID: 1436116789}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiBottomRight
-      value: 
-      objectReference: {fileID: 705572426}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiParticles.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
       propertyPath: confettiParticles.Array.data[0]
       value: 
       objectReference: {fileID: 1694964099}
@@ -21139,18 +21107,10 @@ PrefabInstance:
       propertyPath: confettiParticles.Array.data[3]
       value: 
       objectReference: {fileID: 705572426}
-    - target: {fileID: 4393323460517257078, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: confettiParticles.Array.data[4]
-      value: 
-      objectReference: {fileID: 705572426}
     - target: {fileID: 4673380249026353389, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
       propertyPath: startMessage
       value: 
       objectReference: {fileID: 1748722155}
-    - target: {fileID: 4673380249026353389, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
-      propertyPath: focusedMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: eac492a4f6cedde44bfa1300dcd38868, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee74eaaa7f3e8c4cb70a334a7765c8e, type: 3}
 --- !u!1001 &1169794482326639373

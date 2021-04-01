@@ -1239,6 +1239,7 @@ GameObject:
   - component: {fileID: 888761966736110580}
   - component: {fileID: 942708779309994302}
   - component: {fileID: 8727963640673566349}
+  - component: {fileID: 2584268647468749294}
   - component: {fileID: 4673380249026353389}
   - component: {fileID: 4393323460517257078}
   - component: {fileID: 2446646793266797993}
@@ -1303,6 +1304,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &2584268647468749294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883289468087890216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b313b85673575144a921098ca3d52999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityScale: 1.7
 --- !u!114 &4673380249026353389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,9 +1329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8988eb5f42369048b3e8771b31948d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 7.5
-  fallForce: 100
+  jumpForce: 9
   jumpVFX: {fileID: 766139325104249899}
+  startMessage: {fileID: 0}
   isDead: 0
 --- !u!114 &4393323460517257078
 MonoBehaviour:
@@ -1333,7 +1347,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreUI: {fileID: 0}
   splashVFX: {fileID: 2650940169749478116}
-  highscoreVFX: {fileID: 4414018268384657227}
+  highscore: {fileID: 0}
+  confettiParticles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   graphy: {fileID: 0}
 --- !u!65 &2446646793266797993
 BoxCollider:
@@ -2133,11 +2152,6 @@ PrefabInstance:
 --- !u!4 &4579741138026930333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4100699973242056, guid: 878ab5772b7528849be29298047dba21, type: 3}
-  m_PrefabInstance: {fileID: 4575679058941766741}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &4414018268384657227 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198631066050499358, guid: 878ab5772b7528849be29298047dba21, type: 3}
   m_PrefabInstance: {fileID: 4575679058941766741}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7401692204930209993
