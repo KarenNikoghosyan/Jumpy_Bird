@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        AudioManager.instance.Play("Jumping Sound");
+        AudioManager.instance.Play(Constants.JUMPING_SOUND);
         GetComponent<Animator>().SetBool("Fly", true);
         jumpVFX.Play();
         

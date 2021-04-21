@@ -2,11 +2,586 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddafe6d8-7420-4732-9055-edd9b8d7c4c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jumpy_Bird/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Blender Font Extractor.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Blender Font Extractor.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Documentation.PDF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Documentation.PDF.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples/Countdown.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples/Countdown.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples/Damage Effect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples/Damage Effect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples/Typewriter Sound Effect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples/Typewriter Sound Effect.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples/Typewriter.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Examples/Typewriter.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amarante.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amarante.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amarante.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amarante.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amatic SC Bold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amatic SC Bold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amatic SC Bold.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amatic SC Bold.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amatic SC Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amatic SC Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amatic SC Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Amatic SC Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Backout Midnight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Backout Midnight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Backout Midnight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Backout Midnight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Backout Sunrise.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Backout Sunrise.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Backout Sunrise.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Backout Sunrise.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bahianita.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bahianita.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bahianita.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bahianita.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bangers.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bangers.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bangers.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bangers.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Barrio.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Barrio.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Barrio.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Barrio.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bigelow Rules.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bigelow Rules.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bigelow Rules.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bigelow Rules.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bungee.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bungee.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bungee.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Bungee.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Codystar Light.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Codystar Light.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Codystar Light.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Codystar Light.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Codystar.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Codystar.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Codystar.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Codystar.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Creepster.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Creepster.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Creepster.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Creepster.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fanwood Italic.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fanwood Italic.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fanwood Italic.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fanwood Italic.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fanwood Master.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fanwood Master.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fanwood Master.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fanwood Master.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Faster One.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Faster One.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/FasterOne.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/FasterOne.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Flavors.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Flavors.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Flavors.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Flavors.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Freckle Face.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Freckle Face.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Freckle Face.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Freckle Face.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fredoka One.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fredoka One.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fredoka One.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Fredoka One.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Germania One.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Germania One.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Germania One.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Germania One.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Goudy Bookletter 1911.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Goudy Bookletter 1911.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Goudy Bookletter 1911.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Goudy Bookletter 1911.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Indie Flower.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Indie Flower.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Indie Flower.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Indie Flower.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-CondensedItalic.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-CondensedItalic.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-CondensedItalic.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-CondensedItalic.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-CondensedRegular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-CondensedRegular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-CondensedRegular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-CondensedRegular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-Italic.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-Italic.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-Italic.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-Italic.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueGothic-Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Bold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Bold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Bold.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Bold.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-ExtraBold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-ExtraBold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-ExtraBold.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-ExtraBold.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Light.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Light.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Light.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Light.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Medium.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Medium.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Medium.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Medium.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-SemiBold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-SemiBold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-SemiBold.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-SemiBold.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Thin.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Thin.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Thin.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-Thin.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-UltraLight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-UltraLight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-UltraLight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueMono-UltraLight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueSpartan-Bold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueSpartan-Bold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueSpartan-Bold.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/LeagueSpartan-Bold.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Linden Hill Italic.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Linden Hill Italic.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Linden Hill Italic.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Linden Hill Italic.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Linden Hill.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Linden Hill.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Linden Hill.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Linden Hill.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Lobster.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Lobster.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Lobster.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Lobster.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Medula One.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Medula One.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Medula One.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Medula One.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Nosifer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Nosifer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Nosifer.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Nosifer.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Nova Cut.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Nova Cut.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Nova Cut.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Nova Cut.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/OFLGoudyStM.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/OFLGoudyStM.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/OFLGoudyStM.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/OFLGoudyStM.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Orbitron Black.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Orbitron Black.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Orbitron Black.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Orbitron Black.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Orbitron Light.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Orbitron Light.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Orbitron Light.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Orbitron Light.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/PermanentMarker-Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/PermanentMarker-Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/PermanentMarker-Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/PermanentMarker-Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Playball-Regular..asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Playball-Regular..asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Playball-Regular..fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Playball-Regular..fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/PressStart2P-Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/PressStart2P-Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/PressStart2P-Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/PressStart2P-Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Prociono.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Prociono.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Prociono.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Prociono.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Raleway Thin.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Raleway Thin.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Raleway Thin.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Raleway Thin.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/RibeyeMarrow-Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/RibeyeMarrow-Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/RibeyeMarrow-Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/RibeyeMarrow-Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Righteous-Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Righteous-Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Righteous-Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Righteous-Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sedgwick Ave Display.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sedgwick Ave Display.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sedgwick Ave Display.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sedgwick Ave Display.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sevillana-Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sevillana-Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sevillana-Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sevillana-Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/ShadowsIntoLight-Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/ShadowsIntoLight-Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/ShadowsIntoLight-Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/ShadowsIntoLight-Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sniglet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sniglet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sniglet.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Sniglet.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Srisakdi-Bold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Srisakdi-Bold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Srisakdi-Bold.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Srisakdi-Bold.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Srisakdi-Regular.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Srisakdi-Regular.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Srisakdi-Regular.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Fonts/Srisakdi-Regular.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Black.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Black.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Brown.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Brown.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Emission Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Emission Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Green Bright.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Green Bright.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grey Dark.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grey Dark.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grey Light Dark.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grey Light Dark.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grey.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grey.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grid 160 x 160.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grid 160 x 160.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grid 80 x 80.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grid 80 x 80.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Grid.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Particle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Particle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/White Dark.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/White Dark.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/White Transparent.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/White Transparent.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/White.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Yellow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Materials/Yellow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models/Chest.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models/Chest.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models/Crosshair.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models/Crosshair.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models/Graphics.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models/Graphics.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models/HP.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Models/HP.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/! Grow From Zero to Original.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/! Grow From Zero to Original.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/! Shrink From Original to Zero.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/! Shrink From Original to Zero.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Add Gravity.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Add Gravity.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Add Rigidbody + Random Force 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Add Rigidbody + Random Force 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Add Rigidbody + Random Force.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Add Rigidbody + Random Force.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Add Rigidbody.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Add Rigidbody.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Bouncy Physic Material.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Bouncy Physic Material.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Grow From Zero to Original Jump In.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Grow From Zero to Original Jump In.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Play Particle 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Play Particle 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Play Particle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Play Particle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Position Change.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Position Change.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Remove Gravity+Rigidbody.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Remove Gravity+Rigidbody.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Shrink From Original to Zero Jump In.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Modules/Shrink From Original to Zero Jump In.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Black Particle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Black Particle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Bright Particle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Bright Particle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Large (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Large (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Large Extra (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Large Extra (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Medium (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Medium (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Small (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Small (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Small Extra (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Button Baveled Small Extra (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Chest Open Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Chest Open Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Chest.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Chest.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Chest.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Chest.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Input Field (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Input Field (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/List (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/List (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Raycast Selector (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Raycast Selector (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Slider (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Slider (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Text (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Text (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Toggle (M3D).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Prefabs/Toggle (M3D).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/01 Text - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/01 Text - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/02 Input Field - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/02 Input Field - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/03 Button - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/03 Button - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/04 Slider - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/04 Slider - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/05 Toggle - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/05 Toggle - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/06 Fonts - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/06 Fonts - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/07 Menus - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/07 Menus - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/08 Dropdown - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/08 Dropdown - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/09 Example - Typewriter - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/09 Example - Typewriter - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/10 Example - Countdown with Modules- M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/10 Example - Countdown with Modules- M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Animation.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Animation.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Modules tutorial image 5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Tutorial anim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Modules Tutorial/Tutorial anim.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Tutoiral - Modules - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/11 Tutoiral - Modules - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/12 Example - VR - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/12 Example - VR - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/13 Example - Shop Signs - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/13 Example - Shop Signs - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/14 Example - Damage Effects - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/14 Example - Damage Effects - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/15 Example - Particle System Module - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/15 Example - Particle System Module - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/16 Example - Logo - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/16 Example - Logo - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/17 Horizontal Selector - M3DText.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Sample Scenes/17 Horizontal Selector - M3DText.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_FontCreator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_FontCreator.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_FontExporter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_FontExporter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_MeshAssetExporter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_MeshAssetExporter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_NewFontCharacterRange.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_NewFontCharacterRange.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_ObjExporter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Font Creator/MText_ObjExporter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_CharacterDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_CharacterDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_FindResource.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_FindResource.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_FontEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_FontEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_LoopAnimationEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_LoopAnimationEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_ButtonEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_ButtonEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_HorizontalSelectorEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_HorizontalSelectorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_ListEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_ListEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_SliderEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_SliderEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_ToggleEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_UI_ToggleEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_Window.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/MText_Window.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Modular3DTextEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Modular3DTextEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Mtext_UI_InputStringEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Editor/Mtext_UI_InputStringEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples/Countdown.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples/Countdown.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples/DamageText.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples/DamageText.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples/StatusToolTip.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples/StatusToolTip.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples/Typewriter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Examples/Typewriter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Character.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Character.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Font.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Font.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_GetCharacterObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_GetCharacterObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_KernPair.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_KernPair.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_KernPairHolder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_KernPairHolder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Letter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Letter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_LoopAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_LoopAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_MenuItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_MenuItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Module.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Module.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_ModuleContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_ModuleContainer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Pool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Pool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_PoolItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_PoolItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_TextUpdater.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_TextUpdater.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_Button.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_Button.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_HorizontalSelector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_HorizontalSelector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_List.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_List.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_ListEditorHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_ListEditorHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_RaycastSelector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_RaycastSelector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_Slider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_Slider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_SliderHandle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_SliderHandle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_Toggle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_UI_Toggle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Utilities.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_Utilities.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modular3DText.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modular3DText.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_AddRigidBody.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_AddRigidBody.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_PlayParticles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_PlayParticles.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_PositionChange.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_PositionChange.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_RemoveRigidBody.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_RemoveRigidBody.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_ScaleChange.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Modules/MText_Module_ScaleChange.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Mtext_UI_InputString.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Mtext_UI_InputString.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/ProgressBar Handle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/ProgressBar Handle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_Announcement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_Announcement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_Cursor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_Cursor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_FontTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_FontTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_ListTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_ListTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_VRCam.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Sample Scene/MText_SampleScene_VRCam.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Utilities.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Utilities/M Text_Settings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Utilities/M Text_Settings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Utilities/MText_Settings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/Utilities/MText_Settings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/VertexColor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/VertexColor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Android.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Android.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Android/DebugLogLogcatListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Android/DebugLogLogcatListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Android/IngameDebugConsole.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Android/IngameDebugConsole.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Android/IngameDebugConsole.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Android/IngameDebugConsole.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor/DebugLogManagerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor/DebugLogManagerEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor/DebugLogManagerEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor/DebugLogManagerEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor/IngameDebugConsole.Editor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor/IngameDebugConsole.Editor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor/IngameDebugConsole.Editor.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Editor/IngameDebugConsole.Editor.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/IngameDebugConsole.Runtime.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/IngameDebugConsole.Runtime.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/IngameDebugConsole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/IngameDebugConsole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/IngameDebugConsole.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/IngameDebugConsole.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs/CommandSuggestion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs/CommandSuggestion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs/CommandSuggestion.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs/CommandSuggestion.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/README.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/README.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/CircularBuffer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/CircularBuffer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/ConsoleMethodAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/ConsoleMethodAttribute.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogConsole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogConsole.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogConsole.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogConsole.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogEntry.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogEntry.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogIndexList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogIndexList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogPopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogPopup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogPopup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogResizeListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugLogResizeListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Sprites.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Sprites/Unused.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/Sprites/Unused.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/iOS.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/iOS.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/iOS/IngameDebugConsole.mm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/iOS/IngameDebugConsole.mm.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropDownMenuAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DropDownMenuAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PipesSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PipesSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,10 +609,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CloudCollisionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../5_Realm_Rush/5_Realm_Rush/Assets/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constants.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/75/a16de815/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cc/a5da24d3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/75/a16de815/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -45,19 +621,19 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Pipes/NormalPipe.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pipe.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PipesMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PipesSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CloudCollisionHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Asset Packs/Tiny Giant Studios/Modular 3D Text/Scripts/MText_LoopAnimation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Asset Packs/Modern UI Pack/Scripts/Button/ButtonManagerBasicEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/DropDownMenuAnimation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ThemeManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomGravity.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DropDownMenuAnimation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SplashScreenButtonsGUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameButtonsGUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PipesSpawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1olJdGD3ZXzmrwSj9K4yGBtkRW3" />
@@ -78,6 +654,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -87,6 +664,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>

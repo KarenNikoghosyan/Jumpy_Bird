@@ -71,7 +71,8 @@ public class GameButtonsGUI : MonoBehaviour
     {
         if (!isEnabled)
         {
-            AudioManager.instance.Play("Pause Sound");
+            AudioManager.instance.Play(Constants.PAUSE_GAME_SOUND);
+            
             Time.timeScale = 0; ;
             inGameMenu.gameObject.SetActive(true);
             ShowCurrentScore();
@@ -89,8 +90,10 @@ public class GameButtonsGUI : MonoBehaviour
 
     public void ResumeGameButton()
     {
-        if (isEnabled) {
-            AudioManager.instance.Play("Resume Sound");
+        if (isEnabled) 
+        {
+            AudioManager.instance.Play(Constants.RESUME_GAME_SOUND);
+            
             Time.timeScale = 1;
             inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
             StartCoroutine(ResumeGameAnimator());
@@ -108,13 +111,13 @@ public class GameButtonsGUI : MonoBehaviour
     public void RestartGameButton()
     {
         SaveHighScore();
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
         transition2.SetActive(true);
     }
 
     public void HomeButton()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
         inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(OpenQuitMenuDelay());
     }
@@ -127,7 +130,7 @@ public class GameButtonsGUI : MonoBehaviour
     }
     public void CloseQuitMenu()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
         quitMenu.gameObject.SetActive(false);
         inGameMenu.gameObject.SetActive(true);
         inGameMenu.GetComponentInChildren<Animator>().SetBool("open", true);
@@ -135,7 +138,7 @@ public class GameButtonsGUI : MonoBehaviour
 
     public void SettingsButton()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
         inGameMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(SettingsButtonDelay());
 
@@ -153,7 +156,7 @@ public class GameButtonsGUI : MonoBehaviour
     public void CloseSettingsButton()
     {
         PlayerPrefs.SetFloat(Constants.SLIDER_VOLUME, musicPlayer.volume);
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
         settingsMenu.gameObject.SetActive(false);
         inGameMenu.gameObject.SetActive(true);
         inGameMenu.GetComponentInChildren<Animator>().SetBool("open", true);
@@ -162,7 +165,7 @@ public class GameButtonsGUI : MonoBehaviour
     public void QuitGame()
     {
         SaveHighScore();
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
         transition1.SetActive(true);
     }
 

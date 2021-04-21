@@ -21,6 +21,8 @@ public class DropDownMenuAnimation : MonoBehaviour
     {
         if (!isOpen)
         {
+            AudioManager.instance.Play(Constants.CLICK_SOUND);
+            
             settingsButton.gameObject.SetActive(true);
             creditsButton.gameObject.SetActive(true);
             
@@ -32,6 +34,8 @@ public class DropDownMenuAnimation : MonoBehaviour
 
         else
         {
+            AudioManager.instance.Play(Constants.CLICK_SOUND);
+            
             settingsButton.GetComponent<Animator>().SetBool("open", false);
             creditsButton.GetComponent<Animator>().SetBool("open", false);
 

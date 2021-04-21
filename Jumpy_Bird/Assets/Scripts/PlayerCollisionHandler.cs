@@ -92,7 +92,8 @@ public class PlayerCollisionHandler : MonoBehaviour
 
         if (other.gameObject.CompareTag("Water"))
         {
-            AudioManager.instance.Play("Water Splash Sound");
+            AudioManager.instance.Play(Constants.WATER_SPLASH_SOUND);
+            
             splashVFX.Play();
             KillPlayer();
             Invoke("OpenGameOverMenu", 1f);
@@ -102,14 +103,14 @@ public class PlayerCollisionHandler : MonoBehaviour
 
         if (other.gameObject.CompareTag("Sky"))
         {
-            AudioManager.instance.Play("Death Sound");
+            AudioManager.instance.Play(Constants.DEATH_SOUND);
             KillPlayer();
             Invoke("OpenGameOverMenu", 0.3f);
         }
 
         if (other.gameObject.CompareTag("PipeTop_Collider"))
         {
-            AudioManager.instance.Play("Death Sound");
+            AudioManager.instance.Play(Constants.DEATH_SOUND);
             KillPlayer();
             Invoke("OpenGameOverMenu", 1f);
         }
@@ -118,7 +119,7 @@ public class PlayerCollisionHandler : MonoBehaviour
 
         if (other.gameObject.CompareTag("PipeBottom_Collider"))
         {
-            AudioManager.instance.Play("Death Sound");
+            AudioManager.instance.Play(Constants.DEATH_SOUND);
             KillPlayer();
             Invoke("OpenGameOverMenu", 0.3f);
         }
@@ -144,7 +145,7 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void StopPipesMovement()
     {
-        AudioManager.instance.Play("Death Sound");
+        AudioManager.instance.Play(Constants.DEATH_SOUND);
         GetComponent<PlayerController>().isDead = true;
         GetComponent<Animator>().SetBool("Roll", true);
         FindObjectOfType<PipesMovement>().PipeMovement(stop: true);
@@ -158,7 +159,7 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void AddScore()
     {
-        AudioManager.instance.Play("Scroing Sound");
+        AudioManager.instance.Play(Constants.SCORING_SOUND);
         score++;
         scoreUI.UpdateText(score);
         ShowHighScoreParticles();
@@ -168,7 +169,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     {
         if (score == PlayerPrefs.GetInt(Constants.HIGHSCORE) + 1 && PlayerPrefs.GetInt(Constants.HIGHSCORE) != 0)
         {
-            AudioManager.instance.Play("HighScore");
+            AudioManager.instance.Play(Constants.HIGHSCORE_SOUND);
             StartCoroutine(PlayConfettiVFX());
         }
     }

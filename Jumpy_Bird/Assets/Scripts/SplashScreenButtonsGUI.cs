@@ -150,16 +150,18 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     public void StartGame()
     {
         if (isPlaying) { return; }
-        AudioManager.instance.Play("Start Game Sound");
+        AudioManager.instance.Play(Constants.START_GAME_SOUND);
         transition.SetActive(true);
         isPlaying = true;
     }
 
     public void OpenQuitMenu()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
+        
         splashButtons.gameObject.SetActive(false);
         quitMenu.gameObject.SetActive(true);
+        
         quitMenu.GetComponentInChildren<Animator>().SetBool("open", true);
     }
 
@@ -170,7 +172,8 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     public void CloseQuitMenu()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
+        
         quitMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(CloseQuitMenuDelay());
     }
@@ -178,21 +181,24 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     IEnumerator CloseQuitMenuDelay()
     {
         yield return new WaitForSeconds(0.4f);
+        
         quitMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
     }
 
     public void SettingsButton()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
+        
         splashButtons.gameObject.SetActive(false);
         settingsMenu.gameObject.SetActive(true);
+        
         settingsMenu.GetComponentInChildren<Animator>().SetBool("open", true);
     }
 
     public void CloseSettingsMenuButton()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
         
         //Saves the volume setting
         PlayerPrefs.SetFloat(Constants.SLIDER_VOLUME, musicPlayer.volume);
@@ -203,6 +209,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     IEnumerator CloseSettingsMenuDelay()
     {
+        
         yield return new WaitForSeconds(0.4f);
         settingsMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
@@ -210,15 +217,18 @@ public class SplashScreenButtonsGUI : MonoBehaviour
 
     public void OpenCreditsMenu()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
+        
         splashButtons.gameObject.SetActive(false);
         creditsMenu.gameObject.SetActive(true);
+        
         creditsMenu.GetComponentInChildren<Animator>().SetBool("open", true);
     }
 
     public void CloseCreditsMenu()
     {
-        AudioManager.instance.Play("Click Sound");
+        AudioManager.instance.Play(Constants.CLICK_SOUND);
+        
         creditsMenu.GetComponentInChildren<Animator>().SetBool("open", false);
         StartCoroutine(CloseCreditsMenuDelay());
     }
@@ -226,6 +236,7 @@ public class SplashScreenButtonsGUI : MonoBehaviour
     IEnumerator CloseCreditsMenuDelay()
     {
         yield return new WaitForSeconds(0.4f);
+        
         creditsMenu.gameObject.SetActive(false);
         splashButtons.gameObject.SetActive(true);
     }

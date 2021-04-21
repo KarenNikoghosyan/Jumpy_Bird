@@ -5172,7 +5172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modular3DText: {fileID: 599875208}
-  text: Speeding UP!
+  text: SPEEDING UP!
   speed: {x: 0.1, y: 0.1}
   typeSound: {fileID: 0}
   volume: {x: 0, y: 0}
@@ -9684,7 +9684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Scroing Sound
+  - name: Scoring Sound
     clip: {fileID: 8300000, guid: 52633201299171d4990bacf1afbf5e85, type: 3}
     volume: 0.65
     pitch: 1
@@ -10448,7 +10448,7 @@ Transform:
   - {fileID: 1436116788}
   - {fileID: 705572427}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1130454961
 PrefabInstance:
@@ -21234,6 +21234,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 140198784, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498577343, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_text
+      value: Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 498577343, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_fontSize
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 498577343, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 498577343, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 498577343, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454471729, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3640707554043171909, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
       propertyPath: scoreUI
       value: 
@@ -21244,7 +21272,7 @@ PrefabInstance:
       objectReference: {fileID: 599875208}
     - target: {fileID: 3640707555057027874, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3640707555057027874, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21289,6 +21317,26 @@ PrefabInstance:
     - target: {fileID: 3640707555057027877, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
       propertyPath: m_Name
       value: Game UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454861203340210090, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454861203340210090, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454937086147645590, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454937086147645590, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454937086147645590, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26ed6feadd55b4144a33d1c63ba70357, type: 3}

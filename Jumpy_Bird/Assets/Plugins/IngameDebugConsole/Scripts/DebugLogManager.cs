@@ -5,6 +5,12 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+using UnityEngine.InputSystem;
+#endif
+#if UNITY_EDITOR && UNITY_2021_1_OR_NEWER
+using Screen = UnityEngine.Device.Screen; // To support Device Simulator on Unity 2021.1+
+#endif
 
 // Receives debug entries and custom events (e.g. Clear, Collapse, Filter by Type)
 // and notifies the recycled list view of changes to the list of debug entries
@@ -47,6 +53,21 @@ namespace IngameDebugConsole
 
 		[SerializeField]
 		[HideInInspector]
+		[Tooltip( "If enabled, console window can be resized horizontally, as well" )]
+		private bool enableHorizontalResizing = false;
+
+		[SerializeField]
+		[HideInInspector]
+		[Tooltip( "If enabled, console window's resize button will be located at bottom-right corner. Otherwise, it will be located at bottom-left corner" )]
+		private bool resizeFromRight = true;
+
+		[SerializeField]
+		[HideInInspector]
+		[Tooltip( "Minimum width of the console window" )]
+		private float minimumWidth = 240f;
+
+		[SerializeField]
+		[HideInInspector]
 		[Tooltip( "If disabled, no popup will be shown when the console window is hidden" )]
 		private bool enablePopup = true;
 
@@ -65,9 +86,15 @@ namespace IngameDebugConsole
 		[Tooltip( "If enabled, pressing the Toggle Key will show/hide (i.e. toggle) the console window at runtime" )]
 		private bool toggleWithKey = false;
 
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+		[SerializeField]
+		[HideInInspector]
+		public InputAction toggleBinding = new InputAction( "Toggle Binding", type: InputActionType.Button, binding: "<Keyboard>/backquote", expectedControlType: "Button" );
+#else
 		[SerializeField]
 		[HideInInspector]
 		private KeyCode toggleKey = KeyCode.BackQuote;
+#endif
 
 		[SerializeField]
 		[HideInInspector]
@@ -135,6 +162,12 @@ namespace IngameDebugConsole
 		[SerializeField]
 		private Sprite errorLog;
 
+		// Visuals for resize button
+		[SerializeField]
+		private Sprite resizeIconAllDirections;
+		[SerializeField]
+		private Sprite resizeIconVerticalOnly;
+
 		private Dictionary<LogType, Sprite> logSpriteRepresentations;
 
 		[SerializeField]
@@ -156,7 +189,7 @@ namespace IngameDebugConsole
 		[SerializeField]
 		private RectTransform logWindowTR;
 
-		private RectTransform canvasTR;
+		internal RectTransform canvasTR;
 
 		[SerializeField]
 		private RectTransform logItemsContainer;
@@ -198,6 +231,9 @@ namespace IngameDebugConsole
 		private RectTransform searchbarSlotBottom;
 
 		[SerializeField]
+		private Image resizeButton;
+
+		[SerializeField]
 		private GameObject snapToBottomButton;
 
 		// Canvas group to modify visibility of the log window
@@ -227,6 +263,7 @@ namespace IngameDebugConsole
 		}
 
 		private bool screenDimensionsChanged = true;
+		private float logWindowPreviousWidth;
 
 		// Number of entries filtered by their types
 		private int infoEntryCount = 0, warningEntryCount = 0, errorEntryCount = 0;
@@ -352,6 +389,8 @@ namespace IngameDebugConsole
 			filterWarningButton.color = filterButtonsSelectedColor;
 			filterErrorButton.color = filterButtonsSelectedColor;
 
+			resizeButton.sprite = enableHorizontalResizing ? resizeIconAllDirections : resizeIconVerticalOnly;
+
 			collapsedLogEntries = new List<DebugLogEntry>( 128 );
 			collapsedLogEntriesMap = new Dictionary<DebugLogEntry, int>( 128 );
 			uncollapsedLogEntriesIndices = new DebugLogIndexList();
@@ -360,8 +399,20 @@ namespace IngameDebugConsole
 			recycledListView.Initialize( this, collapsedLogEntries, indicesOfListEntriesToShow, logItemPrefab.Transform.sizeDelta.y );
 			recycledListView.UpdateItemsInTheList( true );
 
+			if( minimumWidth < 100f )
+				minimumWidth = 100f;
 			if( minimumHeight < 200f )
 				minimumHeight = 200f;
+
+			if( !resizeFromRight )
+			{
+				RectTransform resizeButtonTR = (RectTransform) resizeButton.GetComponentInParent<DebugLogResizeListener>().transform;
+				resizeButtonTR.anchorMin = new Vector2( 0f, resizeButtonTR.anchorMin.y );
+				resizeButtonTR.anchorMax = new Vector2( 0f, resizeButtonTR.anchorMax.y );
+				resizeButtonTR.pivot = new Vector2( 0f, resizeButtonTR.pivot.y );
+
+				( (RectTransform) commandInputField.transform ).anchoredPosition += new Vector2( resizeButtonTR.sizeDelta.x, 0f );
+			}
 
 			if( enableSearchbar )
 				searchbar.GetComponent<InputField>().onValueChanged.AddListener( SearchTermChanged );
@@ -388,6 +439,22 @@ namespace IngameDebugConsole
 			snapToBottomButton.GetComponent<Button>().onClick.AddListener( () => SetSnapToBottom( true ) );
 
 			nullPointerEventData = new PointerEventData( null );
+
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+			toggleBinding.performed += ( context ) =>
+			{
+				if( toggleWithKey )
+				{
+					if( isLogWindowVisible )
+						HideLogWindow();
+					else
+						ShowLogWindow();
+				}
+			};
+
+			// On new Input System, scroll sensitivity is much higher than legacy Input system
+			logItemsScrollRect.scrollSensitivity *= 0.25f;
+#endif
 		}
 
 		private void OnEnable()
@@ -409,7 +476,13 @@ namespace IngameDebugConsole
 #endif
 			}
 
-			DebugLogConsole.AddCommand( "save_logs", "Saves logs to a file", SaveLogsToFile );
+			DebugLogConsole.AddCommand( "logs.save", "Saves logs to persistentDataPath", SaveLogsToFile );
+			DebugLogConsole.AddCommand<string>( "logs.save", "Saves logs to the specified file", SaveLogsToFile );
+
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+			if( toggleWithKey )
+				toggleBinding.Enable();
+#endif
 
 			//Debug.LogAssertion( "assert" );
 			//Debug.LogError( "error" );
@@ -431,7 +504,12 @@ namespace IngameDebugConsole
 				logcatListener.Stop();
 #endif
 
-			DebugLogConsole.RemoveCommand( "save_logs" );
+			DebugLogConsole.RemoveCommand( "logs.save" );
+
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+			if( toggleBinding.enabled )
+				toggleBinding.Disable();
+#endif
 		}
 
 		private void Start()
@@ -445,6 +523,12 @@ namespace IngameDebugConsole
 		}
 
 #if UNITY_EDITOR
+		private void OnValidate()
+		{
+			if( UnityEditor.EditorApplication.isPlaying )
+				resizeButton.sprite = enableHorizontalResizing ? resizeIconAllDirections : resizeIconVerticalOnly;
+		}
+
 		private void OnApplicationQuit()
 		{
 			isQuittingApplication = true;
@@ -457,6 +541,7 @@ namespace IngameDebugConsole
 			screenDimensionsChanged = true;
 		}
 
+#if !ENABLE_INPUT_SYSTEM || ENABLE_LEGACY_INPUT_MANAGER
 		private void Update()
 		{
 			// Toggling the console with toggleKey is handled in Update instead of LateUpdate because
@@ -474,6 +559,7 @@ namespace IngameDebugConsole
 				}
 			}
 		}
+#endif
 
 		private void LateUpdate()
 		{
@@ -550,17 +636,24 @@ namespace IngameDebugConsole
 			{
 				// Update the recycled list view
 				if( isLogWindowVisible )
-					recycledListView.OnViewportDimensionsChanged();
+					recycledListView.OnViewportHeightChanged();
 				else
-					popupManager.OnViewportDimensionsChanged();
+					popupManager.UpdatePosition( true );
 
-#if UNITY_ANDROID || UNITY_IOS
+#if UNITY_EDITOR || UNITY_ANDROID || UNITY_IOS
 				CheckScreenCutout();
 #endif
 
+				screenDimensionsChanged = false;
+			}
+
+			float logWindowWidth = logWindowTR.rect.width;
+			if( !Mathf.Approximately( logWindowWidth, logWindowPreviousWidth ) )
+			{
+				logWindowPreviousWidth = logWindowWidth;
+
 				if( searchbar )
 				{
-					float logWindowWidth = logWindowTR.rect.width;
 					if( logWindowWidth >= topSearchbarMinWidth )
 					{
 						if( searchbar.parent == searchbarSlotBottom )
@@ -588,7 +681,8 @@ namespace IngameDebugConsole
 					}
 				}
 
-				screenDimensionsChanged = false;
+				if( isLogWindowVisible )
+					recycledListView.OnViewportWidthChanged();
 			}
 
 			// If snapToBottom is enabled, force the scrollbar to the bottom
@@ -608,27 +702,40 @@ namespace IngameDebugConsole
 
 			if( isLogWindowVisible && commandInputField.isFocused && commandHistory.Count > 0 )
 			{
-				if( Input.GetKeyDown( KeyCode.UpArrow ) )
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+				if( Keyboard.current != null )
+#endif
 				{
-					if( commandHistoryIndex == -1 )
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+					if( Keyboard.current[Key.UpArrow].wasPressedThisFrame )
+#else
+					if( Input.GetKeyDown( KeyCode.UpArrow ) )
+#endif
 					{
-						commandHistoryIndex = commandHistory.Count - 1;
-						unfinishedCommand = commandInputField.text;
-					}
-					else if( --commandHistoryIndex < 0 )
-						commandHistoryIndex = 0;
+						if( commandHistoryIndex == -1 )
+						{
+							commandHistoryIndex = commandHistory.Count - 1;
+							unfinishedCommand = commandInputField.text;
+						}
+						else if( --commandHistoryIndex < 0 )
+							commandHistoryIndex = 0;
 
-					commandInputField.text = commandHistory[commandHistoryIndex];
-					commandInputField.caretPosition = commandInputField.text.Length;
-				}
-				else if( Input.GetKeyDown( KeyCode.DownArrow ) && commandHistoryIndex != -1 )
-				{
-					if( ++commandHistoryIndex < commandHistory.Count )
 						commandInputField.text = commandHistory[commandHistoryIndex];
-					else
+						commandInputField.caretPosition = commandInputField.text.Length;
+					}
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+					else if( Keyboard.current[Key.DownArrow].wasPressedThisFrame && commandHistoryIndex != -1 )
+#else
+					else if( Input.GetKeyDown( KeyCode.DownArrow ) && commandHistoryIndex != -1 )
+#endif
 					{
-						commandHistoryIndex = -1;
-						commandInputField.text = unfinishedCommand ?? string.Empty;
+						if( ++commandHistoryIndex < commandHistory.Count )
+							commandInputField.text = commandHistory[commandHistoryIndex];
+						else
+						{
+							commandHistoryIndex = -1;
+							commandInputField.text = unfinishedCommand ?? string.Empty;
+						}
 					}
 				}
 			}
@@ -1091,17 +1198,56 @@ namespace IngameDebugConsole
 		// preventing window dimensions from going below the minimum dimensions
 		internal void Resize( PointerEventData eventData )
 		{
-			// Grab the resize button from top; 36f is the height of the resize button
-			float newHeight = ( eventData.position.y - logWindowTR.position.y ) / -canvasTR.localScale.y + 36f;
-			if( newHeight < minimumHeight )
-				newHeight = minimumHeight;
+			Vector2 localPoint;
+			if( !RectTransformUtility.ScreenPointToLocalPointInRectangle( canvasTR, eventData.position, eventData.pressEventCamera, out localPoint ) )
+				return;
 
+			// To be able to maximize the log window easily:
+			// - When enableHorizontalResizing is true and resizing horizontally, resize button will be grabbed from its left edge (if resizeFromRight is true) or its right edge
+			// - While resizing vertically, resize button will be grabbed from its top edge
+			const float resizeButtonWidth = 64f;
+			const float resizeButtonHeight = 36f;
+
+			Vector2 canvasPivot = canvasTR.pivot;
+			Vector2 canvasSize = canvasTR.rect.size;
 			Vector2 anchorMin = logWindowTR.anchorMin;
-			anchorMin.y = Mathf.Max( 0f, 1f - newHeight / canvasTR.sizeDelta.y );
+
+			// Horizontal resizing
+			if( enableHorizontalResizing )
+			{
+				if( resizeFromRight )
+				{
+					localPoint.x += canvasPivot.x * canvasSize.x + resizeButtonWidth;
+					if( localPoint.x < minimumWidth )
+						localPoint.x = minimumWidth;
+
+					Vector2 anchorMax = logWindowTR.anchorMax;
+					anchorMax.x = Mathf.Clamp01( localPoint.x / canvasSize.x );
+					logWindowTR.anchorMax = anchorMax;
+				}
+				else
+				{
+					localPoint.x += canvasPivot.x * canvasSize.x - resizeButtonWidth;
+					if( localPoint.x > canvasSize.x - minimumWidth )
+						localPoint.x = canvasSize.x - minimumWidth;
+
+					anchorMin.x = Mathf.Clamp01( localPoint.x / canvasSize.x );
+				}
+			}
+
+			// Vertical resizing
+			float notchHeight = -logWindowTR.sizeDelta.y; // Size of notch screen cutouts at the top of the screen
+
+			localPoint.y += canvasPivot.y * canvasSize.y - resizeButtonHeight;
+			if( localPoint.y > canvasSize.y - minimumHeight - notchHeight )
+				localPoint.y = canvasSize.y - minimumHeight - notchHeight;
+
+			anchorMin.y = Mathf.Clamp01( localPoint.y / canvasSize.y );
+
 			logWindowTR.anchorMin = anchorMin;
 
 			// Update the recycled list view
-			recycledListView.OnViewportDimensionsChanged();
+			recycledListView.OnViewportHeightChanged();
 		}
 
 		// Determine the filtered list of debug entries to show on screen
@@ -1237,10 +1383,13 @@ namespace IngameDebugConsole
 
 		private void SaveLogsToFile()
 		{
-			string path = Path.Combine( Application.persistentDataPath, System.DateTime.Now.ToString( "dd-MM-yyyy--HH-mm-ss" ) + ".txt" );
-			File.WriteAllText( path, GetAllLogs() );
+			SaveLogsToFile( Path.Combine( Application.persistentDataPath, System.DateTime.Now.ToString( "dd-MM-yyyy--HH-mm-ss" ) + ".txt" ) );
+		}
 
-			Debug.Log( "Logs saved to: " + path );
+		private void SaveLogsToFile( string filePath )
+		{
+			File.WriteAllText( filePath, GetAllLogs() );
+			Debug.Log( "Logs saved to: " + filePath );
 		}
 
 		// If a cutout is intersecting with debug window on notch screens, shift the window downwards
@@ -1249,7 +1398,7 @@ namespace IngameDebugConsole
 			if( !avoidScreenCutout )
 				return;
 
-#if UNITY_2017_2_OR_NEWER && !UNITY_EDITOR && ( UNITY_ANDROID || UNITY_IOS )
+#if UNITY_2017_2_OR_NEWER && ( UNITY_EDITOR || UNITY_ANDROID || UNITY_IOS )
 			// Check if there is a cutout at the top of the screen
 			int screenHeight = Screen.height;
 			float safeYMax = Screen.safeArea.yMax;

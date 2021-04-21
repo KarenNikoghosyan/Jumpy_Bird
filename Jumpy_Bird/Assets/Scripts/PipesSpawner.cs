@@ -19,6 +19,8 @@ public class PipesSpawner : MonoBehaviour
 
     [SerializeField] private float minPipeHeight = -11f;
     [SerializeField] private float maxPipeHeight = -2f;
+
+    //private float heightDifference = 0f;
     
     private bool isCoroutineStarted = false;
 
@@ -52,6 +54,12 @@ public class PipesSpawner : MonoBehaviour
     private GameObject PipeSpawner()
     {
         float randomYRange = Random.Range(minPipeHeight, maxPipeHeight);
+
+        // if (randomYRange - heightDifference < - 0.5f)
+        // {
+        //     
+        // }
+        
         GameObject newPipe = ObjectPoolManager.CreatePooled(pipePrefab, new Vector3(2f, randomYRange, 0f), Quaternion.identity);
         newPipe.transform.parent = pipesParentTransform;
         return newPipe;
