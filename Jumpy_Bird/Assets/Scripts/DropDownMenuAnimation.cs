@@ -13,8 +13,8 @@ public class DropDownMenuAnimation : MonoBehaviour
 
     private void Awake()
     {
-        settingsButton.GetComponent<Animator>().keepAnimatorControllerStateOnDisable = true;
-        creditsButton.GetComponent<Animator>().keepAnimatorControllerStateOnDisable = true;
+        settingsButton.GetComponent<Animator>().keepAnimatorStateOnDisable = true;
+        creditsButton.GetComponent<Animator>().keepAnimatorStateOnDisable = true;
     }
 
     public void OpenCloseDropDownMenu()
